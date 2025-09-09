@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Homework 2</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <h3>DS-4630 / CS-5630 / CS-6630 Homework 2</h3>
+  <h4>LLM Generated Per-Visualization</h4>
+  <address>
+    <span>Your Name</span>
+    <span>Your Email</span>
+    <span>Your UID</span>
+  </address>
+  <br />
+  <a href="llm_transcript.html">LLM Transcript</a>
+  <hr />
+  <br />
+
+  <div class="toolbox">
+
+    <span>
+      <label>Dataset:</label>
+      <select id="dataset">
+        <option selected value="dataset1">Dataset 1</option>
+        <option value="dataset2">Dataset 2</option>
+        <option value="dataset3">Dataset 3</option>
+        <option value="dataset4">Dataset 4</option>
+      </select>
+    </span>
+    <span>
+      <label>Data Metric</label>
+      <select id="metric">
+        <option value="attribute1">Attribute 1</option>
+        <option value="attribute2">Attribute 2</option>
+      </select>
+    </span>
+  </div>
+  <br />
+
+  <div class="row chart">
+    <div class="chart">
+      <h2>Histogram Charts</h2>
+      <div id="Histogram-div">
+      </div>
+    </div>
+
+    <div class="chart">
+      <h2>Line Charts</h2>
+      <div id="Linechart-div"></div>
+    </div>
+  </div>
+
+  <div class="row chart">
+    <div class="chart">
+      <h2>Stacked Area Charts</h2>
+      <div id="StackedArea-div"></div>
+    </div>
+
+    <div class="chart">
+      <h2>Scatterplot</h2>
+      <div id="Scatterplot-div"></div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
