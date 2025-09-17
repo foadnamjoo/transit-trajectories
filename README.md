@@ -9,6 +9,19 @@ This repository contains three deliverables:
 
 Each LLM folder includes its own `index.html`, assets, and a **full transcript** (`llm_transcript.html`) with prompts and the model’s responses.
 
+
+## Thumbnails
+Quick preview of the four charts (exported from the app):
+
+<p align="center">
+  <img src="thumbnails/histogram.png" width="260" alt="Histogram" />
+  <img src="thumbnails/line.png" width="260" alt="Line chart" />
+  <img src="thumbnails/stacked.png" width="260" alt="Stacked area" />
+  <img src="thumbnails/scatter.png" width="260" alt="Scatterplot" />
+</p>
+
+
+
 ---
 
 ## How to run
