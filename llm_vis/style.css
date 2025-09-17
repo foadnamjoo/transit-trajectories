@@ -1,4 +1,7 @@
-:root { --fg:#1a1a1a; --bg:#fff; --card:#fafafa; --border:#e6e6e6; }
+:root {
+  --fg:#1a1a1a; --bg:#fff; --card:#fbfbfb; --border:#e6e6e6;
+  --c1:#1b9e77; --c2:#d95f02; --c3:#7570b3; /* ColorBrewer Dark2 */
+}
 
 * { box-sizing: border-box; }
 
@@ -34,8 +37,21 @@ h1, h2 { margin: .5rem 0; }
 .chart h2 { margin: 4px 2px 8px; }
 
 svg { width: 100%; height: 260px; display: block; }
-.x-axis line, .y-axis line, .x-axis path, .y-axis path { stroke: #ccc; }
+
+/* axes + gridlines */
+.x-axis text, .y-axis text { fill:#444; font-size: 11px; }
+.x-axis path, .y-axis path { stroke:#bbb; }
+.gridline line { stroke:#eee; }
 
 /* histogram bars */
-.bar { fill: #4fafd3; rx: 2; transition: y .35s, height .35s, x .35s, width .35s; }
+.bar { fill: #69b3a2; rx: 2; transition: y .35s, height .35s, x .35s, width .35s; }
 .bar:hover { opacity: .85; }
+
+/* line + points (alt style) */
+.path-line { stroke: #333; stroke-width: 2; fill: none; stroke-linecap: round; }
+.pt-shape { fill-opacity: .95; stroke: #fff; stroke-width: 1.2; }
+.pt-shape:hover { opacity: .98; }
+
+/* legends */
+.legend text { font-size: 12px; fill:#333; }
+.legend rect { rx: 2; }
