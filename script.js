@@ -1,9 +1,10 @@
 // ===== Hand-tuned HW2 (root) script.js =====
 
 // --- Constants & helpers ---
+// ↑ Slightly larger bottom margin to add space between x-axis and its label
 const CHART_WIDTH = 500;
 const CHART_HEIGHT = 260;
-const MARGIN = { left: 50, bottom: 30, top: 20, right: 16 };
+const MARGIN = { left: 57, bottom: 62, top: 20, right: 16 };
 const ANIMATION_DURATION = 500;
 
 const METRIC_MAP = { attribute1: "ridership", attribute2: "on_time_pct" };
@@ -99,16 +100,42 @@ function makeScaffold(sel) {
   const gY = svg.append("g").attr("class", "y-axis").attr("transform", `translate(${MARGIN.left},${MARGIN.top})`);
   const gGridY = svg.append("g").attr("class", "grid-y").attr("transform", `translate(${MARGIN.left},${MARGIN.top})`);
 
+  // Place x-label a touch lower; added gap comes mostly from larger bottom margin
   const xLabel = svg.append("text").attr("class", "x-label").attr("text-anchor", "middle")
-    .attr("x", MARGIN.left + plotW / 2).attr("y", CHART_HEIGHT - 6).text("");
+    .attr("x", MARGIN.left + plotW / 2).attr("y", CHART_HEIGHT - 8).text("");
 
   const yLabel = svg.append("text").attr("class", "y-label").attr("text-anchor", "middle")
     .attr("transform", `translate(14, ${MARGIN.top + plotH / 2}) rotate(-90)`).text("");
 
-  const legend = svg.append("g").attr("class", "legend")
-    .attr("transform", `translate(${CHART_WIDTH - MARGIN.right - 120}, ${MARGIN.top + 8})`);
+  // Inline (HTML) legend in the chart header (outside the plot)
+  let legendHtml = null;
+  try {
+    const card = svg.node().parentNode.closest('.chart-card');
+    if (card) {
+      const head = d3.select(card).select('.chart-head');
+      if (!head.empty()) {
+        legendHtml = head.select('.legend-inline');
+        if (legendHtml.empty()) legendHtml = head.append('div').attr('class', 'legend-inline');
+      }
+    }
+  } catch(_) {}
 
-  return { svg, gPlot, gX, gY, gGridY, xLabel, yLabel, legend, plotW, plotH };
+  // Keep an SVG legend group (unused when HTML legend exists, but harmless)
+  const legend = svg.append("g").attr("class", "legend")
+    .attr("transform", `translate(${CHART_WIDTH - MARGIN.right - 120}, ${MARGIN.top + 8})`)
+    .style("display", legendHtml ? "none" : null); // hide if HTML legend is present
+
+  return { svg, gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH };
+}
+
+// Utility: render a small HTML legend in the header
+function renderHtmlLegend(container, title, items, colorFn) {
+  if (!container) return;
+  container.html("");
+  container.append("span").attr("class","legend-title").text(title);
+  const ul = container.append("ul");
+  ul.selectAll("li").data(items).join("li").attr("class","legend-item")
+    .html(d => `<span class="swatch" style="background:${colorFn(d)}"></span>${d}`);
 }
 
 // --- Data loader ---
@@ -189,7 +216,7 @@ function updateHistogramChart (rows) {
   );
 
   gX.transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
-    .call(d3.axisBottom(x).ticks(6).tickFormat(xTickFormatFor(metric)));
+    .call(d3.axisBottom(x).ticks(6).tickPadding(8).tickFormat(xTickFormatFor(metric)));
   gY.transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
     .call(d3.axisLeft(y).ticks(5));
 
@@ -203,7 +230,7 @@ function updateHistogramChart (rows) {
 
 // --- Line chart ---
 function updateLineChart (rows) {
-  const { gPlot, gX, gY, gGridY, xLabel, yLabel, legend, plotW, plotH } = REFS.line;
+  const { gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH } = REFS.line;
   const metric = STATE.metricKey;
 
   const x = d3.scaleTime().domain(d3.extent(rows, d => d.date)).range([0, plotW]);
@@ -251,7 +278,7 @@ function updateLineChart (rows) {
   );
 
   gX.transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
-    .call(d3.axisBottom(x).ticks(d3.timeMonth.every(1)).tickFormat(monthFmt));
+    .call(d3.axisBottom(x).ticks(d3.timeMonth.every(1)).tickPadding(8).tickFormat(monthFmt));
   gY.transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
     .call(d3.axisLeft(y).ticks(5).tickFormat(yTickFormatFor(metric)));
 
@@ -259,19 +286,24 @@ function updateLineChart (rows) {
   gGridY.call(d3.axisLeft(y).ticks(5).tickSize(-plotW).tickFormat(""))
         .selectAll("line").attr("class", "gridline");
 
-  // Legend (Day type)
-  if (legend.select("text.legend-title").empty()) {
-    legend.append("text").attr("class","legend-title").attr("x",0).attr("y",-6)
-      .style("font-size","12px").style("font-weight","600").text("Day type");
+  // Legend in header (HTML)
+  if (legendHtml) {
+    renderHtmlLegend(legendHtml, "Day type", dayTypeColor.domain(), d => dayTypeColor(d));
+  } else {
+    // fallback to SVG legend (unlikely now)
+    if (legend.select("text.legend-title").empty()) {
+      legend.append("text").attr("class","legend-title").attr("x",0).attr("y",-6)
+        .style("font-size","12px").style("font-weight","600").text("Day type");
+    }
+    const cats = dayTypeColor.domain();
+    const items = legend.selectAll("g.item").data(cats, d => d);
+    const enter = items.enter().append("g").attr("class","item")
+      .attr("transform",(d,i)=>`translate(0,${i*18})`);
+    enter.append("rect").attr("width",12).attr("height",12);
+    enter.append("text").attr("x",18).attr("y",10);
+    items.merge(enter).select("rect").attr("fill", d => dayTypeColor(d));
+    items.merge(enter).select("text").text(d => d).style("font-size","12px");
   }
-  const cats = dayTypeColor.domain();
-  const items = legend.selectAll("g.item").data(cats, d => d);
-  const enter = items.enter().append("g").attr("class","item")
-    .attr("transform",(d,i)=>`translate(0,${i*18})`);
-  enter.append("rect").attr("width",12).attr("height",12);
-  enter.append("text").attr("x",18).attr("y",10);
-  items.merge(enter).select("rect").attr("fill", d => dayTypeColor(d));
-  items.merge(enter).select("text").text(d => d).style("font-size","12px");
 
   xLabel.text("Date");
   yLabel.text(metricNames[metric] || metric);
@@ -279,7 +311,7 @@ function updateLineChart (rows) {
 
 // --- Stacked area ---
 function updateStackedAreaChart (rows) {
-  const { gPlot, gX, gY, gGridY, xLabel, yLabel, legend, plotW, plotH } = REFS.stack;
+  const { gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH } = REFS.stack;
 
   const table = rows.map(d => ({ date: d.date, ridership: d.ridership, on_time_pct: d.on_time_pct }));
   const keys = ["ridership", "on_time_pct"];
@@ -289,13 +321,13 @@ function updateStackedAreaChart (rows) {
   const y = d3.scaleLinear().domain([0, d3.max(stack[stack.length - 1], d => d[1]) || 1]).nice().range([plotH, 0]);
 
   const area = d3.area().x(d => x(d.data.date)).y0(d => y(d[0])).y1(d => y(d[1]));
-  const col = d3.scaleOrdinal().domain(keys).range(["#66c2a5", "#fc8d62"]); // Set2
+  const varColor = d3.scaleOrdinal().domain(keys).range(["#66c2a5", "#fc8d62"]); // Set2
 
   const layers = gPlot.selectAll("path.layer").data(stack, d => d.key);
   layers.join(
     enter => enter.append("path")
       .attr("class", "layer")
-      .attr("fill", d => col(d.key))
+      .attr("fill", d => varColor(d.key))
       .attr("d", area)
       .attr("opacity", 0)
       .transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
@@ -307,7 +339,7 @@ function updateStackedAreaChart (rows) {
   );
 
   gX.transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
-    .call(d3.axisBottom(x).ticks(d3.timeMonth.every(1)).tickFormat(monthFmt));
+    .call(d3.axisBottom(x).ticks(d3.timeMonth.every(1)).tickPadding(8).tickFormat(monthFmt));
   gY.transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
     .call(d3.axisLeft(y).ticks(5));
 
@@ -315,18 +347,22 @@ function updateStackedAreaChart (rows) {
   gGridY.call(d3.axisLeft(y).ticks(5).tickSize(-plotW).tickFormat(""))
         .selectAll("line").attr("class", "gridline");
 
-  // Legend (Variables)
-  if (legend.select("text.legend-title").empty()) {
-    legend.append("text").attr("class","legend-title").attr("x",0).attr("y",-6)
-      .style("font-size","12px").style("font-weight","600").text("Variables");
+  // Legend in header (HTML)
+  if (legendHtml) {
+    renderHtmlLegend(legendHtml, "Variables", keys, d => varColor(d));
+  } else {
+    if (legend.select("text.legend-title").empty()) {
+      legend.append("text").attr("class","legend-title").attr("x",0).attr("y",-6)
+        .style("font-size","12px").style("font-weight","600").text("Variables");
+    }
+    const items = legend.selectAll("g.item").data(keys, d => d);
+    const enter = items.enter().append("g").attr("class","item")
+      .attr("transform",(d,i)=>`translate(0,${i*18})`);
+    enter.append("rect").attr("width",12).attr("height",12);
+    enter.append("text").attr("x",18).attr("y",10);
+    items.merge(enter).select("rect").attr("fill", d => varColor(d));
+    items.merge(enter).select("text").text(d => d).style("font-size","12px");
   }
-  const items = legend.selectAll("g.item").data(keys, d => d);
-  const enter = items.enter().append("g").attr("class","item")
-    .attr("transform",(d,i)=>`translate(0,${i*18})`);
-  enter.append("rect").attr("width",12).attr("height",12);
-  enter.append("text").attr("x",18).attr("y",10);
-  items.merge(enter).select("rect").attr("fill", d => col(d));
-  items.merge(enter).select("text").text(d => d).style("font-size","12px");
 
   xLabel.text("Date");
   yLabel.text("Stacked value");
@@ -334,7 +370,7 @@ function updateStackedAreaChart (rows) {
 
 // --- Scatterplot ---
 function updateScatterPlot (rows) {
-  const { gPlot, gX, gY, gGridY, xLabel, yLabel, legend, plotW, plotH } = REFS.scat;
+  const { gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH } = REFS.scat;
 
   const x = d3.scaleLinear().domain(d3.extent(rows, d => d.ridership)).nice().range([0, plotW]);
   const y = d3.scaleLinear().domain(d3.extent(rows, d => d.on_time_pct)).nice().range([plotH, 0]);
@@ -363,7 +399,7 @@ function updateScatterPlot (rows) {
   );
 
   gX.transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
-    .call(d3.axisBottom(x).ticks(6).tickFormat(fmtInt));
+    .call(d3.axisBottom(x).ticks(6).tickPadding(8).tickFormat(fmtInt));
   gY.transition().duration(ANIMATION_DURATION).ease(d3.easeCubicInOut)
     .call(d3.axisLeft(y).ticks(5).tickFormat(d => fmtPct(d) + "%"));
 
@@ -371,19 +407,23 @@ function updateScatterPlot (rows) {
   gGridY.call(d3.axisLeft(y).ticks(5).tickSize(-plotW).tickFormat(""))
         .selectAll("line").attr("class", "gridline");
 
-  // Legend (Day type) — keep in scatter too for quick reference
-  if (legend.select("text.legend-title").empty()) {
-    legend.append("text").attr("class","legend-title").attr("x",0).attr("y",-6)
-      .style("font-size","12px").style("font-weight","600").text("Day type");
+  // Legend in header (HTML)
+  if (legendHtml) {
+    renderHtmlLegend(legendHtml, "Day type", dayTypeColor.domain(), d => dayTypeColor(d));
+  } else {
+    if (legend.select("text.legend-title").empty()) {
+      legend.append("text").attr("class","legend-title").attr("x",0).attr("y",-6)
+        .style("font-size","12px").style("font-weight","600").text("Day type");
+    }
+    const cats = dayTypeColor.domain();
+    const items = legend.selectAll("g.item").data(cats, d => d);
+    const enter = items.enter().append("g").attr("class","item")
+      .attr("transform",(d,i)=>`translate(0,${i*18})`);
+    enter.append("rect").attr("width",12).attr("height",12);
+    enter.append("text").attr("x",18).attr("y",10);
+    items.merge(enter).select("rect").attr("fill", d => dayTypeColor(d));
+    items.merge(enter).select("text").text(d => d).style("font-size","12px");
   }
-  const cats = dayTypeColor.domain();
-  const items = legend.selectAll("g.item").data(cats, d => d);
-  const enter = items.enter().append("g").attr("class","item")
-    .attr("transform",(d,i)=>`translate(0,${i*18})`);
-  enter.append("rect").attr("width",12).attr("height",12);
-  enter.append("text").attr("x",18).attr("y",10);
-  items.merge(enter).select("rect").attr("fill", d => dayTypeColor(d));
-  items.merge(enter).select("text").text(d => d).style("font-size","12px");
 
   xLabel.text("Ridership");
   yLabel.text("On-time (%)");
