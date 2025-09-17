@@ -1,15 +1,22 @@
 <article class="entry">
-  <h3>Entry #0 <span class="badge">llm_vis – base shell</span></h3>
+  <h3>Entry #2 <span class="badge">llm_vis — Line (alt style)</span></h3>
   <div class="row">
     <section class="prompt">
       <h4>Prompt <span class="badge">prompt</span></h4>
       <pre>
-Create a minimal D3 v7 project for HW2 (llm_vis version). Files: index.html, style.css, script.js.
-- Two selects: #dataset with values route_a.csv / route_b.csv / route_c.csv / route_d.csv; and #metric with ridership / on_time_pct.
-- Empty containers: #Histogram-div, #Linechart-div, #StackedArea-div, #Scatterplot-div.
-- Load CSVs from data/ relative to index.html.
-- Add change listeners to the selects that call changeData().
-Return ONLY index.html, style.css, script.js.
+Add a Line chart in #Linechart-div while keeping the Histogram working.
+
+Requirements:
+- Use a different visual style than the hand-tuned version:
+  • ColorBrewer Dark2 palette for day_type: #1b9e77, #d95f02, #7570b3
+  • Distinct shapes per day_type using d3.symbol: circle (Weekday), square (Weekend), triangle (Holiday)
+  • Add horizontal gridlines
+  • Use curveMonotoneX for a smooth line
+- x = time (parse "%Y-%m-%d"), ticks = month (d3.timeMonth.every(1), labels "%b")
+- y = selected metric (ridership or on_time_pct), format thousands/percent appropriately
+- Subtle transitions
+- Keep changeData() updating BOTH charts (Histogram + Line)
+Return UPDATED index.html, style.css, script.js (complete files). Use ../data/ since llm_vis/ is a subfolder.
       </pre>
     </section>
 
@@ -22,16 +29,16 @@ Return ONLY index.html, style.css, script.js.
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;title&gt;HW2 – llm_vis (Base Shell)&lt;/title&gt;
+  &lt;title&gt;HW2 – llm_vis (Histogram + Line, alt style)&lt;/title&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
 
   &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
   &lt;script src=&quot;https://d3js.org/d3.v7.min.js&quot; defer&gt;&lt;/script&gt;
-  &lt;script src=&quot;script.js?v=1&quot; defer&gt;&lt;/script&gt;
+  &lt;script src=&quot;script.js?v=alt2&quot; defer&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
   &lt;header class=&quot;top&quot;&gt;
-    &lt;h1&gt;HW2 – llm_vis&lt;/h1&gt;
+    &lt;h1&gt;HW2 – llm_vis (Per-Vis Build)&lt;/h1&gt;
     &lt;div class=&quot;controls&quot;&gt;
       &lt;label&gt;Dataset:
         &lt;select id=&quot;dataset&quot;&gt;
@@ -58,7 +65,7 @@ Return ONLY index.html, style.css, script.js.
     &lt;/section&gt;
 
     &lt;section class=&quot;chart&quot;&gt;
-      &lt;h2&gt;Line&lt;/h2&gt;
+      &lt;h2&gt;Line (alt style)&lt;/h2&gt;
       &lt;div id=&quot;Linechart-div&quot;&gt;&lt;/div&gt;
     &lt;/section&gt;
 
@@ -80,7 +87,8 @@ Return ONLY index.html, style.css, script.js.
       <details>
         <summary>style.css</summary>
         <pre>:root {
-  --fg:#1a1a1a; --bg:#fff; --card:#fafafa; --border:#e6e6e6;
+  --fg:#1a1a1a; --bg:#fff; --card:#fbfbfb; --border:#e6e6e6;
+  --c1:#1b9e77; --c2:#d95f02; --c3:#7570b3; /* ColorBrewer Dark2 */
 }
 
 * { box-sizing: border-box; }
@@ -95,10 +103,9 @@ body {
 }
 
 h1, h2 { margin: .5rem 0; }
+
 .controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-.controls select {
-  padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; background: #fff;
-}
+.controls select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
 
 .grid {
   display: grid;
@@ -118,61 +125,206 @@ h1, h2 { margin: .5rem 0; }
 .chart h2 { margin: 4px 2px 8px; }
 
 svg { width: 100%; height: 260px; display: block; }
-.x-axis line, .y-axis line, .x-axis path, .y-axis path { stroke: #ccc; }
+
+/* axes + gridlines */
+.x-axis text, .y-axis text { fill:#444; font-size: 11px; }
+.x-axis path, .y-axis path { stroke:#bbb; }
+.gridline line { stroke:#eee; }
+
+/* histogram bars */
+.bar { fill: #69b3a2; rx: 2; transition: y .35s, height .35s, x .35s, width .35s; }
+.bar:hover { opacity: .85; }
+
+/* line + points (alt style) */
+.path-line { stroke: #333; stroke-width: 2; fill: none; stroke-linecap: round; }
+.pt-shape { fill-opacity: .95; stroke: #fff; stroke-width: 1.2; }
+.pt-shape:hover { opacity: .98; }
+
+/* legends */
+.legend text { font-size: 12px; fill:#333; }
+.legend rect { rx: 2; }
 </pre>
       </details>
 
       <details>
         <summary>script.js</summary>
-        <pre>// llm_vis base shell (no charts yet) — D3 v7
+        <pre>// llm_vis – Entry #2: Histogram + Line (alt style / Dark2 palette / shapes)
+// DIFFERENCES vs hand-tuned root: Dark2 palette, symbol shapes, gridlines, curveMonotoneX, different class names
 
-const DATE_PARSE = d3.timeParse(&quot;%Y-%m-%d&quot;);
+const DATE_PARSE = d3.timeParse("%Y-%m-%d");
+const DATA_ROOT = "../data/";
 
-// Wire up once the DOM is ready
-document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
-  // Controls
-  d3.select(&quot;#dataset&quot;).on(&quot;change&quot;, changeData);
-  d3.select(&quot;#metric&quot;).on(&quot;change&quot;, changeData);
+// shared dims
+const M = { left: 50, right: 18, top: 20, bottom: 32 };
+const W = 500 - M.left - M.right;
+const H = 260 - M.top - M.bottom;
 
-  // Create empty SVG scaffolds for each container (optional, handy later)
-  [&quot;Histogram-div&quot;,&quot;Linechart-div&quot;,&quot;StackedArea-div&quot;,&quot;Scatterplot-div&quot;].forEach(id =&gt; {
-    const svg = d3.select(&quot;#&quot; + id).append(&quot;svg&quot;)
-      .attr(&quot;viewBox&quot;, &quot;0 0 500 260&quot;); // matches CSS height
-    // Keep axes groups ready for future steps
-    svg.append(&quot;g&quot;).attr(&quot;class&quot;, &quot;plot&quot;).attr(&quot;transform&quot;, &quot;translate(50,20)&quot;);
-    svg.append(&quot;g&quot;).attr(&quot;class&quot;, &quot;x-axis&quot;).attr(&quot;transform&quot;, &quot;translate(50,230)&quot;);
-    svg.append(&quot;g&quot;).attr(&quot;class&quot;, &quot;y-axis&quot;).attr(&quot;transform&quot;, &quot;translate(50,20)&quot;);
+// formatters
+const fmtInt = d3.format(",");
+const fmtPct = d3.format(".0f");
+const monthFmt = d3.timeFormat("%b");
+const yTickFormatFor = (metric) => metric === "on_time_pct" ? (d) => fmtPct(d) + "%" : (d) => fmtInt(d);
+
+// ColorBrewer Dark2 (distinct from Set1 in your main)
+const dayTypeColor = d3.scaleOrdinal()
+  .domain(["Weekday","Weekend","Holiday"])
+  .range(["#1b9e77","#d95f02","#7570b3"]);
+
+// Symbol shapes for day_type (distinctive vs main)
+const dayTypeSymbol = d3.scaleOrdinal()
+  .domain(["Weekday","Weekend","Holiday"])
+  .range([d3.symbolCircle, d3.symbolSquare, d3.symbolTriangle]);
+
+document.addEventListener("DOMContentLoaded", () => {
+  d3.select("#dataset").on("change", changeData);
+  d3.select("#metric").on("change", changeData);
+
+  // scaffold SVGs
+  ["Histogram-div","Linechart-div","StackedArea-div","Scatterplot-div"].forEach(id => {
+    const svg = d3.select("#" + id).append("svg").attr("viewBox", "0 0 500 260");
+    svg.append("g").attr("class", "plot").attr("transform", `translate(${M.left},${M.top})`);
+    svg.append("g").attr("class", "x-axis").attr("transform", `translate(${M.left},${M.top + H})`);
+    svg.append("g").attr("class", "y-axis").attr("transform", `translate(${M.left},${M.top})`);
+    // gridline groups
+    svg.append("g").attr("class", "grid-x").attr("transform", `translate(${M.left},${M.top + H})`);
+    svg.append("g").attr("class", "grid-y").attr("transform", `translate(${M.left},${M.top})`);
+    // legends
+    svg.append("g").attr("class", "legend").attr("transform", `translate(${M.left + W - 120}, ${M.top + 10})`);
   });
 
-  // Initial load
   changeData();
 });
 
-// Loads the selected CSV and logs parsed rows; charts will be added in later prompts
 function changeData() {
-  const file = d3.select(&quot;#dataset&quot;).property(&quot;value&quot;);       // e.g., &quot;route_b.csv&quot;
-  const metric = d3.select(&quot;#metric&quot;).property(&quot;value&quot;);      // &quot;ridership&quot; or &quot;on_time_pct&quot;
+  const file = d3.select("#dataset").property("value");
+  const metric = d3.select("#metric").property("value");
 
-  console.log(&quot;Loading:&quot;, `data/${file}`, &quot;metric:&quot;, metric);
-
-  d3.csv(`data/${file}`).then(raw =&gt; {
-    // Parse to the known schema; keep as strings where not needed yet
-    const rows = raw.map(d =&gt; ({
+  d3.csv(DATA_ROOT + file).then(raw => {
+    const rows = raw.map(d => ({
       date: DATE_PARSE(d.date),
       group: d.group,
       ridership: +d.ridership,
       on_time_pct: +d.on_time_pct,
       day_type: d.day_type
-    })).filter(d =&gt; d.date);
+    })).filter(d => d.date);
 
-    rows.sort((a, b) =&gt; a.date - b.date);
+    rows.sort((a, b) => a.date - b.date);
 
-    // For this base shell we just log; next steps will draw each chart.
-    console.log(`Loaded ${rows.length} rows from ${file}. Example row:`, rows[0]);
-  }).catch(err =&gt; {
-    console.error(&quot;Failed to load CSV:&quot;, err);
-    alert(&quot;Error loading CSV. Check that data/ exists and filenames match the dropdown.&quot;);
+    updateHistogram(rows, metric);
+    updateLineAlt(rows, metric); // alt-styled line
+    // stacked & scatter will be added in Entries #3/#4
+  }).catch(err => {
+    console.error("Failed to load CSV:", err);
+    alert("Error loading CSV. Check ../data/ and filenames.");
   });
+}
+
+/* ---------------- Histogram (same behavior, different styling OK) ---------------- */
+function updateHistogram(rows, metric) {
+  const svg = d3.select("#Histogram-div svg");
+  const gPlot = svg.select(".plot");
+  const gX = svg.select(".x-axis");
+  const gY = svg.select(".y-axis");
+  const gGridY = svg.select(".grid-y");
+
+  const values = rows.map(d => d[metric]).filter(Number.isFinite);
+  const x = d3.scaleLinear().domain(d3.extent(values)).nice().range([0, W]);
+  const bins = d3.bin().domain(x.domain()).thresholds(24)(values);
+  const y = d3.scaleLinear().domain([0, d3.max(bins, b => b.length) || 1]).nice().range([H, 0]);
+
+  const t = svg.transition().duration(600).ease(d3.easeCubicInOut);
+
+  const bars = gPlot.selectAll("rect.bar").data(bins, d => `${d.x0}-${d.x1}`);
+  bars.join(
+    enter => enter.append("rect")
+      .attr("class", "bar")
+      .attr("x", d => x(d.x0) + 1)
+      .attr("width", d => Math.max(0, x(d.x1) - x(d.x0) - 1))
+      .attr("y", H)
+      .attr("height", 0)
+      .attr("opacity", 0.95)
+      .call(e => e.transition(t)
+        .attr("y", d => y(d.length))
+        .attr("height", d => H - y(d.length))),
+    update => update
+      .call(u => u.transition(t)
+        .attr("x", d => x(d.x0) + 1)
+        .attr("width", d => Math.max(0, x(d.x1) - x(d.x0) - 1))
+        .attr("y", d => y(d.length))
+        .attr("height", d => H - y(d.length))),
+    exit => exit.call(xe => xe.transition(t).attr("opacity", 0).remove())
+  );
+
+  const xTickFmt = (metric === "on_time_pct") ? (d => d + "%") : fmtInt;
+  gX.transition(t).call(d3.axisBottom(x).ticks(6).tickFormat(xTickFmt));
+  gY.transition(t).call(d3.axisLeft(y).ticks(5));
+
+  // horizontal gridlines
+  gGridY.call(d3.axisLeft(y).ticks(5).tickSize(-W).tickFormat(""))
+    .selectAll("line").attr("class","gridline");
+}
+
+/* ---------------- Line (ALT style): curveMonotoneX + shapes + Dark2 colors ---------------- */
+function updateLineAlt(rows, metric) {
+  const svg = d3.select("#Linechart-div svg");
+  const gPlot = svg.select(".plot");
+  const gX = svg.select(".x-axis");
+  const gY = svg.select(".y-axis");
+  const gGridY = svg.select(".grid-y");
+  const legend = svg.select(".legend");
+
+  const x = d3.scaleTime().domain(d3.extent(rows, d => d.date)).range([0, W]);
+  const y = d3.scaleLinear().domain(d3.extent(rows, d => d[metric])).nice().range([H, 0]);
+
+  const line = d3.line()
+    .curve(d3.curveMonotoneX)
+    .x(d => x(d.date))
+    .y(d => y(d[metric]));
+
+  const t = svg.transition().duration(650).ease(d3.easeCubicInOut);
+
+  // gridlines + axes
+  gGridY.call(d3.axisLeft(y).ticks(5).tickSize(-W).tickFormat("")).selectAll("line").attr("class","gridline");
+  gX.transition(t).call(d3.axisBottom(x).ticks(d3.timeMonth.every(1)).tickFormat(monthFmt));
+  gY.transition(t).call(d3.axisLeft(y).ticks(5).tickFormat(yTickFormatFor(metric)));
+
+  // path
+  gPlot.selectAll("path.path-line").data([rows]).join(
+    enter => enter.append("path").attr("class","path-line").attr("d", line).attr("opacity",0)
+      .call(e => e.transition(t).attr("opacity",1)),
+    update => update.call(u => u.transition(t).attr("d", line))
+  );
+
+  // points as SYMBOL SHAPES (not circles)
+  const sym = d3.symbol().size(52); // ~r=4-5 visual size
+  const pts = gPlot.selectAll("path.pt-shape").data(rows, d => +d.date);
+  pts.join(
+    enter => enter.append("path")
+      .attr("class","pt-shape")
+      .attr("transform", d => `translate(${x(d.date)},${y(d[metric])})`)
+      .attr("d", d => sym.type(dayTypeSymbol(d.day_type))())
+      .attr("fill", d => dayTypeColor(d.day_type))
+      .attr("opacity", 0)
+      .call(e => e.transition().duration(300).ease(d3.easeCubicInOut).attr("opacity", 0.96)),
+    update => update.call(u => u.transition(t)
+      .attr("transform", d => `translate(${x(d.date)},${y(d[metric])})`)
+      .attr("d", d => sym.type(dayTypeSymbol(d.day_type))())),
+    exit => exit.call(xe => xe.transition().duration(250).attr("opacity",0).remove())
+  );
+
+  // legend (title + color chips + shape labels)
+  if (legend.select("text.legend-title").empty()) {
+    legend.append("text").attr("class","legend-title").attr("x",0).attr("y",-6)
+      .style("font-size","12px").style("font-weight","600").text("Day type");
+  }
+  const cats = dayTypeColor.domain();
+  const items = legend.selectAll("g.item").data(cats, d => d);
+  const enter = items.enter().append("g").attr("class","item").attr("transform",(d,i)=>`translate(0,${i*18})`);
+  enter.append("rect").attr("width", 12).attr("height", 12);
+  enter.append("text").attr("x", 18).attr("y", 10);
+  items.merge(enter).select("rect").attr("fill", d => dayTypeColor(d));
+  items.merge(enter).select("text").text(d => d).style("font-size","12px");
+  items.merge(enter).attr("transform",(d,i)=>`translate(0,${i*18})`);
 }
 </pre>
       </details>
