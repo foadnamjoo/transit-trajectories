@@ -1,5 +1,5 @@
 # HW2 — Visualization for Data Science
-**Course:** DS-4630 / CS-5630 / CS-6630  
+**Course:** CS-6630  
 **Student:** Foad Namjoo (u1419668) · foad.namjoo@utah.edu
 
 This repository contains three deliverables:
@@ -13,11 +13,12 @@ Each LLM folder includes its own `index.html`, assets, and a **full transcript**
 ## Thumbnails
 Quick preview of the four charts (exported from the app):
 
+
 <p align="center">
-  <img src="thumbnails/histogram.png" width="260" alt="Histogram" />
-  <img src="thumbnails/line.png" width="260" alt="Line chart" />
-  <img src="thumbnails/stacked.png" width="260" alt="Stacked area" />
-  <img src="thumbnails/scatter.png" width="260" alt="Scatterplot" />
+  <img src="./thumbnails/histogram.png" width="260" alt="Histogram" />
+  <img src="./thumbnails/line.png" width="260" alt="Line chart" />
+  <img src="./thumbnails/stacked.png" width="260" alt="Stacked area" />
+  <img src="./thumbnails/scatter.png" width="260" alt="Scatterplot" />
 </p>
 
 
