@@ -1,71 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>HW2 – Visualization for Data Science</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>HW2 – Visualization for Data Science (Hand-Tuned)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 
   <!-- D3 then your script (cache-busted) -->
   <script src="https://d3js.org/d3.v7.min.js" defer></script>
-  <script src="script.js?v=6" defer></script>
+  <script src="script.js?v=7" defer></script>
 </head>
 <body>
-  <header class="top">
-    <h1>CS-6630 Homework 2</h1>
-    <h2>Hand-Tuned Solution</h2>
-    <address class="text-muted">
-      <div><strong>Name:</strong> Foad Namjoo</div>
-      <div><strong>Email:</strong> <a href="mailto:foad.namjoo@utah.edu">foad.namjoo@utah.edu</a></div>
-      <div><strong>UID:</strong> u1419668</div>
-      <div><strong>Homepage:</strong> <a href="https://users.cs.utah.edu/~foad27/" rel="noopener">Personal Webpage</a></div>
-    </address>
-    <nav class="links">
-      <a href="llm_system/index.html">LLM Generated System Level</a> ·
-      <a href="llm_vis/index.html">LLM Generated Per-Visualization</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-left">
+        <h1>CS-6630 • Homework 2</h1>
+        <p class="subtitle">Hand-Tuned Visualization Dashboard</p>
+        <address class="meta">
+          <span><strong>Name:</strong> Foad Namjoo</span>
+          <span><strong>Email:</strong> <a href="mailto:foad.namjoo@utah.edu">foad.namjoo@utah.edu</a></span>
+          <div><strong>Homepage:</strong> <a href="https://users.cs.utah.edu/~foad27/" rel="noopener">Personal Webpage</a></div>
+          <span><strong>UID:</strong> u1419668</span>
+        </address>
+      </div>
+
+      <nav class="header-links">
+        <a href="llm_system/index.html" aria-label="System-level LLM build">LLM System</a>
+        <a href="llm_vis/index.html" aria-label="Per-visualization LLM build">LLM Per-Vis</a>
+      </nav>
+    </div>
   </header>
 
-  <hr>
+  <!-- Sticky toolbar with professional controls -->
+  <section class="toolbar">
+    <div class="container toolbar-inner" aria-label="Controls">
+      <div class="control">
+        <label for="dataset">Dataset</label>
+        <select id="dataset" name="dataset" class="select">
+          <option value="route_a.csv" selected>Dataset 1 (Route A)</option>
+          <option value="route_b.csv">Dataset 2 (Route B)</option>
+          <option value="route_c.csv">Dataset 3 (Route C)</option>
+          <option value="route_d.csv">Dataset 4 (Route D)</option>
+        </select>
+      </div>
 
-  <section class="toolbox" aria-label="Controls">
-    <label for="dataset">Dataset:</label>
-    <select id="dataset" name="dataset">
-      <option value="route_a.csv" selected>Dataset 1</option>
-      <option value="route_b.csv">Dataset 2</option>
-      <option value="route_c.csv">Dataset 3</option>
-      <option value="route_d.csv">Dataset 4</option>
-    </select>
+      <div class="control">
+        <label for="metric">Data Metric</label>
+        <select id="metric" name="metric" class="select">
+          <option value="attribute1" selected>Attribute 1 — Ridership</option>
+          <option value="attribute2">Attribute 2 — On-time %</option>
+        </select>
+      </div>
 
-    <label for="metric">Data Metric</label>
-    <select id="metric" name="metric">
-      <option value="attribute1" selected>Attribute 1 (ridership)</option>
-      <option value="attribute2">Attribute 2 (on_time_pct)</option>
-    </select>
+      <div class="status">
+        <span class="label">Current:</span>
+        <span id="datasetLabel" class="badge">Dataset 1 (Route A)</span>
+        <span id="metricLabel" class="badge">Ridership (passengers/day)</span>
+      </div>
+    </div>
   </section>
 
-  <main class="grid">
-    <section class="chart">
-      <h2>Histogram</h2>
-      <div id="Histogram-div"></div>
+  <!-- 2x2 side-by-side responsive grid -->
+  <main class="container charts">
+    <section class="chart-card">
+      <div class="chart-head">
+        <h3>Histogram</h3>
+        <p class="caption">Distribution of the selected metric across 120 days.</p>
+      </div>
+      <div id="Histogram-div" class="chart-plot"></div>
     </section>
 
-    <section class="chart">
-      <h2>Line Chart</h2>
-      <div id="Linechart-div"></div>
+    <section class="chart-card">
+      <div class="chart-head">
+        <h3>Line Chart</h3>
+        <p class="caption">Time trend with color by day type; hover for details.</p>
+      </div>
+      <div id="Linechart-div" class="chart-plot"></div>
     </section>
 
-    <section class="chart">
-      <h2>Stacked Area</h2>
-      <div id="StackedArea-div"></div>
+    <section class="chart-card">
+      <div class="chart-head">
+        <h3>Stacked Area</h3>
+        <p class="caption">Cumulative view of ridership and on-time % over time.</p>
+      </div>
+      <div id="StackedArea-div" class="chart-plot"></div>
     </section>
 
-    <section class="chart">
-      <h2>Scatterplot</h2>
-      <div id="Scatterplot-div"></div>
+    <section class="chart-card">
+      <div class="chart-head">
+        <h3>Scatterplot</h3>
+        <p class="caption">Ridership vs. on-time %, colored by day type.</p>
+      </div>
+      <div id="Scatterplot-div" class="chart-plot"></div>
     </section>
   </main>
-  <div id="tooltip" class="vis-tooltip" style="opacity:0"></div> 
+
+  <!-- Tooltip for charts -->
+  <div id="tooltip" class="vis-tooltip" style="opacity:0"></div>
 </body>
 </html>
