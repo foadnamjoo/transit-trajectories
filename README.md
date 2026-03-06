@@ -179,10 +179,10 @@ CI (`.github/workflows/ci.yml`) runs on push/PR: install deps, compile Python, r
 
 ## Screenshots / GIF
 
+![Transit Ops Lab demo](assets/demo.gif)
+
 1. **Summary:** KPI cards at top; 2-column grid of 10 charts (histogram, line, time series, scatter, emissions, cost by route, vehicle type, ridership by route, forecast, data quality). Each chart has a Show checkbox (uncheck to hide; restore from the bar above the grid). Time series legend is clickable to toggle Ridership / On-time %.
 2. **Click any chart** to open a larger modal: drag to pan, scroll to zoom, drag the bottom-right corner to resize the window.
-
-To record a GIF: run `make demo`, change Route/Metric, toggle chart visibility, click a chart to open the modal, then pan/zoom/resize.
 
 ---
 
