@@ -1,0 +1,5402 @@
+[
+{
+"date": "2025-01-01",
+"route": "Route A",
+"ridership": 1388,
+"on_time_pct": 89.6,
+"cost_usd": 227.41,
+"fuel_liters": 113.6,
+"co2_kg": 304.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-02",
+"route": "Route A",
+"ridership": 1344,
+"on_time_pct": 94.5,
+"cost_usd": 224.4,
+"fuel_liters": 111.3,
+"co2_kg": 298.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-03",
+"route": "Route A",
+"ridership": 1204,
+"on_time_pct": 89.2,
+"cost_usd": 213.96,
+"fuel_liters": 103.7,
+"co2_kg": 207.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-04",
+"route": "Route A",
+"ridership": 968,
+"on_time_pct": 95.2,
+"cost_usd": 196.24,
+"fuel_liters": 90.9,
+"co2_kg": 181.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-05",
+"route": "Route A",
+"ridership": 861,
+"on_time_pct": 94.5,
+"cost_usd": 188.33,
+"fuel_liters": 85.1,
+"co2_kg": 136.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-06",
+"route": "Route A",
+"ridership": 1237,
+"on_time_pct": 88.5,
+"cost_usd": 217.79,
+"fuel_liters": 106.0,
+"co2_kg": 169.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-07",
+"route": "Route A",
+"ridership": 1360,
+"on_time_pct": 84.1,
+"cost_usd": 227.66,
+"fuel_liters": 112.9,
+"co2_kg": 302.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-08",
+"route": "Route A",
+"ridership": 1262,
+"on_time_pct": 88.1,
+"cost_usd": 220.44,
+"fuel_liters": 107.6,
+"co2_kg": 288.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-09",
+"route": "Route A",
+"ridership": 1251,
+"on_time_pct": 90.7,
+"cost_usd": 219.94,
+"fuel_liters": 107.1,
+"co2_kg": 214.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-10",
+"route": "Route A",
+"ridership": 1171,
+"on_time_pct": 85.5,
+"cost_usd": 214.27,
+"fuel_liters": 102.9,
+"co2_kg": 205.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-11",
+"route": "Route A",
+"ridership": 966,
+"on_time_pct": 92.0,
+"cost_usd": 198.79,
+"fuel_liters": 91.7,
+"co2_kg": 146.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-12",
+"route": "Route A",
+"ridership": 898,
+"on_time_pct": 88.4,
+"cost_usd": 193.96,
+"fuel_liters": 88.1,
+"co2_kg": 236.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-13",
+"route": "Route A",
+"ridership": 1239,
+"on_time_pct": 90.0,
+"cost_usd": 220.62,
+"fuel_liters": 107.0,
+"co2_kg": 286.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-14",
+"route": "Route A",
+"ridership": 1284,
+"on_time_pct": 90.7,
+"cost_usd": 224.46,
+"fuel_liters": 109.6,
+"co2_kg": 219.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-15",
+"route": "Route A",
+"ridership": 719,
+"on_time_pct": 91.7,
+"cost_usd": 181.41,
+"fuel_liters": 78.7,
+"co2_kg": 157.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-16",
+"route": "Route A",
+"ridership": 1283,
+"on_time_pct": 95.1,
+"cost_usd": 225.29,
+"fuel_liters": 109.9,
+"co2_kg": 175.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-17",
+"route": "Route A",
+"ridership": 1231,
+"on_time_pct": 86.3,
+"cost_usd": 221.58,
+"fuel_liters": 107.1,
+"co2_kg": 171.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-18",
+"route": "Route A",
+"ridership": 932,
+"on_time_pct": 88.8,
+"cost_usd": 198.96,
+"fuel_liters": 90.8,
+"co2_kg": 243.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-19",
+"route": "Route A",
+"ridership": 911,
+"on_time_pct": 86.6,
+"cost_usd": 197.76,
+"fuel_liters": 89.8,
+"co2_kg": 240.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-20",
+"route": "Route A",
+"ridership": 1199,
+"on_time_pct": 90.0,
+"cost_usd": 220.37,
+"fuel_liters": 105.8,
+"co2_kg": 211.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-21",
+"route": "Route A",
+"ridership": 1405,
+"on_time_pct": 89.9,
+"cost_usd": 236.53,
+"fuel_liters": 117.2,
+"co2_kg": 234.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-22",
+"route": "Route A",
+"ridership": 1374,
+"on_time_pct": 88.5,
+"cost_usd": 234.64,
+"fuel_liters": 115.7,
+"co2_kg": 185.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-23",
+"route": "Route A",
+"ridership": 1238,
+"on_time_pct": 87.2,
+"cost_usd": 224.48,
+"fuel_liters": 108.3,
+"co2_kg": 173.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-24",
+"route": "Route A",
+"ridership": 1211,
+"on_time_pct": 92.5,
+"cost_usd": 222.86,
+"fuel_liters": 107.0,
+"co2_kg": 286.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-25",
+"route": "Route A",
+"ridership": 909,
+"on_time_pct": 87.0,
+"cost_usd": 199.97,
+"fuel_liters": 90.5,
+"co2_kg": 242.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-26",
+"route": "Route A",
+"ridership": 923,
+"on_time_pct": 91.1,
+"cost_usd": 201.43,
+"fuel_liters": 91.4,
+"co2_kg": 182.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-27",
+"route": "Route A",
+"ridership": 1246,
+"on_time_pct": 91.1,
+"cost_usd": 226.7,
+"fuel_liters": 109.3,
+"co2_kg": 218.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-28",
+"route": "Route A",
+"ridership": 1430,
+"on_time_pct": 92.0,
+"cost_usd": 241.32,
+"fuel_liters": 119.6,
+"co2_kg": 191.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-29",
+"route": "Route A",
+"ridership": 1338,
+"on_time_pct": 88.2,
+"cost_usd": 234.52,
+"fuel_liters": 114.6,
+"co2_kg": 183.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-30",
+"route": "Route A",
+"ridership": 1354,
+"on_time_pct": 92.1,
+"cost_usd": 236.27,
+"fuel_liters": 115.7,
+"co2_kg": 310.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-31",
+"route": "Route A",
+"ridership": 1217,
+"on_time_pct": 88.5,
+"cost_usd": 226.11,
+"fuel_liters": 108.3,
+"co2_kg": 290.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-01",
+"route": "Route A",
+"ridership": 827,
+"on_time_pct": 88.5,
+"cost_usd": 196.36,
+"fuel_liters": 86.9,
+"co2_kg": 173.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-02",
+"route": "Route A",
+"ridership": 957,
+"on_time_pct": 96.1,
+"cost_usd": 206.78,
+"fuel_liters": 94.2,
+"co2_kg": 188.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-03",
+"route": "Route A",
+"ridership": 1289,
+"on_time_pct": 92.0,
+"cost_usd": 232.74,
+"fuel_liters": 112.6,
+"co2_kg": 180.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-04",
+"route": "Route A",
+"ridership": 1397,
+"on_time_pct": 87.0,
+"cost_usd": 241.49,
+"fuel_liters": 118.7,
+"co2_kg": 189.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-05",
+"route": "Route A",
+"ridership": 1418,
+"on_time_pct": 93.6,
+"cost_usd": 243.51,
+"fuel_liters": 120.0,
+"co2_kg": 321.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-06",
+"route": "Route A",
+"ridership": 1339,
+"on_time_pct": 93.6,
+"cost_usd": 237.84,
+"fuel_liters": 115.8,
+"co2_kg": 310.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-07",
+"route": "Route A",
+"ridership": 1095,
+"on_time_pct": 91.4,
+"cost_usd": 219.42,
+"fuel_liters": 102.5,
+"co2_kg": 205.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-08",
+"route": "Route A",
+"ridership": 903,
+"on_time_pct": 91.0,
+"cost_usd": 205.06,
+"fuel_liters": 92.1,
+"co2_kg": 184.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-09",
+"route": "Route A",
+"ridership": 919,
+"on_time_pct": 85.9,
+"cost_usd": 206.67,
+"fuel_liters": 93.1,
+"co2_kg": 149.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-10",
+"route": "Route A",
+"ridership": 1287,
+"on_time_pct": 89.9,
+"cost_usd": 235.43,
+"fuel_liters": 113.5,
+"co2_kg": 181.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-11",
+"route": "Route A",
+"ridership": 1471,
+"on_time_pct": 87.2,
+"cost_usd": 249.92,
+"fuel_liters": 123.7,
+"co2_kg": 331.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-12",
+"route": "Route A",
+"ridership": 1355,
+"on_time_pct": 87.2,
+"cost_usd": 241.44,
+"fuel_liters": 117.5,
+"co2_kg": 314.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-13",
+"route": "Route A",
+"ridership": 1404,
+"on_time_pct": 89.7,
+"cost_usd": 222.36,
+"fuel_liters": 112.3,
+"co2_kg": 224.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-14",
+"route": "Route A",
+"ridership": 1227,
+"on_time_pct": 90.2,
+"cost_usd": 209.13,
+"fuel_liters": 102.7,
+"co2_kg": 205.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-15",
+"route": "Route A",
+"ridership": 908,
+"on_time_pct": 94.6,
+"cost_usd": 184.97,
+"fuel_liters": 85.3,
+"co2_kg": 136.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-16",
+"route": "Route A",
+"ridership": 876,
+"on_time_pct": 90.6,
+"cost_usd": 182.94,
+"fuel_liters": 83.7,
+"co2_kg": 133.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-17",
+"route": "Route A",
+"ridership": 1284,
+"on_time_pct": 84.2,
+"cost_usd": 214.78,
+"fuel_liters": 106.3,
+"co2_kg": 284.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-18",
+"route": "Route A",
+"ridership": 1408,
+"on_time_pct": 89.3,
+"cost_usd": 224.64,
+"fuel_liters": 113.2,
+"co2_kg": 303.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-19",
+"route": "Route A",
+"ridership": 1412,
+"on_time_pct": 87.8,
+"cost_usd": 225.41,
+"fuel_liters": 113.6,
+"co2_kg": 227.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-20",
+"route": "Route A",
+"ridership": 1271,
+"on_time_pct": 87.2,
+"cost_usd": 214.97,
+"fuel_liters": 106.0,
+"co2_kg": 212.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-21",
+"route": "Route A",
+"ridership": 1245,
+"on_time_pct": 86.1,
+"cost_usd": 213.36,
+"fuel_liters": 104.7,
+"co2_kg": 167.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-22",
+"route": "Route A",
+"ridership": 898,
+"on_time_pct": 92.7,
+"cost_usd": 186.96,
+"fuel_liters": 85.7,
+"co2_kg": 137.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-23",
+"route": "Route A",
+"ridership": 1037,
+"on_time_pct": 91.9,
+"cost_usd": 198.08,
+"fuel_liters": 93.5,
+"co2_kg": 250.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-24",
+"route": "Route A",
+"ridership": 1330,
+"on_time_pct": 88.2,
+"cost_usd": 220.97,
+"fuel_liters": 109.7,
+"co2_kg": 294.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-25",
+"route": "Route A",
+"ridership": 1283,
+"on_time_pct": 88.3,
+"cost_usd": 217.81,
+"fuel_liters": 107.3,
+"co2_kg": 214.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-26",
+"route": "Route A",
+"ridership": 1423,
+"on_time_pct": 95.7,
+"cost_usd": 228.94,
+"fuel_liters": 115.1,
+"co2_kg": 230.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-27",
+"route": "Route A",
+"ridership": 1352,
+"on_time_pct": 89.2,
+"cost_usd": 223.96,
+"fuel_liters": 111.4,
+"co2_kg": 178.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-28",
+"route": "Route A",
+"ridership": 1271,
+"on_time_pct": 84.8,
+"cost_usd": 218.0,
+"fuel_liters": 107.0,
+"co2_kg": 171.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-01",
+"route": "Route A",
+"ridership": 981,
+"on_time_pct": 93.5,
+"cost_usd": 196.09,
+"fuel_liters": 91.2,
+"co2_kg": 244.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-02",
+"route": "Route A",
+"ridership": 976,
+"on_time_pct": 88.5,
+"cost_usd": 196.15,
+"fuel_liters": 91.1,
+"co2_kg": 182.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-03",
+"route": "Route A",
+"ridership": 1406,
+"on_time_pct": 84.0,
+"cost_usd": 229.68,
+"fuel_liters": 114.9,
+"co2_kg": 229.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-04",
+"route": "Route A",
+"ridership": 1440,
+"on_time_pct": 94.7,
+"cost_usd": 232.68,
+"fuel_liters": 116.9,
+"co2_kg": 187.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-05",
+"route": "Route A",
+"ridership": 1367,
+"on_time_pct": 86.4,
+"cost_usd": 227.42,
+"fuel_liters": 113.0,
+"co2_kg": 180.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-06",
+"route": "Route A",
+"ridership": 1376,
+"on_time_pct": 86.6,
+"cost_usd": 228.47,
+"fuel_liters": 113.6,
+"co2_kg": 304.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-07",
+"route": "Route A",
+"ridership": 1186,
+"on_time_pct": 88.3,
+"cost_usd": 214.25,
+"fuel_liters": 103.3,
+"co2_kg": 276.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-08",
+"route": "Route A",
+"ridership": 854,
+"on_time_pct": 92.4,
+"cost_usd": 189.12,
+"fuel_liters": 85.2,
+"co2_kg": 170.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-09",
+"route": "Route A",
+"ridership": 878,
+"on_time_pct": 95.6,
+"cost_usd": 191.28,
+"fuel_liters": 86.6,
+"co2_kg": 173.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-10",
+"route": "Route A",
+"ridership": 1282,
+"on_time_pct": 87.0,
+"cost_usd": 222.84,
+"fuel_liters": 109.0,
+"co2_kg": 174.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-11",
+"route": "Route A",
+"ridership": 1462,
+"on_time_pct": 84.2,
+"cost_usd": 237.05,
+"fuel_liters": 119.0,
+"co2_kg": 190.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-12",
+"route": "Route A",
+"ridership": 1448,
+"on_time_pct": 91.8,
+"cost_usd": 236.41,
+"fuel_liters": 118.4,
+"co2_kg": 317.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-13",
+"route": "Route A",
+"ridership": 1281,
+"on_time_pct": 88.4,
+"cost_usd": 224.02,
+"fuel_liters": 109.4,
+"co2_kg": 293.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-14",
+"route": "Route A",
+"ridership": 1302,
+"on_time_pct": 90.2,
+"cost_usd": 226.04,
+"fuel_liters": 110.7,
+"co2_kg": 221.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-15",
+"route": "Route A",
+"ridership": 848,
+"on_time_pct": 86.8,
+"cost_usd": 191.38,
+"fuel_liters": 85.8,
+"co2_kg": 171.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-16",
+"route": "Route A",
+"ridership": 970,
+"on_time_pct": 91.7,
+"cost_usd": 201.25,
+"fuel_liters": 92.7,
+"co2_kg": 148.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-17",
+"route": "Route A",
+"ridership": 1351,
+"on_time_pct": 88.8,
+"cost_usd": 230.99,
+"fuel_liters": 113.8,
+"co2_kg": 182.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-18",
+"route": "Route A",
+"ridership": 1379,
+"on_time_pct": 88.4,
+"cost_usd": 233.44,
+"fuel_liters": 115.4,
+"co2_kg": 309.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-19",
+"route": "Route A",
+"ridership": 1460,
+"on_time_pct": 85.5,
+"cost_usd": 240.08,
+"fuel_liters": 120.0,
+"co2_kg": 321.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-20",
+"route": "Route A",
+"ridership": 1497,
+"on_time_pct": 89.1,
+"cost_usd": 243.36,
+"fuel_liters": 122.2,
+"co2_kg": 244.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-21",
+"route": "Route A",
+"ridership": 1222,
+"on_time_pct": 89.6,
+"cost_usd": 222.57,
+"fuel_liters": 107.2,
+"co2_kg": 214.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-22",
+"route": "Route A",
+"ridership": 869,
+"on_time_pct": 93.0,
+"cost_usd": 195.75,
+"fuel_liters": 87.9,
+"co2_kg": 140.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-23",
+"route": "Route A",
+"ridership": 1013,
+"on_time_pct": 88.1,
+"cost_usd": 207.3,
+"fuel_liters": 96.0,
+"co2_kg": 153.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-24",
+"route": "Route A",
+"ridership": 1400,
+"on_time_pct": 88.8,
+"cost_usd": 237.46,
+"fuel_liters": 117.4,
+"co2_kg": 314.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-25",
+"route": "Route A",
+"ridership": 1477,
+"on_time_pct": 93.2,
+"cost_usd": 243.82,
+"fuel_liters": 121.8,
+"co2_kg": 326.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-26",
+"route": "Route A",
+"ridership": 1435,
+"on_time_pct": 85.2,
+"cost_usd": 240.95,
+"fuel_liters": 119.6,
+"co2_kg": 239.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-27",
+"route": "Route A",
+"ridership": 1339,
+"on_time_pct": 85.0,
+"cost_usd": 234.01,
+"fuel_liters": 114.5,
+"co2_kg": 229.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-28",
+"route": "Route A",
+"ridership": 1295,
+"on_time_pct": 88.4,
+"cost_usd": 231.0,
+"fuel_liters": 112.2,
+"co2_kg": 179.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-29",
+"route": "Route A",
+"ridership": 949,
+"on_time_pct": 92.9,
+"cost_usd": 204.74,
+"fuel_liters": 93.3,
+"co2_kg": 149.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-30",
+"route": "Route A",
+"ridership": 949,
+"on_time_pct": 94.7,
+"cost_usd": 205.08,
+"fuel_liters": 93.4,
+"co2_kg": 250.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-31",
+"route": "Route A",
+"ridership": 1334,
+"on_time_pct": 95.5,
+"cost_usd": 235.11,
+"fuel_liters": 114.7,
+"co2_kg": 307.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-01",
+"route": "Route B",
+"ridership": 935,
+"on_time_pct": 87.7,
+"cost_usd": 193.2,
+"fuel_liters": 88.9,
+"co2_kg": 238.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-02",
+"route": "Route B",
+"ridership": 955,
+"on_time_pct": 90.6,
+"cost_usd": 195.23,
+"fuel_liters": 90.2,
+"co2_kg": 241.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-03",
+"route": "Route B",
+"ridership": 816,
+"on_time_pct": 86.9,
+"cost_usd": 184.79,
+"fuel_liters": 82.6,
+"co2_kg": 165.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-04",
+"route": "Route B",
+"ridership": 644,
+"on_time_pct": 89.0,
+"cost_usd": 171.98,
+"fuel_liters": 73.3,
+"co2_kg": 146.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-05",
+"route": "Route B",
+"ridership": 757,
+"on_time_pct": 92.1,
+"cost_usd": 181.14,
+"fuel_liters": 79.7,
+"co2_kg": 127.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-06",
+"route": "Route B",
+"ridership": 847,
+"on_time_pct": 90.6,
+"cost_usd": 188.48,
+"fuel_liters": 84.8,
+"co2_kg": 135.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-07",
+"route": "Route B",
+"ridership": 1056,
+"on_time_pct": 90.9,
+"cost_usd": 204.93,
+"fuel_liters": 96.4,
+"co2_kg": 258.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-08",
+"route": "Route B",
+"ridership": 907,
+"on_time_pct": 86.3,
+"cost_usd": 193.79,
+"fuel_liters": 88.3,
+"co2_kg": 176.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-09",
+"route": "Route B",
+"ridership": 994,
+"on_time_pct": 85.6,
+"cost_usd": 201.0,
+"fuel_liters": 93.3,
+"co2_kg": 186.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-10",
+"route": "Route B",
+"ridership": 895,
+"on_time_pct": 90.1,
+"cost_usd": 193.64,
+"fuel_liters": 87.9,
+"co2_kg": 140.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-11",
+"route": "Route B",
+"ridership": 627,
+"on_time_pct": 90.5,
+"cost_usd": 173.4,
+"fuel_liters": 73.3,
+"co2_kg": 117.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-12",
+"route": "Route B",
+"ridership": 535,
+"on_time_pct": 87.6,
+"cost_usd": 166.75,
+"fuel_liters": 68.4,
+"co2_kg": 183.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-13",
+"route": "Route B",
+"ridership": 897,
+"on_time_pct": 83.9,
+"cost_usd": 195.09,
+"fuel_liters": 88.5,
+"co2_kg": 237.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-14",
+"route": "Route B",
+"ridership": 1040,
+"on_time_pct": 83.3,
+"cost_usd": 206.5,
+"fuel_liters": 96.5,
+"co2_kg": 193.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-15",
+"route": "Route B",
+"ridership": 569,
+"on_time_pct": 91.0,
+"cost_usd": 170.58,
+"fuel_liters": 70.7,
+"co2_kg": 141.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-16",
+"route": "Route B",
+"ridership": 1007,
+"on_time_pct": 83.2,
+"cost_usd": 204.66,
+"fuel_liters": 94.9,
+"co2_kg": 151.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-17",
+"route": "Route B",
+"ridership": 932,
+"on_time_pct": 87.6,
+"cost_usd": 199.27,
+"fuel_liters": 90.9,
+"co2_kg": 145.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-18",
+"route": "Route B",
+"ridership": 629,
+"on_time_pct": 91.9,
+"cost_usd": 176.37,
+"fuel_liters": 74.4,
+"co2_kg": 199.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-19",
+"route": "Route B",
+"ridership": 694,
+"on_time_pct": 88.7,
+"cost_usd": 181.76,
+"fuel_liters": 78.1,
+"co2_kg": 209.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-20",
+"route": "Route B",
+"ridership": 917,
+"on_time_pct": 86.3,
+"cost_usd": 199.32,
+"fuel_liters": 90.5,
+"co2_kg": 181.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-21",
+"route": "Route B",
+"ridership": 977,
+"on_time_pct": 89.4,
+"cost_usd": 204.42,
+"fuel_liters": 94.0,
+"co2_kg": 188.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-22",
+"route": "Route B",
+"ridership": 1058,
+"on_time_pct": 83.7,
+"cost_usd": 210.93,
+"fuel_liters": 98.5,
+"co2_kg": 157.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-23",
+"route": "Route B",
+"ridership": 1044,
+"on_time_pct": 81.5,
+"cost_usd": 210.29,
+"fuel_liters": 97.9,
+"co2_kg": 156.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-24",
+"route": "Route B",
+"ridership": 878,
+"on_time_pct": 89.1,
+"cost_usd": 197.9,
+"fuel_liters": 88.9,
+"co2_kg": 238.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-25",
+"route": "Route B",
+"ridership": 689,
+"on_time_pct": 88.4,
+"cost_usd": 183.82,
+"fuel_liters": 78.7,
+"co2_kg": 210.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-26",
+"route": "Route B",
+"ridership": 679,
+"on_time_pct": 88.8,
+"cost_usd": 183.32,
+"fuel_liters": 78.2,
+"co2_kg": 156.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-27",
+"route": "Route B",
+"ridership": 892,
+"on_time_pct": 89.8,
+"cost_usd": 200.19,
+"fuel_liters": 90.1,
+"co2_kg": 180.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-28",
+"route": "Route B",
+"ridership": 993,
+"on_time_pct": 85.1,
+"cost_usd": 208.37,
+"fuel_liters": 95.8,
+"co2_kg": 153.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-29",
+"route": "Route B",
+"ridership": 1032,
+"on_time_pct": 88.1,
+"cost_usd": 211.8,
+"fuel_liters": 98.1,
+"co2_kg": 157.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-30",
+"route": "Route B",
+"ridership": 989,
+"on_time_pct": 89.0,
+"cost_usd": 208.78,
+"fuel_liters": 95.8,
+"co2_kg": 256.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-31",
+"route": "Route B",
+"ridership": 852,
+"on_time_pct": 85.4,
+"cost_usd": 198.62,
+"fuel_liters": 88.4,
+"co2_kg": 236.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-01",
+"route": "Route B",
+"ridership": 714,
+"on_time_pct": 91.9,
+"cost_usd": 188.47,
+"fuel_liters": 81.0,
+"co2_kg": 162.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-02",
+"route": "Route B",
+"ridership": 691,
+"on_time_pct": 90.4,
+"cost_usd": 187.13,
+"fuel_liters": 79.9,
+"co2_kg": 159.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-03",
+"route": "Route B",
+"ridership": 981,
+"on_time_pct": 85.2,
+"cost_usd": 209.74,
+"fuel_liters": 95.9,
+"co2_kg": 153.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-04",
+"route": "Route B",
+"ridership": 1007,
+"on_time_pct": 86.4,
+"cost_usd": 212.18,
+"fuel_liters": 97.5,
+"co2_kg": 156.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-05",
+"route": "Route B",
+"ridership": 988,
+"on_time_pct": 90.2,
+"cost_usd": 211.12,
+"fuel_liters": 96.6,
+"co2_kg": 258.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-06",
+"route": "Route B",
+"ridership": 995,
+"on_time_pct": 89.4,
+"cost_usd": 212.03,
+"fuel_liters": 97.1,
+"co2_kg": 260.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-07",
+"route": "Route B",
+"ridership": 953,
+"on_time_pct": 87.0,
+"cost_usd": 209.15,
+"fuel_liters": 94.9,
+"co2_kg": 189.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-08",
+"route": "Route B",
+"ridership": 715,
+"on_time_pct": 88.9,
+"cost_usd": 191.3,
+"fuel_liters": 82.0,
+"co2_kg": 164.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-09",
+"route": "Route B",
+"ridership": 711,
+"on_time_pct": 89.4,
+"cost_usd": 191.36,
+"fuel_liters": 81.9,
+"co2_kg": 131.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-10",
+"route": "Route B",
+"ridership": 933,
+"on_time_pct": 88.6,
+"cost_usd": 208.92,
+"fuel_liters": 94.3,
+"co2_kg": 150.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-11",
+"route": "Route B",
+"ridership": 951,
+"on_time_pct": 93.0,
+"cost_usd": 187.47,
+"fuel_liters": 87.4,
+"co2_kg": 234.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-12",
+"route": "Route B",
+"ridership": 958,
+"on_time_pct": 83.1,
+"cost_usd": 188.37,
+"fuel_liters": 87.9,
+"co2_kg": 235.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-13",
+"route": "Route B",
+"ridership": 1015,
+"on_time_pct": 89.1,
+"cost_usd": 193.2,
+"fuel_liters": 91.2,
+"co2_kg": 182.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-14",
+"route": "Route B",
+"ridership": 927,
+"on_time_pct": 88.6,
+"cost_usd": 186.82,
+"fuel_liters": 86.5,
+"co2_kg": 173.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-15",
+"route": "Route B",
+"ridership": 687,
+"on_time_pct": 87.0,
+"cost_usd": 168.68,
+"fuel_liters": 73.4,
+"co2_kg": 117.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-16",
+"route": "Route B",
+"ridership": 703,
+"on_time_pct": 87.6,
+"cost_usd": 170.29,
+"fuel_liters": 74.4,
+"co2_kg": 119.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-17",
+"route": "Route B",
+"ridership": 978,
+"on_time_pct": 86.1,
+"cost_usd": 191.91,
+"fuel_liters": 89.7,
+"co2_kg": 240.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-18",
+"route": "Route B",
+"ridership": 956,
+"on_time_pct": 85.6,
+"cost_usd": 190.58,
+"fuel_liters": 88.6,
+"co2_kg": 237.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-19",
+"route": "Route B",
+"ridership": 1027,
+"on_time_pct": 84.8,
+"cost_usd": 196.38,
+"fuel_liters": 92.6,
+"co2_kg": 185.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-20",
+"route": "Route B",
+"ridership": 931,
+"on_time_pct": 87.2,
+"cost_usd": 189.44,
+"fuel_liters": 87.5,
+"co2_kg": 175.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-21",
+"route": "Route B",
+"ridership": 915,
+"on_time_pct": 84.9,
+"cost_usd": 188.67,
+"fuel_liters": 86.8,
+"co2_kg": 138.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-22",
+"route": "Route B",
+"ridership": 670,
+"on_time_pct": 90.1,
+"cost_usd": 170.11,
+"fuel_liters": 73.4,
+"co2_kg": 117.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-23",
+"route": "Route B",
+"ridership": 638,
+"on_time_pct": 85.2,
+"cost_usd": 168.08,
+"fuel_liters": 71.8,
+"co2_kg": 192.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-24",
+"route": "Route B",
+"ridership": 907,
+"on_time_pct": 85.7,
+"cost_usd": 189.14,
+"fuel_liters": 86.7,
+"co2_kg": 232.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-25",
+"route": "Route B",
+"ridership": 1012,
+"on_time_pct": 90.8,
+"cost_usd": 197.6,
+"fuel_liters": 92.6,
+"co2_kg": 185.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-26",
+"route": "Route B",
+"ridership": 1052,
+"on_time_pct": 85.8,
+"cost_usd": 201.17,
+"fuel_liters": 95.0,
+"co2_kg": 190.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-27",
+"route": "Route B",
+"ridership": 973,
+"on_time_pct": 83.3,
+"cost_usd": 195.49,
+"fuel_liters": 90.8,
+"co2_kg": 145.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-28",
+"route": "Route B",
+"ridership": 908,
+"on_time_pct": 85.4,
+"cost_usd": 190.8,
+"fuel_liters": 87.3,
+"co2_kg": 234.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-01",
+"route": "Route B",
+"ridership": 710,
+"on_time_pct": 86.7,
+"cost_usd": 176.02,
+"fuel_liters": 76.6,
+"co2_kg": 205.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-02",
+"route": "Route B",
+"ridership": 731,
+"on_time_pct": 93.8,
+"cost_usd": 178.04,
+"fuel_liters": 77.9,
+"co2_kg": 155.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-03",
+"route": "Route B",
+"ridership": 939,
+"on_time_pct": 87.4,
+"cost_usd": 194.35,
+"fuel_liters": 89.4,
+"co2_kg": 178.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-04",
+"route": "Route B",
+"ridership": 1035,
+"on_time_pct": 84.9,
+"cost_usd": 202.25,
+"fuel_liters": 94.9,
+"co2_kg": 151.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-05",
+"route": "Route B",
+"ridership": 1029,
+"on_time_pct": 86.1,
+"cost_usd": 202.18,
+"fuel_liters": 94.7,
+"co2_kg": 151.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-06",
+"route": "Route B",
+"ridership": 983,
+"on_time_pct": 83.8,
+"cost_usd": 199.02,
+"fuel_liters": 92.3,
+"co2_kg": 247.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-07",
+"route": "Route B",
+"ridership": 915,
+"on_time_pct": 87.5,
+"cost_usd": 194.18,
+"fuel_liters": 88.7,
+"co2_kg": 237.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-08",
+"route": "Route B",
+"ridership": 764,
+"on_time_pct": 91.9,
+"cost_usd": 182.91,
+"fuel_liters": 80.5,
+"co2_kg": 161.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-09",
+"route": "Route B",
+"ridership": 808,
+"on_time_pct": 86.7,
+"cost_usd": 186.61,
+"fuel_liters": 83.0,
+"co2_kg": 166.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-10",
+"route": "Route B",
+"ridership": 988,
+"on_time_pct": 86.5,
+"cost_usd": 200.96,
+"fuel_liters": 93.1,
+"co2_kg": 149.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-11",
+"route": "Route B",
+"ridership": 1108,
+"on_time_pct": 83.5,
+"cost_usd": 210.54,
+"fuel_liters": 99.8,
+"co2_kg": 159.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-12",
+"route": "Route B",
+"ridership": 987,
+"on_time_pct": 84.1,
+"cost_usd": 201.64,
+"fuel_liters": 93.3,
+"co2_kg": 250.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-13",
+"route": "Route B",
+"ridership": 889,
+"on_time_pct": 84.3,
+"cost_usd": 194.43,
+"fuel_liters": 88.0,
+"co2_kg": 235.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-14",
+"route": "Route B",
+"ridership": 885,
+"on_time_pct": 86.3,
+"cost_usd": 194.63,
+"fuel_liters": 88.0,
+"co2_kg": 176.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-15",
+"route": "Route B",
+"ridership": 718,
+"on_time_pct": 94.4,
+"cost_usd": 182.1,
+"fuel_liters": 78.9,
+"co2_kg": 157.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-16",
+"route": "Route B",
+"ridership": 758,
+"on_time_pct": 87.0,
+"cost_usd": 185.66,
+"fuel_liters": 81.3,
+"co2_kg": 130.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-17",
+"route": "Route B",
+"ridership": 914,
+"on_time_pct": 87.2,
+"cost_usd": 198.04,
+"fuel_liters": 90.0,
+"co2_kg": 144.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-18",
+"route": "Route B",
+"ridership": 955,
+"on_time_pct": 91.2,
+"cost_usd": 201.61,
+"fuel_liters": 92.4,
+"co2_kg": 247.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-19",
+"route": "Route B",
+"ridership": 1083,
+"on_time_pct": 84.3,
+"cost_usd": 211.75,
+"fuel_liters": 99.5,
+"co2_kg": 266.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-20",
+"route": "Route B",
+"ridership": 912,
+"on_time_pct": 89.7,
+"cost_usd": 199.08,
+"fuel_liters": 90.3,
+"co2_kg": 180.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-21",
+"route": "Route B",
+"ridership": 919,
+"on_time_pct": 89.3,
+"cost_usd": 199.98,
+"fuel_liters": 90.8,
+"co2_kg": 181.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-22",
+"route": "Route B",
+"ridership": 635,
+"on_time_pct": 86.8,
+"cost_usd": 178.48,
+"fuel_liters": 75.3,
+"co2_kg": 120.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-23",
+"route": "Route B",
+"ridership": 719,
+"on_time_pct": 88.7,
+"cost_usd": 185.41,
+"fuel_liters": 80.1,
+"co2_kg": 128.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-24",
+"route": "Route B",
+"ridership": 939,
+"on_time_pct": 87.4,
+"cost_usd": 202.69,
+"fuel_liters": 92.3,
+"co2_kg": 247.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-25",
+"route": "Route B",
+"ridership": 972,
+"on_time_pct": 85.1,
+"cost_usd": 205.56,
+"fuel_liters": 94.2,
+"co2_kg": 252.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-26",
+"route": "Route B",
+"ridership": 1041,
+"on_time_pct": 87.0,
+"cost_usd": 211.36,
+"fuel_liters": 98.2,
+"co2_kg": 196.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-27",
+"route": "Route B",
+"ridership": 1027,
+"on_time_pct": 82.1,
+"cost_usd": 210.58,
+"fuel_liters": 97.5,
+"co2_kg": 195.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-28",
+"route": "Route B",
+"ridership": 859,
+"on_time_pct": 89.3,
+"cost_usd": 198.05,
+"fuel_liters": 88.4,
+"co2_kg": 141.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-29",
+"route": "Route B",
+"ridership": 725,
+"on_time_pct": 86.1,
+"cost_usd": 188.17,
+"fuel_liters": 81.2,
+"co2_kg": 129.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-30",
+"route": "Route B",
+"ridership": 792,
+"on_time_pct": 88.7,
+"cost_usd": 193.7,
+"fuel_liters": 85.0,
+"co2_kg": 227.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-31",
+"route": "Route B",
+"ridership": 1017,
+"on_time_pct": 85.5,
+"cost_usd": 211.4,
+"fuel_liters": 97.5,
+"co2_kg": 261.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-01",
+"route": "Route C",
+"ridership": 712,
+"on_time_pct": 83.1,
+"cost_usd": 176.78,
+"fuel_liters": 76.9,
+"co2_kg": 206.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-02",
+"route": "Route C",
+"ridership": 632,
+"on_time_pct": 86.6,
+"cost_usd": 170.96,
+"fuel_liters": 72.6,
+"co2_kg": 194.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-03",
+"route": "Route C",
+"ridership": 616,
+"on_time_pct": 81.7,
+"cost_usd": 170.18,
+"fuel_liters": 71.9,
+"co2_kg": 143.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-04",
+"route": "Route C",
+"ridership": 500,
+"on_time_pct": 85.7,
+"cost_usd": 161.71,
+"fuel_liters": 65.7,
+"co2_kg": 131.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-05",
+"route": "Route C",
+"ridership": 591,
+"on_time_pct": 91.5,
+"cost_usd": 169.05,
+"fuel_liters": 70.8,
+"co2_kg": 113.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-06",
+"route": "Route C",
+"ridership": 667,
+"on_time_pct": 90.3,
+"cost_usd": 175.28,
+"fuel_liters": 75.1,
+"co2_kg": 201.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-07",
+"route": "Route C",
+"ridership": 713,
+"on_time_pct": 83.2,
+"cost_usd": 179.26,
+"fuel_liters": 77.8,
+"co2_kg": 208.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-08",
+"route": "Route C",
+"ridership": 774,
+"on_time_pct": 87.4,
+"cost_usd": 184.36,
+"fuel_liters": 81.3,
+"co2_kg": 162.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-09",
+"route": "Route C",
+"ridership": 656,
+"on_time_pct": 85.2,
+"cost_usd": 175.61,
+"fuel_liters": 74.9,
+"co2_kg": 149.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-10",
+"route": "Route C",
+"ridership": 616,
+"on_time_pct": 81.6,
+"cost_usd": 172.87,
+"fuel_liters": 72.8,
+"co2_kg": 116.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-11",
+"route": "Route C",
+"ridership": 558,
+"on_time_pct": 94.4,
+"cost_usd": 168.88,
+"fuel_liters": 69.8,
+"co2_kg": 111.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-12",
+"route": "Route C",
+"ridership": 486,
+"on_time_pct": 90.4,
+"cost_usd": 163.76,
+"fuel_liters": 66.0,
+"co2_kg": 176.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-13",
+"route": "Route C",
+"ridership": 649,
+"on_time_pct": 84.2,
+"cost_usd": 176.7,
+"fuel_liters": 75.1,
+"co2_kg": 201.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-14",
+"route": "Route C",
+"ridership": 693,
+"on_time_pct": 83.0,
+"cost_usd": 180.41,
+"fuel_liters": 77.6,
+"co2_kg": 155.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-15",
+"route": "Route C",
+"ridership": 473,
+"on_time_pct": 86.1,
+"cost_usd": 163.95,
+"fuel_liters": 65.7,
+"co2_kg": 131.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-16",
+"route": "Route C",
+"ridership": 706,
+"on_time_pct": 85.4,
+"cost_usd": 182.22,
+"fuel_liters": 78.6,
+"co2_kg": 125.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-17",
+"route": "Route C",
+"ridership": 642,
+"on_time_pct": 82.8,
+"cost_usd": 177.66,
+"fuel_liters": 75.2,
+"co2_kg": 120.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-18",
+"route": "Route C",
+"ridership": 508,
+"on_time_pct": 90.8,
+"cost_usd": 167.78,
+"fuel_liters": 68.0,
+"co2_kg": 182.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-19",
+"route": "Route C",
+"ridership": 555,
+"on_time_pct": 85.5,
+"cost_usd": 171.77,
+"fuel_liters": 70.7,
+"co2_kg": 189.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-20",
+"route": "Route C",
+"ridership": 679,
+"on_time_pct": 87.7,
+"cost_usd": 181.77,
+"fuel_liters": 77.7,
+"co2_kg": 155.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-21",
+"route": "Route C",
+"ridership": 659,
+"on_time_pct": 87.0,
+"cost_usd": 180.58,
+"fuel_liters": 76.7,
+"co2_kg": 153.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-22",
+"route": "Route C",
+"ridership": 706,
+"on_time_pct": 87.1,
+"cost_usd": 184.56,
+"fuel_liters": 79.4,
+"co2_kg": 127.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-23",
+"route": "Route C",
+"ridership": 673,
+"on_time_pct": 79.9,
+"cost_usd": 182.52,
+"fuel_liters": 77.8,
+"co2_kg": 124.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-24",
+"route": "Route C",
+"ridership": 597,
+"on_time_pct": 85.5,
+"cost_usd": 176.99,
+"fuel_liters": 73.7,
+"co2_kg": 197.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-25",
+"route": "Route C",
+"ridership": 540,
+"on_time_pct": 85.6,
+"cost_usd": 172.99,
+"fuel_liters": 70.7,
+"co2_kg": 189.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-26",
+"route": "Route C",
+"ridership": 563,
+"on_time_pct": 83.3,
+"cost_usd": 175.16,
+"fuel_liters": 72.1,
+"co2_kg": 144.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-27",
+"route": "Route C",
+"ridership": 677,
+"on_time_pct": 81.6,
+"cost_usd": 184.32,
+"fuel_liters": 78.5,
+"co2_kg": 157.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-28",
+"route": "Route C",
+"ridership": 699,
+"on_time_pct": 85.3,
+"cost_usd": 186.48,
+"fuel_liters": 79.9,
+"co2_kg": 127.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-29",
+"route": "Route C",
+"ridership": 703,
+"on_time_pct": 84.0,
+"cost_usd": 187.11,
+"fuel_liters": 80.2,
+"co2_kg": 128.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-30",
+"route": "Route C",
+"ridership": 739,
+"on_time_pct": 83.4,
+"cost_usd": 190.25,
+"fuel_liters": 82.3,
+"co2_kg": 220.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-31",
+"route": "Route C",
+"ridership": 687,
+"on_time_pct": 81.7,
+"cost_usd": 186.68,
+"fuel_liters": 79.6,
+"co2_kg": 213.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-01",
+"route": "Route C",
+"ridership": 553,
+"on_time_pct": 92.4,
+"cost_usd": 176.8,
+"fuel_liters": 72.4,
+"co2_kg": 144.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-02",
+"route": "Route C",
+"ridership": 457,
+"on_time_pct": 85.6,
+"cost_usd": 169.72,
+"fuel_liters": 67.2,
+"co2_kg": 134.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-03",
+"route": "Route C",
+"ridership": 703,
+"on_time_pct": 84.4,
+"cost_usd": 189.11,
+"fuel_liters": 80.9,
+"co2_kg": 129.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-04",
+"route": "Route C",
+"ridership": 739,
+"on_time_pct": 83.2,
+"cost_usd": 192.25,
+"fuel_liters": 83.0,
+"co2_kg": 132.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-05",
+"route": "Route C",
+"ridership": 740,
+"on_time_pct": 84.5,
+"cost_usd": 192.74,
+"fuel_liters": 83.2,
+"co2_kg": 223.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-06",
+"route": "Route C",
+"ridership": 749,
+"on_time_pct": 85.7,
+"cost_usd": 193.78,
+"fuel_liters": 83.8,
+"co2_kg": 224.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-07",
+"route": "Route C",
+"ridership": 673,
+"on_time_pct": 83.7,
+"cost_usd": 188.38,
+"fuel_liters": 79.8,
+"co2_kg": 159.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-08",
+"route": "Route C",
+"ridership": 520,
+"on_time_pct": 86.6,
+"cost_usd": 176.97,
+"fuel_liters": 71.5,
+"co2_kg": 143.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-09",
+"route": "Route C",
+"ridership": 560,
+"on_time_pct": 86.6,
+"cost_usd": 157.19,
+"fuel_liters": 65.8,
+"co2_kg": 105.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-10",
+"route": "Route C",
+"ridership": 696,
+"on_time_pct": 91.0,
+"cost_usd": 168.18,
+"fuel_liters": 73.5,
+"co2_kg": 117.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-11",
+"route": "Route C",
+"ridership": 760,
+"on_time_pct": 83.8,
+"cost_usd": 173.42,
+"fuel_liters": 77.1,
+"co2_kg": 206.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-12",
+"route": "Route C",
+"ridership": 783,
+"on_time_pct": 83.5,
+"cost_usd": 175.58,
+"fuel_liters": 78.5,
+"co2_kg": 210.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-13",
+"route": "Route C",
+"ridership": 640,
+"on_time_pct": 81.7,
+"cost_usd": 165.01,
+"fuel_liters": 70.8,
+"co2_kg": 141.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-14",
+"route": "Route C",
+"ridership": 599,
+"on_time_pct": 83.6,
+"cost_usd": 162.27,
+"fuel_liters": 68.7,
+"co2_kg": 137.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-15",
+"route": "Route C",
+"ridership": 541,
+"on_time_pct": 92.7,
+"cost_usd": 158.14,
+"fuel_liters": 65.6,
+"co2_kg": 105.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-16",
+"route": "Route C",
+"ridership": 561,
+"on_time_pct": 87.0,
+"cost_usd": 160.16,
+"fuel_liters": 66.9,
+"co2_kg": 107.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-17",
+"route": "Route C",
+"ridership": 719,
+"on_time_pct": 78.0,
+"cost_usd": 172.68,
+"fuel_liters": 75.7,
+"co2_kg": 202.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-18",
+"route": "Route C",
+"ridership": 742,
+"on_time_pct": 86.9,
+"cost_usd": 174.85,
+"fuel_liters": 77.1,
+"co2_kg": 206.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-19",
+"route": "Route C",
+"ridership": 693,
+"on_time_pct": 88.0,
+"cost_usd": 171.41,
+"fuel_liters": 74.5,
+"co2_kg": 149.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-20",
+"route": "Route C",
+"ridership": 727,
+"on_time_pct": 83.3,
+"cost_usd": 174.42,
+"fuel_liters": 76.5,
+"co2_kg": 153.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-21",
+"route": "Route C",
+"ridership": 690,
+"on_time_pct": 91.3,
+"cost_usd": 171.96,
+"fuel_liters": 74.6,
+"co2_kg": 119.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-22",
+"route": "Route C",
+"ridership": 549,
+"on_time_pct": 88.2,
+"cost_usd": 161.52,
+"fuel_liters": 67.0,
+"co2_kg": 107.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-23",
+"route": "Route C",
+"ridership": 536,
+"on_time_pct": 84.9,
+"cost_usd": 160.89,
+"fuel_liters": 66.4,
+"co2_kg": 178.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-24",
+"route": "Route C",
+"ridership": 723,
+"on_time_pct": 81.8,
+"cost_usd": 175.79,
+"fuel_liters": 76.9,
+"co2_kg": 153.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-25",
+"route": "Route C",
+"ridership": 740,
+"on_time_pct": 82.9,
+"cost_usd": 177.4,
+"fuel_liters": 77.9,
+"co2_kg": 155.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-26",
+"route": "Route C",
+"ridership": 766,
+"on_time_pct": 85.3,
+"cost_usd": 179.84,
+"fuel_liters": 79.5,
+"co2_kg": 127.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-27",
+"route": "Route C",
+"ridership": 756,
+"on_time_pct": 82.8,
+"cost_usd": 179.48,
+"fuel_liters": 79.1,
+"co2_kg": 126.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-28",
+"route": "Route C",
+"ridership": 662,
+"on_time_pct": 81.3,
+"cost_usd": 172.55,
+"fuel_liters": 74.0,
+"co2_kg": 198.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-01",
+"route": "Route C",
+"ridership": 530,
+"on_time_pct": 88.4,
+"cost_usd": 162.81,
+"fuel_liters": 66.9,
+"co2_kg": 179.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-02",
+"route": "Route C",
+"ridership": 582,
+"on_time_pct": 84.4,
+"cost_usd": 167.22,
+"fuel_liters": 69.9,
+"co2_kg": 139.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-03",
+"route": "Route C",
+"ridership": 728,
+"on_time_pct": 88.2,
+"cost_usd": 178.9,
+"fuel_liters": 78.1,
+"co2_kg": 156.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-04",
+"route": "Route C",
+"ridership": 756,
+"on_time_pct": 89.8,
+"cost_usd": 181.48,
+"fuel_liters": 79.8,
+"co2_kg": 127.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-05",
+"route": "Route C",
+"ridership": 726,
+"on_time_pct": 80.4,
+"cost_usd": 179.45,
+"fuel_liters": 78.2,
+"co2_kg": 125.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-06",
+"route": "Route C",
+"ridership": 661,
+"on_time_pct": 88.6,
+"cost_usd": 174.89,
+"fuel_liters": 74.8,
+"co2_kg": 200.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-07",
+"route": "Route C",
+"ridership": 698,
+"on_time_pct": 83.9,
+"cost_usd": 178.18,
+"fuel_liters": 77.0,
+"co2_kg": 206.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-08",
+"route": "Route C",
+"ridership": 558,
+"on_time_pct": 83.6,
+"cost_usd": 167.74,
+"fuel_liters": 69.4,
+"co2_kg": 138.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-09",
+"route": "Route C",
+"ridership": 644,
+"on_time_pct": 87.4,
+"cost_usd": 174.8,
+"fuel_liters": 74.3,
+"co2_kg": 148.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-10",
+"route": "Route C",
+"ridership": 705,
+"on_time_pct": 86.1,
+"cost_usd": 179.91,
+"fuel_liters": 77.8,
+"co2_kg": 124.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-11",
+"route": "Route C",
+"ridership": 762,
+"on_time_pct": 84.6,
+"cost_usd": 184.59,
+"fuel_liters": 81.0,
+"co2_kg": 129.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-12",
+"route": "Route C",
+"ridership": 729,
+"on_time_pct": 85.3,
+"cost_usd": 182.56,
+"fuel_liters": 79.4,
+"co2_kg": 212.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-13",
+"route": "Route C",
+"ridership": 793,
+"on_time_pct": 87.9,
+"cost_usd": 187.8,
+"fuel_liters": 83.0,
+"co2_kg": 222.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-14",
+"route": "Route C",
+"ridership": 735,
+"on_time_pct": 82.3,
+"cost_usd": 183.8,
+"fuel_liters": 80.0,
+"co2_kg": 160.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-15",
+"route": "Route C",
+"ridership": 517,
+"on_time_pct": 86.4,
+"cost_usd": 167.35,
+"fuel_liters": 68.1,
+"co2_kg": 136.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-16",
+"route": "Route C",
+"ridership": 563,
+"on_time_pct": 90.1,
+"cost_usd": 171.33,
+"fuel_liters": 70.8,
+"co2_kg": 113.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-17",
+"route": "Route C",
+"ridership": 646,
+"on_time_pct": 88.3,
+"cost_usd": 178.12,
+"fuel_liters": 75.5,
+"co2_kg": 120.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-18",
+"route": "Route C",
+"ridership": 744,
+"on_time_pct": 82.4,
+"cost_usd": 186.02,
+"fuel_liters": 81.0,
+"co2_kg": 217.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-19",
+"route": "Route C",
+"ridership": 726,
+"on_time_pct": 78.7,
+"cost_usd": 184.96,
+"fuel_liters": 80.1,
+"co2_kg": 214.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-20",
+"route": "Route C",
+"ridership": 760,
+"on_time_pct": 83.9,
+"cost_usd": 188.11,
+"fuel_liters": 82.2,
+"co2_kg": 164.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-21",
+"route": "Route C",
+"ridership": 637,
+"on_time_pct": 79.7,
+"cost_usd": 178.93,
+"fuel_liters": 75.5,
+"co2_kg": 151.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-22",
+"route": "Route C",
+"ridership": 543,
+"on_time_pct": 91.6,
+"cost_usd": 172.14,
+"fuel_liters": 70.5,
+"co2_kg": 112.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-23",
+"route": "Route C",
+"ridership": 555,
+"on_time_pct": 82.1,
+"cost_usd": 173.46,
+"fuel_liters": 71.3,
+"co2_kg": 114.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-24",
+"route": "Route C",
+"ridership": 700,
+"on_time_pct": 82.7,
+"cost_usd": 185.0,
+"fuel_liters": 79.4,
+"co2_kg": 212.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-25",
+"route": "Route C",
+"ridership": 659,
+"on_time_pct": 83.3,
+"cost_usd": 182.27,
+"fuel_liters": 77.3,
+"co2_kg": 207.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-26",
+"route": "Route C",
+"ridership": 757,
+"on_time_pct": 85.6,
+"cost_usd": 190.17,
+"fuel_liters": 82.8,
+"co2_kg": 165.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-27",
+"route": "Route C",
+"ridership": 800,
+"on_time_pct": 86.8,
+"cost_usd": 193.88,
+"fuel_liters": 85.3,
+"co2_kg": 170.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-28",
+"route": "Route C",
+"ridership": 677,
+"on_time_pct": 80.1,
+"cost_usd": 184.84,
+"fuel_liters": 78.7,
+"co2_kg": 125.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-29",
+"route": "Route C",
+"ridership": 648,
+"on_time_pct": 86.6,
+"cost_usd": 182.94,
+"fuel_liters": 77.2,
+"co2_kg": 123.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-30",
+"route": "Route C",
+"ridership": 568,
+"on_time_pct": 86.3,
+"cost_usd": 177.27,
+"fuel_liters": 73.0,
+"co2_kg": 195.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-31",
+"route": "Route C",
+"ridership": 719,
+"on_time_pct": 82.9,
+"cost_usd": 189.23,
+"fuel_liters": 81.4,
+"co2_kg": 218.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-01",
+"route": "Route D",
+"ridership": 601,
+"on_time_pct": 86.9,
+"cost_usd": 168.89,
+"fuel_liters": 71.0,
+"co2_kg": 190.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-02",
+"route": "Route D",
+"ridership": 536,
+"on_time_pct": 94.2,
+"cost_usd": 164.33,
+"fuel_liters": 67.6,
+"co2_kg": 135.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-03",
+"route": "Route D",
+"ridership": 536,
+"on_time_pct": 91.4,
+"cost_usd": 164.68,
+"fuel_liters": 67.7,
+"co2_kg": 135.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-04",
+"route": "Route D",
+"ridership": 356,
+"on_time_pct": 96.0,
+"cost_usd": 151.3,
+"fuel_liters": 58.0,
+"co2_kg": 92.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-05",
+"route": "Route D",
+"ridership": 349,
+"on_time_pct": 92.5,
+"cost_usd": 151.08,
+"fuel_liters": 57.7,
+"co2_kg": 92.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-06",
+"route": "Route D",
+"ridership": 557,
+"on_time_pct": 88.9,
+"cost_usd": 167.53,
+"fuel_liters": 69.3,
+"co2_kg": 185.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-07",
+"route": "Route D",
+"ridership": 597,
+"on_time_pct": 86.7,
+"cost_usd": 170.95,
+"fuel_liters": 71.6,
+"co2_kg": 191.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-08",
+"route": "Route D",
+"ridership": 622,
+"on_time_pct": 93.2,
+"cost_usd": 173.4,
+"fuel_liters": 73.2,
+"co2_kg": 146.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-09",
+"route": "Route D",
+"ridership": 579,
+"on_time_pct": 94.7,
+"cost_usd": 170.38,
+"fuel_liters": 70.9,
+"co2_kg": 141.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-10",
+"route": "Route D",
+"ridership": 576,
+"on_time_pct": 94.8,
+"cost_usd": 170.58,
+"fuel_liters": 70.9,
+"co2_kg": 113.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-11",
+"route": "Route D",
+"ridership": 312,
+"on_time_pct": 90.9,
+"cost_usd": 150.63,
+"fuel_liters": 56.5,
+"co2_kg": 90.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-12",
+"route": "Route D",
+"ridership": 348,
+"on_time_pct": 94.7,
+"cost_usd": 153.77,
+"fuel_liters": 58.6,
+"co2_kg": 157.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-13",
+"route": "Route D",
+"ridership": 568,
+"on_time_pct": 89.5,
+"cost_usd": 171.2,
+"fuel_liters": 70.9,
+"co2_kg": 190.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-14",
+"route": "Route D",
+"ridership": 595,
+"on_time_pct": 89.3,
+"cost_usd": 173.64,
+"fuel_liters": 72.5,
+"co2_kg": 145.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-15",
+"route": "Route D",
+"ridership": 284,
+"on_time_pct": 90.4,
+"cost_usd": 150.04,
+"fuel_liters": 55.5,
+"co2_kg": 111.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-16",
+"route": "Route D",
+"ridership": 553,
+"on_time_pct": 87.5,
+"cost_usd": 171.11,
+"fuel_liters": 70.4,
+"co2_kg": 112.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-17",
+"route": "Route D",
+"ridership": 513,
+"on_time_pct": 94.7,
+"cost_usd": 168.51,
+"fuel_liters": 68.4,
+"co2_kg": 109.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-18",
+"route": "Route D",
+"ridership": 336,
+"on_time_pct": 98.0,
+"cost_usd": 155.28,
+"fuel_liters": 58.8,
+"co2_kg": 157.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-19",
+"route": "Route D",
+"ridership": 378,
+"on_time_pct": 95.0,
+"cost_usd": 158.84,
+"fuel_liters": 61.2,
+"co2_kg": 164.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-20",
+"route": "Route D",
+"ridership": 537,
+"on_time_pct": 93.5,
+"cost_usd": 171.5,
+"fuel_liters": 70.1,
+"co2_kg": 140.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-21",
+"route": "Route D",
+"ridership": 579,
+"on_time_pct": 91.8,
+"cost_usd": 175.21,
+"fuel_liters": 72.6,
+"co2_kg": 145.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-22",
+"route": "Route D",
+"ridership": 667,
+"on_time_pct": 91.1,
+"cost_usd": 182.27,
+"fuel_liters": 77.5,
+"co2_kg": 124.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-23",
+"route": "Route D",
+"ridership": 608,
+"on_time_pct": 89.2,
+"cost_usd": 178.14,
+"fuel_liters": 74.4,
+"co2_kg": 119.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-24",
+"route": "Route D",
+"ridership": 540,
+"on_time_pct": 96.6,
+"cost_usd": 173.3,
+"fuel_liters": 70.8,
+"co2_kg": 189.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-25",
+"route": "Route D",
+"ridership": 346,
+"on_time_pct": 98.0,
+"cost_usd": 158.8,
+"fuel_liters": 60.3,
+"co2_kg": 161.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-26",
+"route": "Route D",
+"ridership": 386,
+"on_time_pct": 92.6,
+"cost_usd": 162.23,
+"fuel_liters": 62.6,
+"co2_kg": 125.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-27",
+"route": "Route D",
+"ridership": 577,
+"on_time_pct": 94.1,
+"cost_usd": 177.41,
+"fuel_liters": 73.3,
+"co2_kg": 146.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-28",
+"route": "Route D",
+"ridership": 613,
+"on_time_pct": 86.5,
+"cost_usd": 180.56,
+"fuel_liters": 75.4,
+"co2_kg": 120.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-29",
+"route": "Route D",
+"ridership": 588,
+"on_time_pct": 90.4,
+"cost_usd": 178.94,
+"fuel_liters": 74.1,
+"co2_kg": 118.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-30",
+"route": "Route D",
+"ridership": 580,
+"on_time_pct": 93.0,
+"cost_usd": 178.72,
+"fuel_liters": 73.8,
+"co2_kg": 197.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-31",
+"route": "Route D",
+"ridership": 548,
+"on_time_pct": 87.1,
+"cost_usd": 176.69,
+"fuel_liters": 72.2,
+"co2_kg": 193.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-01",
+"route": "Route D",
+"ridership": 373,
+"on_time_pct": 95.9,
+"cost_usd": 163.59,
+"fuel_liters": 62.7,
+"co2_kg": 125.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-02",
+"route": "Route D",
+"ridership": 384,
+"on_time_pct": 97.3,
+"cost_usd": 164.92,
+"fuel_liters": 63.5,
+"co2_kg": 127.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-03",
+"route": "Route D",
+"ridership": 585,
+"on_time_pct": 92.4,
+"cost_usd": 180.8,
+"fuel_liters": 74.7,
+"co2_kg": 119.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-04",
+"route": "Route D",
+"ridership": 599,
+"on_time_pct": 86.0,
+"cost_usd": 182.26,
+"fuel_liters": 75.6,
+"co2_kg": 121.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-05",
+"route": "Route D",
+"ridership": 620,
+"on_time_pct": 91.6,
+"cost_usd": 184.29,
+"fuel_liters": 76.9,
+"co2_kg": 206.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-06",
+"route": "Route D",
+"ridership": 592,
+"on_time_pct": 87.1,
+"cost_usd": 182.39,
+"fuel_liters": 75.4,
+"co2_kg": 202.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-07",
+"route": "Route D",
+"ridership": 520,
+"on_time_pct": 94.0,
+"cost_usd": 154.08,
+"fuel_liters": 63.6,
+"co2_kg": 127.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-08",
+"route": "Route D",
+"ridership": 365,
+"on_time_pct": 95.9,
+"cost_usd": 142.52,
+"fuel_liters": 55.2,
+"co2_kg": 110.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-09",
+"route": "Route D",
+"ridership": 373,
+"on_time_pct": 93.9,
+"cost_usd": 143.56,
+"fuel_liters": 55.8,
+"co2_kg": 89.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-10",
+"route": "Route D",
+"ridership": 591,
+"on_time_pct": 89.3,
+"cost_usd": 160.71,
+"fuel_liters": 67.9,
+"co2_kg": 108.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-11",
+"route": "Route D",
+"ridership": 606,
+"on_time_pct": 89.4,
+"cost_usd": 162.31,
+"fuel_liters": 68.9,
+"co2_kg": 184.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-12",
+"route": "Route D",
+"ridership": 602,
+"on_time_pct": 89.8,
+"cost_usd": 162.38,
+"fuel_liters": 68.8,
+"co2_kg": 184.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-13",
+"route": "Route D",
+"ridership": 594,
+"on_time_pct": 89.3,
+"cost_usd": 162.16,
+"fuel_liters": 68.5,
+"co2_kg": 137.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-14",
+"route": "Route D",
+"ridership": 581,
+"on_time_pct": 88.0,
+"cost_usd": 161.52,
+"fuel_liters": 67.9,
+"co2_kg": 135.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-15",
+"route": "Route D",
+"ridership": 363,
+"on_time_pct": 92.3,
+"cost_usd": 145.21,
+"fuel_liters": 56.1,
+"co2_kg": 89.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-16",
+"route": "Route D",
+"ridership": 410,
+"on_time_pct": 94.2,
+"cost_usd": 149.19,
+"fuel_liters": 58.8,
+"co2_kg": 94.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-17",
+"route": "Route D",
+"ridership": 596,
+"on_time_pct": 86.1,
+"cost_usd": 163.96,
+"fuel_liters": 69.2,
+"co2_kg": 185.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-18",
+"route": "Route D",
+"ridership": 614,
+"on_time_pct": 93.2,
+"cost_usd": 165.7,
+"fuel_liters": 70.3,
+"co2_kg": 188.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-19",
+"route": "Route D",
+"ridership": 618,
+"on_time_pct": 93.7,
+"cost_usd": 166.32,
+"fuel_liters": 70.6,
+"co2_kg": 141.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-20",
+"route": "Route D",
+"ridership": 579,
+"on_time_pct": 94.7,
+"cost_usd": 163.73,
+"fuel_liters": 68.6,
+"co2_kg": 137.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-21",
+"route": "Route D",
+"ridership": 610,
+"on_time_pct": 89.4,
+"cost_usd": 166.59,
+"fuel_liters": 70.5,
+"co2_kg": 112.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-22",
+"route": "Route D",
+"ridership": 359,
+"on_time_pct": 97.8,
+"cost_usd": 147.62,
+"fuel_liters": 56.8,
+"co2_kg": 152.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-23",
+"route": "Route D",
+"ridership": 416,
+"on_time_pct": 91.8,
+"cost_usd": 152.44,
+"fuel_liters": 60.1,
+"co2_kg": 161.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-24",
+"route": "Route D",
+"ridership": 563,
+"on_time_pct": 89.5,
+"cost_usd": 164.12,
+"fuel_liters": 68.3,
+"co2_kg": 136.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-25",
+"route": "Route D",
+"ridership": 577,
+"on_time_pct": 87.6,
+"cost_usd": 165.59,
+"fuel_liters": 69.2,
+"co2_kg": 138.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-26",
+"route": "Route D",
+"ridership": 594,
+"on_time_pct": 88.0,
+"cost_usd": 167.33,
+"fuel_liters": 70.3,
+"co2_kg": 112.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-27",
+"route": "Route D",
+"ridership": 594,
+"on_time_pct": 91.0,
+"cost_usd": 167.68,
+"fuel_liters": 70.4,
+"co2_kg": 112.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-28",
+"route": "Route D",
+"ridership": 594,
+"on_time_pct": 87.3,
+"cost_usd": 168.16,
+"fuel_liters": 70.6,
+"co2_kg": 189.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-01",
+"route": "Route D",
+"ridership": 396,
+"on_time_pct": 92.6,
+"cost_usd": 153.24,
+"fuel_liters": 59.8,
+"co2_kg": 160.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-02",
+"route": "Route D",
+"ridership": 377,
+"on_time_pct": 95.2,
+"cost_usd": 152.19,
+"fuel_liters": 58.9,
+"co2_kg": 117.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-03",
+"route": "Route D",
+"ridership": 549,
+"on_time_pct": 91.3,
+"cost_usd": 165.83,
+"fuel_liters": 68.5,
+"co2_kg": 137.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-04",
+"route": "Route D",
+"ridership": 618,
+"on_time_pct": 91.6,
+"cost_usd": 171.5,
+"fuel_liters": 72.4,
+"co2_kg": 115.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-05",
+"route": "Route D",
+"ridership": 630,
+"on_time_pct": 97.5,
+"cost_usd": 172.82,
+"fuel_liters": 73.2,
+"co2_kg": 117.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-06",
+"route": "Route D",
+"ridership": 582,
+"on_time_pct": 88.5,
+"cost_usd": 169.52,
+"fuel_liters": 70.7,
+"co2_kg": 189.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-07",
+"route": "Route D",
+"ridership": 543,
+"on_time_pct": 88.4,
+"cost_usd": 166.93,
+"fuel_liters": 68.7,
+"co2_kg": 184.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-08",
+"route": "Route D",
+"ridership": 358,
+"on_time_pct": 96.6,
+"cost_usd": 153.13,
+"fuel_liters": 58.7,
+"co2_kg": 117.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-09",
+"route": "Route D",
+"ridership": 416,
+"on_time_pct": 91.3,
+"cost_usd": 157.96,
+"fuel_liters": 62.0,
+"co2_kg": 124.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-10",
+"route": "Route D",
+"ridership": 559,
+"on_time_pct": 91.4,
+"cost_usd": 169.36,
+"fuel_liters": 70.0,
+"co2_kg": 112.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-11",
+"route": "Route D",
+"ridership": 603,
+"on_time_pct": 91.8,
+"cost_usd": 173.06,
+"fuel_liters": 72.5,
+"co2_kg": 116.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-12",
+"route": "Route D",
+"ridership": 631,
+"on_time_pct": 85.4,
+"cost_usd": 175.65,
+"fuel_liters": 74.2,
+"co2_kg": 198.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-13",
+"route": "Route D",
+"ridership": 640,
+"on_time_pct": 95.3,
+"cost_usd": 176.69,
+"fuel_liters": 74.8,
+"co2_kg": 200.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-14",
+"route": "Route D",
+"ridership": 546,
+"on_time_pct": 88.7,
+"cost_usd": 169.9,
+"fuel_liters": 69.8,
+"co2_kg": 139.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-15",
+"route": "Route D",
+"ridership": 383,
+"on_time_pct": 93.8,
+"cost_usd": 157.78,
+"fuel_liters": 61.0,
+"co2_kg": 122.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-16",
+"route": "Route D",
+"ridership": 399,
+"on_time_pct": 98.0,
+"cost_usd": 159.38,
+"fuel_liters": 62.0,
+"co2_kg": 99.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-17",
+"route": "Route D",
+"ridership": 579,
+"on_time_pct": 87.4,
+"cost_usd": 173.59,
+"fuel_liters": 72.0,
+"co2_kg": 115.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-18",
+"route": "Route D",
+"ridership": 585,
+"on_time_pct": 87.5,
+"cost_usd": 174.49,
+"fuel_liters": 72.5,
+"co2_kg": 194.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-19",
+"route": "Route D",
+"ridership": 629,
+"on_time_pct": 95.1,
+"cost_usd": 178.34,
+"fuel_liters": 75.1,
+"co2_kg": 201.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-20",
+"route": "Route D",
+"ridership": 592,
+"on_time_pct": 90.3,
+"cost_usd": 175.88,
+"fuel_liters": 73.2,
+"co2_kg": 146.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-21",
+"route": "Route D",
+"ridership": 564,
+"on_time_pct": 93.2,
+"cost_usd": 174.12,
+"fuel_liters": 71.8,
+"co2_kg": 143.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-22",
+"route": "Route D",
+"ridership": 441,
+"on_time_pct": 91.0,
+"cost_usd": 164.95,
+"fuel_liters": 65.1,
+"co2_kg": 104.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-23",
+"route": "Route D",
+"ridership": 372,
+"on_time_pct": 95.7,
+"cost_usd": 160.11,
+"fuel_liters": 61.5,
+"co2_kg": 98.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-24",
+"route": "Route D",
+"ridership": 603,
+"on_time_pct": 95.1,
+"cost_usd": 178.24,
+"fuel_liters": 74.3,
+"co2_kg": 199.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-25",
+"route": "Route D",
+"ridership": 638,
+"on_time_pct": 88.4,
+"cost_usd": 181.38,
+"fuel_liters": 76.4,
+"co2_kg": 204.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-26",
+"route": "Route D",
+"ridership": 648,
+"on_time_pct": 92.8,
+"cost_usd": 182.56,
+"fuel_liters": 77.1,
+"co2_kg": 154.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-27",
+"route": "Route D",
+"ridership": 628,
+"on_time_pct": 91.0,
+"cost_usd": 181.37,
+"fuel_liters": 76.1,
+"co2_kg": 152.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-28",
+"route": "Route D",
+"ridership": 594,
+"on_time_pct": 92.9,
+"cost_usd": 179.19,
+"fuel_liters": 74.4,
+"co2_kg": 119.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-29",
+"route": "Route D",
+"ridership": 414,
+"on_time_pct": 94.3,
+"cost_usd": 165.68,
+"fuel_liters": 64.6,
+"co2_kg": 103.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-30",
+"route": "Route D",
+"ridership": 382,
+"on_time_pct": 92.8,
+"cost_usd": 163.64,
+"fuel_liters": 63.0,
+"co2_kg": 168.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-31",
+"route": "Route D",
+"ridership": 619,
+"on_time_pct": 86.9,
+"cost_usd": 182.18,
+"fuel_liters": 76.1,
+"co2_kg": 203.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-01",
+"route": "Route E",
+"ridership": 851,
+"on_time_pct": 84.6,
+"cost_usd": 189.1,
+"fuel_liters": 85.1,
+"co2_kg": 228.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-02",
+"route": "Route E",
+"ridership": 860,
+"on_time_pct": 84.8,
+"cost_usd": 190.14,
+"fuel_liters": 85.7,
+"co2_kg": 171.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-03",
+"route": "Route E",
+"ridership": 868,
+"on_time_pct": 85.0,
+"cost_usd": 191.18,
+"fuel_liters": 86.3,
+"co2_kg": 172.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-04",
+"route": "Route E",
+"ridership": 877,
+"on_time_pct": 85.2,
+"cost_usd": 192.23,
+"fuel_liters": 86.9,
+"co2_kg": 139.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-05",
+"route": "Route E",
+"ridership": 885,
+"on_time_pct": 85.3,
+"cost_usd": 193.27,
+"fuel_liters": 87.5,
+"co2_kg": 140.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-06",
+"route": "Route E",
+"ridership": 894,
+"on_time_pct": 85.5,
+"cost_usd": 194.46,
+"fuel_liters": 88.2,
+"co2_kg": 236.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-07",
+"route": "Route E",
+"ridership": 902,
+"on_time_pct": 85.7,
+"cost_usd": 195.36,
+"fuel_liters": 88.7,
+"co2_kg": 237.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-08",
+"route": "Route E",
+"ridership": 911,
+"on_time_pct": 85.8,
+"cost_usd": 196.54,
+"fuel_liters": 89.4,
+"co2_kg": 178.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-09",
+"route": "Route E",
+"ridership": 919,
+"on_time_pct": 86.0,
+"cost_usd": 197.45,
+"fuel_liters": 89.9,
+"co2_kg": 179.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-10",
+"route": "Route E",
+"ridership": 928,
+"on_time_pct": 86.2,
+"cost_usd": 198.63,
+"fuel_liters": 90.6,
+"co2_kg": 145.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-11",
+"route": "Route E",
+"ridership": 936,
+"on_time_pct": 86.3,
+"cost_usd": 199.54,
+"fuel_liters": 91.1,
+"co2_kg": 145.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-12",
+"route": "Route E",
+"ridership": 945,
+"on_time_pct": 86.5,
+"cost_usd": 200.72,
+"fuel_liters": 91.8,
+"co2_kg": 246.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-13",
+"route": "Route E",
+"ridership": 953,
+"on_time_pct": 86.7,
+"cost_usd": 201.76,
+"fuel_liters": 92.4,
+"co2_kg": 247.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-14",
+"route": "Route E",
+"ridership": 962,
+"on_time_pct": 86.8,
+"cost_usd": 202.81,
+"fuel_liters": 93.0,
+"co2_kg": 186.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-15",
+"route": "Route E",
+"ridership": 970,
+"on_time_pct": 87.0,
+"cost_usd": 203.85,
+"fuel_liters": 93.6,
+"co2_kg": 187.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-16",
+"route": "Route E",
+"ridership": 979,
+"on_time_pct": 87.2,
+"cost_usd": 204.9,
+"fuel_liters": 94.2,
+"co2_kg": 150.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-17",
+"route": "Route E",
+"ridership": 987,
+"on_time_pct": 87.4,
+"cost_usd": 205.94,
+"fuel_liters": 94.8,
+"co2_kg": 151.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-18",
+"route": "Route E",
+"ridership": 996,
+"on_time_pct": 87.5,
+"cost_usd": 206.98,
+"fuel_liters": 95.4,
+"co2_kg": 255.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-19",
+"route": "Route E",
+"ridership": 1004,
+"on_time_pct": 87.7,
+"cost_usd": 208.03,
+"fuel_liters": 96.0,
+"co2_kg": 257.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-20",
+"route": "Route E",
+"ridership": 1013,
+"on_time_pct": 87.9,
+"cost_usd": 209.07,
+"fuel_liters": 96.6,
+"co2_kg": 193.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-21",
+"route": "Route E",
+"ridership": 1021,
+"on_time_pct": 88.0,
+"cost_usd": 210.12,
+"fuel_liters": 97.2,
+"co2_kg": 194.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-22",
+"route": "Route E",
+"ridership": 1030,
+"on_time_pct": 88.2,
+"cost_usd": 211.16,
+"fuel_liters": 97.8,
+"co2_kg": 156.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-23",
+"route": "Route E",
+"ridership": 1038,
+"on_time_pct": 88.4,
+"cost_usd": 212.2,
+"fuel_liters": 98.4,
+"co2_kg": 157.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-24",
+"route": "Route E",
+"ridership": 1047,
+"on_time_pct": 88.5,
+"cost_usd": 213.25,
+"fuel_liters": 99.0,
+"co2_kg": 265.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-25",
+"route": "Route E",
+"ridership": 1055,
+"on_time_pct": 88.7,
+"cost_usd": 214.29,
+"fuel_liters": 99.6,
+"co2_kg": 266.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-26",
+"route": "Route E",
+"ridership": 1064,
+"on_time_pct": 88.9,
+"cost_usd": 215.34,
+"fuel_liters": 100.2,
+"co2_kg": 200.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-27",
+"route": "Route E",
+"ridership": 1072,
+"on_time_pct": 89.1,
+"cost_usd": 216.38,
+"fuel_liters": 100.8,
+"co2_kg": 201.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-28",
+"route": "Route E",
+"ridership": 1081,
+"on_time_pct": 89.2,
+"cost_usd": 217.42,
+"fuel_liters": 101.4,
+"co2_kg": 162.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-29",
+"route": "Route E",
+"ridership": 1089,
+"on_time_pct": 89.4,
+"cost_usd": 218.47,
+"fuel_liters": 102.0,
+"co2_kg": 163.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-30",
+"route": "Route E",
+"ridership": 1098,
+"on_time_pct": 89.6,
+"cost_usd": 219.51,
+"fuel_liters": 102.6,
+"co2_kg": 275.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-31",
+"route": "Route E",
+"ridership": 1106,
+"on_time_pct": 89.7,
+"cost_usd": 220.56,
+"fuel_liters": 103.2,
+"co2_kg": 276.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-01",
+"route": "Route E",
+"ridership": 1115,
+"on_time_pct": 89.9,
+"cost_usd": 221.6,
+"fuel_liters": 103.8,
+"co2_kg": 207.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-02",
+"route": "Route E",
+"ridership": 1123,
+"on_time_pct": 90.1,
+"cost_usd": 222.64,
+"fuel_liters": 104.4,
+"co2_kg": 208.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-03",
+"route": "Route E",
+"ridership": 1132,
+"on_time_pct": 90.2,
+"cost_usd": 223.83,
+"fuel_liters": 105.1,
+"co2_kg": 168.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-04",
+"route": "Route E",
+"ridership": 1140,
+"on_time_pct": 90.4,
+"cost_usd": 224.73,
+"fuel_liters": 105.6,
+"co2_kg": 169.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-05",
+"route": "Route E",
+"ridership": 1149,
+"on_time_pct": 90.6,
+"cost_usd": 202.72,
+"fuel_liters": 98.3,
+"co2_kg": 263.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-06",
+"route": "Route E",
+"ridership": 1157,
+"on_time_pct": 90.8,
+"cost_usd": 203.62,
+"fuel_liters": 98.8,
+"co2_kg": 264.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-07",
+"route": "Route E",
+"ridership": 1166,
+"on_time_pct": 90.9,
+"cost_usd": 204.8,
+"fuel_liters": 99.5,
+"co2_kg": 199.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-08",
+"route": "Route E",
+"ridership": 1174,
+"on_time_pct": 91.1,
+"cost_usd": 205.71,
+"fuel_liters": 100.0,
+"co2_kg": 200.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-09",
+"route": "Route E",
+"ridership": 1183,
+"on_time_pct": 91.3,
+"cost_usd": 206.89,
+"fuel_liters": 100.7,
+"co2_kg": 161.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-10",
+"route": "Route E",
+"ridership": 1191,
+"on_time_pct": 91.4,
+"cost_usd": 207.8,
+"fuel_liters": 101.2,
+"co2_kg": 161.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-11",
+"route": "Route E",
+"ridership": 1200,
+"on_time_pct": 91.6,
+"cost_usd": 208.98,
+"fuel_liters": 101.9,
+"co2_kg": 273.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-12",
+"route": "Route E",
+"ridership": 1208,
+"on_time_pct": 91.8,
+"cost_usd": 210.02,
+"fuel_liters": 102.5,
+"co2_kg": 274.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-13",
+"route": "Route E",
+"ridership": 1217,
+"on_time_pct": 92.0,
+"cost_usd": 211.07,
+"fuel_liters": 103.1,
+"co2_kg": 206.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-14",
+"route": "Route E",
+"ridership": 1225,
+"on_time_pct": 92.1,
+"cost_usd": 212.11,
+"fuel_liters": 103.7,
+"co2_kg": 207.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-15",
+"route": "Route E",
+"ridership": 1234,
+"on_time_pct": 92.3,
+"cost_usd": 213.16,
+"fuel_liters": 104.3,
+"co2_kg": 166.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-16",
+"route": "Route E",
+"ridership": 1242,
+"on_time_pct": 92.5,
+"cost_usd": 214.2,
+"fuel_liters": 104.9,
+"co2_kg": 167.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-17",
+"route": "Route E",
+"ridership": 1251,
+"on_time_pct": 92.6,
+"cost_usd": 215.24,
+"fuel_liters": 105.5,
+"co2_kg": 282.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-18",
+"route": "Route E",
+"ridership": 1259,
+"on_time_pct": 92.8,
+"cost_usd": 216.29,
+"fuel_liters": 106.1,
+"co2_kg": 212.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-19",
+"route": "Route E",
+"ridership": 1268,
+"on_time_pct": 93.0,
+"cost_usd": 217.33,
+"fuel_liters": 106.7,
+"co2_kg": 213.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-20",
+"route": "Route E",
+"ridership": 1276,
+"on_time_pct": 93.1,
+"cost_usd": 218.38,
+"fuel_liters": 107.3,
+"co2_kg": 171.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-21",
+"route": "Route E",
+"ridership": 1285,
+"on_time_pct": 93.3,
+"cost_usd": 219.42,
+"fuel_liters": 107.9,
+"co2_kg": 172.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-22",
+"route": "Route E",
+"ridership": 1293,
+"on_time_pct": 93.5,
+"cost_usd": 220.46,
+"fuel_liters": 108.5,
+"co2_kg": 290.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-23",
+"route": "Route E",
+"ridership": 1302,
+"on_time_pct": 93.7,
+"cost_usd": 221.51,
+"fuel_liters": 109.1,
+"co2_kg": 292.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-24",
+"route": "Route E",
+"ridership": 1310,
+"on_time_pct": 93.8,
+"cost_usd": 222.55,
+"fuel_liters": 109.7,
+"co2_kg": 219.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-25",
+"route": "Route E",
+"ridership": 1319,
+"on_time_pct": 94.0,
+"cost_usd": 223.6,
+"fuel_liters": 110.3,
+"co2_kg": 220.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-26",
+"route": "Route E",
+"ridership": 1327,
+"on_time_pct": 84.2,
+"cost_usd": 224.64,
+"fuel_liters": 110.9,
+"co2_kg": 177.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-27",
+"route": "Route E",
+"ridership": 1336,
+"on_time_pct": 84.3,
+"cost_usd": 225.68,
+"fuel_liters": 111.5,
+"co2_kg": 178.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-28",
+"route": "Route E",
+"ridership": 1344,
+"on_time_pct": 84.5,
+"cost_usd": 226.73,
+"fuel_liters": 112.1,
+"co2_kg": 300.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-01",
+"route": "Route E",
+"ridership": 853,
+"on_time_pct": 84.7,
+"cost_usd": 189.27,
+"fuel_liters": 85.2,
+"co2_kg": 228.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-02",
+"route": "Route E",
+"ridership": 861,
+"on_time_pct": 84.8,
+"cost_usd": 190.32,
+"fuel_liters": 85.8,
+"co2_kg": 171.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-03",
+"route": "Route E",
+"ridership": 870,
+"on_time_pct": 85.0,
+"cost_usd": 191.36,
+"fuel_liters": 86.4,
+"co2_kg": 172.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-04",
+"route": "Route E",
+"ridership": 878,
+"on_time_pct": 85.2,
+"cost_usd": 192.4,
+"fuel_liters": 87.0,
+"co2_kg": 139.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-05",
+"route": "Route E",
+"ridership": 887,
+"on_time_pct": 85.3,
+"cost_usd": 193.59,
+"fuel_liters": 87.7,
+"co2_kg": 140.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-06",
+"route": "Route E",
+"ridership": 895,
+"on_time_pct": 85.5,
+"cost_usd": 194.49,
+"fuel_liters": 88.2,
+"co2_kg": 236.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-07",
+"route": "Route E",
+"ridership": 904,
+"on_time_pct": 85.7,
+"cost_usd": 195.68,
+"fuel_liters": 88.9,
+"co2_kg": 238.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-08",
+"route": "Route E",
+"ridership": 912,
+"on_time_pct": 85.9,
+"cost_usd": 196.58,
+"fuel_liters": 89.4,
+"co2_kg": 178.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-09",
+"route": "Route E",
+"ridership": 921,
+"on_time_pct": 86.0,
+"cost_usd": 197.76,
+"fuel_liters": 90.1,
+"co2_kg": 180.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-10",
+"route": "Route E",
+"ridership": 929,
+"on_time_pct": 86.2,
+"cost_usd": 198.67,
+"fuel_liters": 90.6,
+"co2_kg": 145.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-11",
+"route": "Route E",
+"ridership": 938,
+"on_time_pct": 86.4,
+"cost_usd": 199.85,
+"fuel_liters": 91.3,
+"co2_kg": 146.1,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-12",
+"route": "Route E",
+"ridership": 946,
+"on_time_pct": 86.5,
+"cost_usd": 200.9,
+"fuel_liters": 91.9,
+"co2_kg": 246.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-13",
+"route": "Route E",
+"ridership": 955,
+"on_time_pct": 86.7,
+"cost_usd": 201.94,
+"fuel_liters": 92.5,
+"co2_kg": 247.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-14",
+"route": "Route E",
+"ridership": 963,
+"on_time_pct": 86.9,
+"cost_usd": 202.98,
+"fuel_liters": 93.1,
+"co2_kg": 186.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-15",
+"route": "Route E",
+"ridership": 972,
+"on_time_pct": 87.0,
+"cost_usd": 204.03,
+"fuel_liters": 93.7,
+"co2_kg": 187.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-16",
+"route": "Route E",
+"ridership": 980,
+"on_time_pct": 87.2,
+"cost_usd": 205.07,
+"fuel_liters": 94.3,
+"co2_kg": 150.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-17",
+"route": "Route E",
+"ridership": 989,
+"on_time_pct": 87.4,
+"cost_usd": 206.12,
+"fuel_liters": 94.9,
+"co2_kg": 151.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-18",
+"route": "Route E",
+"ridership": 997,
+"on_time_pct": 87.6,
+"cost_usd": 207.16,
+"fuel_liters": 95.5,
+"co2_kg": 255.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-19",
+"route": "Route E",
+"ridership": 1006,
+"on_time_pct": 87.7,
+"cost_usd": 208.2,
+"fuel_liters": 96.1,
+"co2_kg": 257.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-20",
+"route": "Route E",
+"ridership": 1014,
+"on_time_pct": 87.9,
+"cost_usd": 209.25,
+"fuel_liters": 96.7,
+"co2_kg": 193.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-21",
+"route": "Route E",
+"ridership": 1023,
+"on_time_pct": 88.1,
+"cost_usd": 210.29,
+"fuel_liters": 97.3,
+"co2_kg": 194.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-22",
+"route": "Route E",
+"ridership": 1031,
+"on_time_pct": 88.2,
+"cost_usd": 211.34,
+"fuel_liters": 97.9,
+"co2_kg": 156.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-23",
+"route": "Route E",
+"ridership": 1040,
+"on_time_pct": 88.4,
+"cost_usd": 212.38,
+"fuel_liters": 98.5,
+"co2_kg": 157.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-24",
+"route": "Route E",
+"ridership": 1048,
+"on_time_pct": 88.6,
+"cost_usd": 213.42,
+"fuel_liters": 99.1,
+"co2_kg": 265.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-25",
+"route": "Route E",
+"ridership": 1057,
+"on_time_pct": 88.8,
+"cost_usd": 214.47,
+"fuel_liters": 99.7,
+"co2_kg": 267.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-26",
+"route": "Route E",
+"ridership": 1065,
+"on_time_pct": 88.9,
+"cost_usd": 215.51,
+"fuel_liters": 100.3,
+"co2_kg": 200.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-27",
+"route": "Route E",
+"ridership": 1074,
+"on_time_pct": 89.1,
+"cost_usd": 216.56,
+"fuel_liters": 100.9,
+"co2_kg": 201.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-28",
+"route": "Route E",
+"ridership": 1082,
+"on_time_pct": 89.3,
+"cost_usd": 217.6,
+"fuel_liters": 101.5,
+"co2_kg": 162.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-29",
+"route": "Route E",
+"ridership": 1091,
+"on_time_pct": 89.4,
+"cost_usd": 218.64,
+"fuel_liters": 102.1,
+"co2_kg": 163.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-30",
+"route": "Route E",
+"ridership": 1099,
+"on_time_pct": 89.6,
+"cost_usd": 219.69,
+"fuel_liters": 102.7,
+"co2_kg": 275.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-31",
+"route": "Route E",
+"ridership": 1108,
+"on_time_pct": 89.8,
+"cost_usd": 220.73,
+"fuel_liters": 103.3,
+"co2_kg": 276.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-01",
+"route": "Route F",
+"ridership": 533,
+"on_time_pct": 87.8,
+"cost_usd": 165.39,
+"fuel_liters": 67.9,
+"co2_kg": 182.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-02",
+"route": "Route F",
+"ridership": 540,
+"on_time_pct": 87.9,
+"cost_usd": 166.29,
+"fuel_liters": 68.4,
+"co2_kg": 136.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-03",
+"route": "Route F",
+"ridership": 547,
+"on_time_pct": 88.0,
+"cost_usd": 167.2,
+"fuel_liters": 68.9,
+"co2_kg": 137.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-04",
+"route": "Route F",
+"ridership": 554,
+"on_time_pct": 88.2,
+"cost_usd": 168.1,
+"fuel_liters": 69.4,
+"co2_kg": 111.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-05",
+"route": "Route F",
+"ridership": 560,
+"on_time_pct": 88.3,
+"cost_usd": 169.0,
+"fuel_liters": 69.9,
+"co2_kg": 111.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-06",
+"route": "Route F",
+"ridership": 567,
+"on_time_pct": 88.4,
+"cost_usd": 169.91,
+"fuel_liters": 70.4,
+"co2_kg": 188.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-07",
+"route": "Route F",
+"ridership": 574,
+"on_time_pct": 88.6,
+"cost_usd": 170.81,
+"fuel_liters": 70.9,
+"co2_kg": 190.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-08",
+"route": "Route F",
+"ridership": 581,
+"on_time_pct": 88.7,
+"cost_usd": 171.86,
+"fuel_liters": 71.5,
+"co2_kg": 143.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-09",
+"route": "Route F",
+"ridership": 588,
+"on_time_pct": 88.8,
+"cost_usd": 172.76,
+"fuel_liters": 72.0,
+"co2_kg": 144.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-10",
+"route": "Route F",
+"ridership": 594,
+"on_time_pct": 89.0,
+"cost_usd": 173.52,
+"fuel_liters": 72.4,
+"co2_kg": 115.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-11",
+"route": "Route F",
+"ridership": 601,
+"on_time_pct": 89.1,
+"cost_usd": 174.57,
+"fuel_liters": 73.0,
+"co2_kg": 116.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-12",
+"route": "Route F",
+"ridership": 608,
+"on_time_pct": 89.3,
+"cost_usd": 175.47,
+"fuel_liters": 73.5,
+"co2_kg": 197.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-13",
+"route": "Route F",
+"ridership": 615,
+"on_time_pct": 89.4,
+"cost_usd": 176.38,
+"fuel_liters": 74.0,
+"co2_kg": 198.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-14",
+"route": "Route F",
+"ridership": 622,
+"on_time_pct": 89.5,
+"cost_usd": 177.28,
+"fuel_liters": 74.5,
+"co2_kg": 149.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-15",
+"route": "Route F",
+"ridership": 628,
+"on_time_pct": 89.7,
+"cost_usd": 178.18,
+"fuel_liters": 75.0,
+"co2_kg": 150.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-16",
+"route": "Route F",
+"ridership": 635,
+"on_time_pct": 89.8,
+"cost_usd": 179.09,
+"fuel_liters": 75.5,
+"co2_kg": 120.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-17",
+"route": "Route F",
+"ridership": 642,
+"on_time_pct": 89.9,
+"cost_usd": 179.99,
+"fuel_liters": 76.0,
+"co2_kg": 121.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-18",
+"route": "Route F",
+"ridership": 649,
+"on_time_pct": 90.1,
+"cost_usd": 181.04,
+"fuel_liters": 76.6,
+"co2_kg": 205.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-19",
+"route": "Route F",
+"ridership": 656,
+"on_time_pct": 90.2,
+"cost_usd": 181.94,
+"fuel_liters": 77.1,
+"co2_kg": 206.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-20",
+"route": "Route F",
+"ridership": 662,
+"on_time_pct": 90.3,
+"cost_usd": 182.7,
+"fuel_liters": 77.5,
+"co2_kg": 155.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-21",
+"route": "Route F",
+"ridership": 669,
+"on_time_pct": 90.5,
+"cost_usd": 183.75,
+"fuel_liters": 78.1,
+"co2_kg": 156.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-22",
+"route": "Route F",
+"ridership": 676,
+"on_time_pct": 90.6,
+"cost_usd": 184.65,
+"fuel_liters": 78.6,
+"co2_kg": 125.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-23",
+"route": "Route F",
+"ridership": 683,
+"on_time_pct": 90.8,
+"cost_usd": 185.56,
+"fuel_liters": 79.1,
+"co2_kg": 126.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-24",
+"route": "Route F",
+"ridership": 690,
+"on_time_pct": 90.9,
+"cost_usd": 186.46,
+"fuel_liters": 79.6,
+"co2_kg": 213.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-25",
+"route": "Route F",
+"ridership": 696,
+"on_time_pct": 91.0,
+"cost_usd": 187.36,
+"fuel_liters": 80.1,
+"co2_kg": 214.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-26",
+"route": "Route F",
+"ridership": 703,
+"on_time_pct": 91.2,
+"cost_usd": 188.27,
+"fuel_liters": 80.6,
+"co2_kg": 161.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-27",
+"route": "Route F",
+"ridership": 710,
+"on_time_pct": 91.3,
+"cost_usd": 189.17,
+"fuel_liters": 81.1,
+"co2_kg": 162.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-28",
+"route": "Route F",
+"ridership": 717,
+"on_time_pct": 91.4,
+"cost_usd": 190.22,
+"fuel_liters": 81.7,
+"co2_kg": 130.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-29",
+"route": "Route F",
+"ridership": 724,
+"on_time_pct": 91.6,
+"cost_usd": 191.12,
+"fuel_liters": 82.2,
+"co2_kg": 131.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-30",
+"route": "Route F",
+"ridership": 730,
+"on_time_pct": 91.7,
+"cost_usd": 191.88,
+"fuel_liters": 82.6,
+"co2_kg": 221.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-01-31",
+"route": "Route F",
+"ridership": 737,
+"on_time_pct": 91.8,
+"cost_usd": 192.93,
+"fuel_liters": 83.2,
+"co2_kg": 223.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-01",
+"route": "Route F",
+"ridership": 744,
+"on_time_pct": 92.0,
+"cost_usd": 193.83,
+"fuel_liters": 83.7,
+"co2_kg": 167.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-02",
+"route": "Route F",
+"ridership": 751,
+"on_time_pct": 92.1,
+"cost_usd": 194.74,
+"fuel_liters": 84.2,
+"co2_kg": 168.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-03",
+"route": "Route F",
+"ridership": 758,
+"on_time_pct": 92.2,
+"cost_usd": 172.44,
+"fuel_liters": 76.7,
+"co2_kg": 122.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-04",
+"route": "Route F",
+"ridership": 764,
+"on_time_pct": 92.4,
+"cost_usd": 173.34,
+"fuel_liters": 77.2,
+"co2_kg": 123.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-05",
+"route": "Route F",
+"ridership": 771,
+"on_time_pct": 92.5,
+"cost_usd": 174.25,
+"fuel_liters": 77.7,
+"co2_kg": 208.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-06",
+"route": "Route F",
+"ridership": 778,
+"on_time_pct": 92.7,
+"cost_usd": 175.15,
+"fuel_liters": 78.2,
+"co2_kg": 209.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-07",
+"route": "Route F",
+"ridership": 785,
+"on_time_pct": 92.8,
+"cost_usd": 176.2,
+"fuel_liters": 78.8,
+"co2_kg": 157.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-08",
+"route": "Route F",
+"ridership": 792,
+"on_time_pct": 92.9,
+"cost_usd": 177.1,
+"fuel_liters": 79.3,
+"co2_kg": 158.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-09",
+"route": "Route F",
+"ridership": 798,
+"on_time_pct": 93.1,
+"cost_usd": 177.86,
+"fuel_liters": 79.7,
+"co2_kg": 127.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-10",
+"route": "Route F",
+"ridership": 805,
+"on_time_pct": 93.2,
+"cost_usd": 178.91,
+"fuel_liters": 80.3,
+"co2_kg": 128.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-11",
+"route": "Route F",
+"ridership": 812,
+"on_time_pct": 93.3,
+"cost_usd": 179.81,
+"fuel_liters": 80.8,
+"co2_kg": 216.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-12",
+"route": "Route F",
+"ridership": 819,
+"on_time_pct": 93.5,
+"cost_usd": 180.72,
+"fuel_liters": 81.3,
+"co2_kg": 217.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-13",
+"route": "Route F",
+"ridership": 826,
+"on_time_pct": 93.6,
+"cost_usd": 181.62,
+"fuel_liters": 81.8,
+"co2_kg": 163.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-14",
+"route": "Route F",
+"ridership": 832,
+"on_time_pct": 93.7,
+"cost_usd": 182.52,
+"fuel_liters": 82.3,
+"co2_kg": 164.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-15",
+"route": "Route F",
+"ridership": 839,
+"on_time_pct": 93.9,
+"cost_usd": 183.43,
+"fuel_liters": 82.8,
+"co2_kg": 132.5,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-16",
+"route": "Route F",
+"ridership": 846,
+"on_time_pct": 94.0,
+"cost_usd": 184.33,
+"fuel_liters": 83.3,
+"co2_kg": 223.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-17",
+"route": "Route F",
+"ridership": 853,
+"on_time_pct": 94.2,
+"cost_usd": 185.38,
+"fuel_liters": 83.9,
+"co2_kg": 224.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-18",
+"route": "Route F",
+"ridership": 860,
+"on_time_pct": 94.3,
+"cost_usd": 186.28,
+"fuel_liters": 84.4,
+"co2_kg": 168.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-19",
+"route": "Route F",
+"ridership": 866,
+"on_time_pct": 94.4,
+"cost_usd": 187.04,
+"fuel_liters": 84.8,
+"co2_kg": 169.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-20",
+"route": "Route F",
+"ridership": 873,
+"on_time_pct": 94.6,
+"cost_usd": 188.09,
+"fuel_liters": 85.4,
+"co2_kg": 136.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-21",
+"route": "Route F",
+"ridership": 880,
+"on_time_pct": 94.7,
+"cost_usd": 188.99,
+"fuel_liters": 85.9,
+"co2_kg": 137.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-22",
+"route": "Route F",
+"ridership": 887,
+"on_time_pct": 94.8,
+"cost_usd": 189.9,
+"fuel_liters": 86.4,
+"co2_kg": 231.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-23",
+"route": "Route F",
+"ridership": 894,
+"on_time_pct": 95.0,
+"cost_usd": 190.8,
+"fuel_liters": 86.9,
+"co2_kg": 232.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-24",
+"route": "Route F",
+"ridership": 900,
+"on_time_pct": 87.1,
+"cost_usd": 191.7,
+"fuel_liters": 87.4,
+"co2_kg": 174.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-25",
+"route": "Route F",
+"ridership": 907,
+"on_time_pct": 87.2,
+"cost_usd": 192.61,
+"fuel_liters": 87.9,
+"co2_kg": 175.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-26",
+"route": "Route F",
+"ridership": 914,
+"on_time_pct": 87.4,
+"cost_usd": 193.51,
+"fuel_liters": 88.4,
+"co2_kg": 141.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-27",
+"route": "Route F",
+"ridership": 521,
+"on_time_pct": 87.5,
+"cost_usd": 163.76,
+"fuel_liters": 67.0,
+"co2_kg": 107.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-02-28",
+"route": "Route F",
+"ridership": 528,
+"on_time_pct": 87.6,
+"cost_usd": 164.66,
+"fuel_liters": 67.5,
+"co2_kg": 180.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-01",
+"route": "Route F",
+"ridership": 534,
+"on_time_pct": 87.8,
+"cost_usd": 165.42,
+"fuel_liters": 67.9,
+"co2_kg": 182.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-02",
+"route": "Route F",
+"ridership": 541,
+"on_time_pct": 87.9,
+"cost_usd": 166.47,
+"fuel_liters": 68.5,
+"co2_kg": 137.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-03",
+"route": "Route F",
+"ridership": 548,
+"on_time_pct": 88.1,
+"cost_usd": 167.37,
+"fuel_liters": 69.0,
+"co2_kg": 138.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-04",
+"route": "Route F",
+"ridership": 555,
+"on_time_pct": 88.2,
+"cost_usd": 168.28,
+"fuel_liters": 69.5,
+"co2_kg": 111.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-05",
+"route": "Route F",
+"ridership": 562,
+"on_time_pct": 88.3,
+"cost_usd": 169.18,
+"fuel_liters": 70.0,
+"co2_kg": 112.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-06",
+"route": "Route F",
+"ridership": 568,
+"on_time_pct": 88.5,
+"cost_usd": 170.08,
+"fuel_liters": 70.5,
+"co2_kg": 188.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-07",
+"route": "Route F",
+"ridership": 575,
+"on_time_pct": 88.6,
+"cost_usd": 170.99,
+"fuel_liters": 71.0,
+"co2_kg": 190.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-08",
+"route": "Route F",
+"ridership": 582,
+"on_time_pct": 88.7,
+"cost_usd": 171.89,
+"fuel_liters": 71.5,
+"co2_kg": 143.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-09",
+"route": "Route F",
+"ridership": 589,
+"on_time_pct": 88.9,
+"cost_usd": 172.94,
+"fuel_liters": 72.1,
+"co2_kg": 144.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-10",
+"route": "Route F",
+"ridership": 596,
+"on_time_pct": 89.0,
+"cost_usd": 173.84,
+"fuel_liters": 72.6,
+"co2_kg": 116.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-11",
+"route": "Route F",
+"ridership": 602,
+"on_time_pct": 89.1,
+"cost_usd": 174.6,
+"fuel_liters": 73.0,
+"co2_kg": 116.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-12",
+"route": "Route F",
+"ridership": 609,
+"on_time_pct": 89.3,
+"cost_usd": 175.65,
+"fuel_liters": 73.6,
+"co2_kg": 197.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-13",
+"route": "Route F",
+"ridership": 616,
+"on_time_pct": 89.4,
+"cost_usd": 176.55,
+"fuel_liters": 74.1,
+"co2_kg": 198.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-14",
+"route": "Route F",
+"ridership": 623,
+"on_time_pct": 89.6,
+"cost_usd": 177.46,
+"fuel_liters": 74.6,
+"co2_kg": 149.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-15",
+"route": "Route F",
+"ridership": 630,
+"on_time_pct": 89.7,
+"cost_usd": 178.36,
+"fuel_liters": 75.1,
+"co2_kg": 150.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-16",
+"route": "Route F",
+"ridership": 636,
+"on_time_pct": 89.8,
+"cost_usd": 179.26,
+"fuel_liters": 75.6,
+"co2_kg": 121.0,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-17",
+"route": "Route F",
+"ridership": 643,
+"on_time_pct": 90.0,
+"cost_usd": 180.17,
+"fuel_liters": 76.1,
+"co2_kg": 121.8,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-18",
+"route": "Route F",
+"ridership": 650,
+"on_time_pct": 90.1,
+"cost_usd": 181.07,
+"fuel_liters": 76.6,
+"co2_kg": 205.3,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-19",
+"route": "Route F",
+"ridership": 657,
+"on_time_pct": 90.2,
+"cost_usd": 182.12,
+"fuel_liters": 77.2,
+"co2_kg": 206.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-20",
+"route": "Route F",
+"ridership": 664,
+"on_time_pct": 90.4,
+"cost_usd": 183.02,
+"fuel_liters": 77.7,
+"co2_kg": 155.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-21",
+"route": "Route F",
+"ridership": 670,
+"on_time_pct": 90.5,
+"cost_usd": 183.78,
+"fuel_liters": 78.1,
+"co2_kg": 156.2,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-22",
+"route": "Route F",
+"ridership": 677,
+"on_time_pct": 90.6,
+"cost_usd": 184.83,
+"fuel_liters": 78.7,
+"co2_kg": 125.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-23",
+"route": "Route F",
+"ridership": 684,
+"on_time_pct": 90.8,
+"cost_usd": 185.73,
+"fuel_liters": 79.2,
+"co2_kg": 126.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-24",
+"route": "Route F",
+"ridership": 691,
+"on_time_pct": 90.9,
+"cost_usd": 186.64,
+"fuel_liters": 79.7,
+"co2_kg": 213.6,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-25",
+"route": "Route F",
+"ridership": 698,
+"on_time_pct": 91.0,
+"cost_usd": 187.54,
+"fuel_liters": 80.2,
+"co2_kg": 214.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-26",
+"route": "Route F",
+"ridership": 704,
+"on_time_pct": 91.2,
+"cost_usd": 188.44,
+"fuel_liters": 80.7,
+"co2_kg": 161.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-27",
+"route": "Route F",
+"ridership": 711,
+"on_time_pct": 91.3,
+"cost_usd": 189.35,
+"fuel_liters": 81.2,
+"co2_kg": 162.4,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-28",
+"route": "Route F",
+"ridership": 718,
+"on_time_pct": 91.5,
+"cost_usd": 190.25,
+"fuel_liters": 81.7,
+"co2_kg": 130.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-29",
+"route": "Route F",
+"ridership": 725,
+"on_time_pct": 91.6,
+"cost_usd": 191.3,
+"fuel_liters": 82.3,
+"co2_kg": 131.7,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-30",
+"route": "Route F",
+"ridership": 732,
+"on_time_pct": 91.7,
+"cost_usd": 192.2,
+"fuel_liters": 82.8,
+"co2_kg": 221.9,
+"headway_regularity": 0.85
+},
+{
+"date": "2025-03-31",
+"route": "Route F",
+"ridership": 738,
+"on_time_pct": 91.9,
+"cost_usd": 192.96,
+"fuel_liters": 83.2,
+"co2_kg": 223.0,
+"headway_regularity": 0.85
+}
+]

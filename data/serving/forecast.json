@@ -1,0 +1,3242 @@
+[
+{
+"date": "2025-01-01",
+"route": "Route A",
+"ridership_actual": 1388,
+"ridership_forecast": 1423
+},
+{
+"date": "2025-01-02",
+"route": "Route A",
+"ridership_actual": 1344,
+"ridership_forecast": 1366
+},
+{
+"date": "2025-01-03",
+"route": "Route A",
+"ridership_actual": 1204,
+"ridership_forecast": 1235
+},
+{
+"date": "2025-01-04",
+"route": "Route A",
+"ridership_actual": 968,
+"ridership_forecast": 1009
+},
+{
+"date": "2025-01-05",
+"route": "Route A",
+"ridership_actual": 861,
+"ridership_forecast": 835
+},
+{
+"date": "2025-01-06",
+"route": "Route A",
+"ridership_actual": 1237,
+"ridership_forecast": 1250
+},
+{
+"date": "2025-01-07",
+"route": "Route A",
+"ridership_actual": 1360,
+"ridership_forecast": 1365
+},
+{
+"date": "2025-01-08",
+"route": "Route A",
+"ridership_actual": 1262,
+"ridership_forecast": 1218
+},
+{
+"date": "2025-01-09",
+"route": "Route A",
+"ridership_actual": 1251,
+"ridership_forecast": 1296
+},
+{
+"date": "2025-01-10",
+"route": "Route A",
+"ridership_actual": 1171,
+"ridership_forecast": 1135
+},
+{
+"date": "2025-01-11",
+"route": "Route A",
+"ridership_actual": 966,
+"ridership_forecast": 965
+},
+{
+"date": "2025-01-12",
+"route": "Route A",
+"ridership_actual": 898,
+"ridership_forecast": 900
+},
+{
+"date": "2025-01-13",
+"route": "Route A",
+"ridership_actual": 1239,
+"ridership_forecast": 1231
+},
+{
+"date": "2025-01-14",
+"route": "Route A",
+"ridership_actual": 1284,
+"ridership_forecast": 1286
+},
+{
+"date": "2025-01-15",
+"route": "Route A",
+"ridership_actual": 719,
+"ridership_forecast": 710
+},
+{
+"date": "2025-01-16",
+"route": "Route A",
+"ridership_actual": 1283,
+"ridership_forecast": 1283
+},
+{
+"date": "2025-01-17",
+"route": "Route A",
+"ridership_actual": 1231,
+"ridership_forecast": 1226
+},
+{
+"date": "2025-01-18",
+"route": "Route A",
+"ridership_actual": 932,
+"ridership_forecast": 914
+},
+{
+"date": "2025-01-19",
+"route": "Route A",
+"ridership_actual": 911,
+"ridership_forecast": 956
+},
+{
+"date": "2025-01-20",
+"route": "Route A",
+"ridership_actual": 1199,
+"ridership_forecast": 1152
+},
+{
+"date": "2025-01-21",
+"route": "Route A",
+"ridership_actual": 1405,
+"ridership_forecast": 1428
+},
+{
+"date": "2025-01-22",
+"route": "Route A",
+"ridership_actual": 1374,
+"ridership_forecast": 1361
+},
+{
+"date": "2025-01-23",
+"route": "Route A",
+"ridership_actual": 1238,
+"ridership_forecast": 1230
+},
+{
+"date": "2025-01-24",
+"route": "Route A",
+"ridership_actual": 1211,
+"ridership_forecast": 1168
+},
+{
+"date": "2025-01-25",
+"route": "Route A",
+"ridership_actual": 909,
+"ridership_forecast": 897
+},
+{
+"date": "2025-01-26",
+"route": "Route A",
+"ridership_actual": 923,
+"ridership_forecast": 934
+},
+{
+"date": "2025-01-27",
+"route": "Route A",
+"ridership_actual": 1246,
+"ridership_forecast": 1219
+},
+{
+"date": "2025-01-28",
+"route": "Route A",
+"ridership_actual": 1430,
+"ridership_forecast": 1445
+},
+{
+"date": "2025-01-29",
+"route": "Route A",
+"ridership_actual": 1338,
+"ridership_forecast": 1319
+},
+{
+"date": "2025-01-30",
+"route": "Route A",
+"ridership_actual": 1354,
+"ridership_forecast": 1387
+},
+{
+"date": "2025-01-31",
+"route": "Route A",
+"ridership_actual": 1217,
+"ridership_forecast": 1169
+},
+{
+"date": "2025-02-01",
+"route": "Route A",
+"ridership_actual": 827,
+"ridership_forecast": 836
+},
+{
+"date": "2025-02-02",
+"route": "Route A",
+"ridership_actual": 957,
+"ridership_forecast": 998
+},
+{
+"date": "2025-02-03",
+"route": "Route A",
+"ridership_actual": 1289,
+"ridership_forecast": 1326
+},
+{
+"date": "2025-02-04",
+"route": "Route A",
+"ridership_actual": 1397,
+"ridership_forecast": 1387
+},
+{
+"date": "2025-02-05",
+"route": "Route A",
+"ridership_actual": 1418,
+"ridership_forecast": 1389
+},
+{
+"date": "2025-02-06",
+"route": "Route A",
+"ridership_actual": 1339,
+"ridership_forecast": 1368
+},
+{
+"date": "2025-02-07",
+"route": "Route A",
+"ridership_actual": 1095,
+"ridership_forecast": 1079
+},
+{
+"date": "2025-02-08",
+"route": "Route A",
+"ridership_actual": 903,
+"ridership_forecast": 904
+},
+{
+"date": "2025-02-09",
+"route": "Route A",
+"ridership_actual": 919,
+"ridership_forecast": 952
+},
+{
+"date": "2025-02-10",
+"route": "Route A",
+"ridership_actual": 1287,
+"ridership_forecast": 1242
+},
+{
+"date": "2025-02-11",
+"route": "Route A",
+"ridership_actual": 1471,
+"ridership_forecast": 1442
+},
+{
+"date": "2025-02-12",
+"route": "Route A",
+"ridership_actual": 1355,
+"ridership_forecast": 1394
+},
+{
+"date": "2025-02-13",
+"route": "Route A",
+"ridership_actual": 1404,
+"ridership_forecast": 1394
+},
+{
+"date": "2025-02-14",
+"route": "Route A",
+"ridership_actual": 1227,
+"ridership_forecast": 1212
+},
+{
+"date": "2025-02-15",
+"route": "Route A",
+"ridership_actual": 908,
+"ridership_forecast": 878
+},
+{
+"date": "2025-02-16",
+"route": "Route A",
+"ridership_actual": 876,
+"ridership_forecast": 895
+},
+{
+"date": "2025-02-17",
+"route": "Route A",
+"ridership_actual": 1284,
+"ridership_forecast": 1246
+},
+{
+"date": "2025-02-18",
+"route": "Route A",
+"ridership_actual": 1408,
+"ridership_forecast": 1365
+},
+{
+"date": "2025-02-19",
+"route": "Route A",
+"ridership_actual": 1412,
+"ridership_forecast": 1371
+},
+{
+"date": "2025-02-20",
+"route": "Route A",
+"ridership_actual": 1271,
+"ridership_forecast": 1279
+},
+{
+"date": "2025-02-21",
+"route": "Route A",
+"ridership_actual": 1245,
+"ridership_forecast": 1244
+},
+{
+"date": "2025-02-22",
+"route": "Route A",
+"ridership_actual": 898,
+"ridership_forecast": 910
+},
+{
+"date": "2025-02-23",
+"route": "Route A",
+"ridership_actual": 1037,
+"ridership_forecast": 1008
+},
+{
+"date": "2025-02-24",
+"route": "Route A",
+"ridership_actual": 1330,
+"ridership_forecast": 1315
+},
+{
+"date": "2025-02-25",
+"route": "Route A",
+"ridership_actual": 1283,
+"ridership_forecast": 1307
+},
+{
+"date": "2025-02-26",
+"route": "Route A",
+"ridership_actual": 1423,
+"ridership_forecast": 1431
+},
+{
+"date": "2025-02-27",
+"route": "Route A",
+"ridership_actual": 1352,
+"ridership_forecast": 1325
+},
+{
+"date": "2025-02-28",
+"route": "Route A",
+"ridership_actual": 1271,
+"ridership_forecast": 1268
+},
+{
+"date": "2025-03-01",
+"route": "Route A",
+"ridership_actual": 981,
+"ridership_forecast": 1026
+},
+{
+"date": "2025-03-02",
+"route": "Route A",
+"ridership_actual": 976,
+"ridership_forecast": 965
+},
+{
+"date": "2025-03-03",
+"route": "Route A",
+"ridership_actual": 1406,
+"ridership_forecast": 1412
+},
+{
+"date": "2025-03-04",
+"route": "Route A",
+"ridership_actual": 1440,
+"ridership_forecast": 1393
+},
+{
+"date": "2025-03-05",
+"route": "Route A",
+"ridership_actual": 1367,
+"ridership_forecast": 1352
+},
+{
+"date": "2025-03-06",
+"route": "Route A",
+"ridership_actual": 1376,
+"ridership_forecast": 1348
+},
+{
+"date": "2025-03-07",
+"route": "Route A",
+"ridership_actual": 1186,
+"ridership_forecast": 1140
+},
+{
+"date": "2025-03-08",
+"route": "Route A",
+"ridership_actual": 854,
+"ridership_forecast": 832
+},
+{
+"date": "2025-03-09",
+"route": "Route A",
+"ridership_actual": 878,
+"ridership_forecast": 851
+},
+{
+"date": "2025-03-10",
+"route": "Route A",
+"ridership_actual": 1282,
+"ridership_forecast": 1279
+},
+{
+"date": "2025-03-11",
+"route": "Route A",
+"ridership_actual": 1462,
+"ridership_forecast": 1448
+},
+{
+"date": "2025-03-12",
+"route": "Route A",
+"ridership_actual": 1448,
+"ridership_forecast": 1423
+},
+{
+"date": "2025-03-13",
+"route": "Route A",
+"ridership_actual": 1281,
+"ridership_forecast": 1322
+},
+{
+"date": "2025-03-14",
+"route": "Route A",
+"ridership_actual": 1302,
+"ridership_forecast": 1325
+},
+{
+"date": "2025-03-15",
+"route": "Route A",
+"ridership_actual": 848,
+"ridership_forecast": 835
+},
+{
+"date": "2025-03-16",
+"route": "Route A",
+"ridership_actual": 970,
+"ridership_forecast": 952
+},
+{
+"date": "2025-03-17",
+"route": "Route A",
+"ridership_actual": 1351,
+"ridership_forecast": 1311
+},
+{
+"date": "2025-03-18",
+"route": "Route A",
+"ridership_actual": 1379,
+"ridership_forecast": 1329
+},
+{
+"date": "2025-03-19",
+"route": "Route A",
+"ridership_actual": 1460,
+"ridership_forecast": 1505
+},
+{
+"date": "2025-03-20",
+"route": "Route A",
+"ridership_actual": 1497,
+"ridership_forecast": 1504
+},
+{
+"date": "2025-03-21",
+"route": "Route A",
+"ridership_actual": 1222,
+"ridership_forecast": 1228
+},
+{
+"date": "2025-03-22",
+"route": "Route A",
+"ridership_actual": 869,
+"ridership_forecast": 847
+},
+{
+"date": "2025-03-23",
+"route": "Route A",
+"ridership_actual": 1013,
+"ridership_forecast": 1058
+},
+{
+"date": "2025-03-24",
+"route": "Route A",
+"ridership_actual": 1400,
+"ridership_forecast": 1418
+},
+{
+"date": "2025-03-25",
+"route": "Route A",
+"ridership_actual": 1477,
+"ridership_forecast": 1428
+},
+{
+"date": "2025-03-26",
+"route": "Route A",
+"ridership_actual": 1435,
+"ridership_forecast": 1462
+},
+{
+"date": "2025-03-27",
+"route": "Route A",
+"ridership_actual": 1339,
+"ridership_forecast": 1355
+},
+{
+"date": "2025-03-28",
+"route": "Route A",
+"ridership_actual": 1295,
+"ridership_forecast": 1288
+},
+{
+"date": "2025-03-29",
+"route": "Route A",
+"ridership_actual": 949,
+"ridership_forecast": 954
+},
+{
+"date": "2025-03-30",
+"route": "Route A",
+"ridership_actual": 949,
+"ridership_forecast": 911
+},
+{
+"date": "2025-03-31",
+"route": "Route A",
+"ridership_actual": 1334,
+"ridership_forecast": 1354
+},
+{
+"date": "2025-01-01",
+"route": "Route B",
+"ridership_actual": 935,
+"ridership_forecast": 970
+},
+{
+"date": "2025-01-02",
+"route": "Route B",
+"ridership_actual": 955,
+"ridership_forecast": 977
+},
+{
+"date": "2025-01-03",
+"route": "Route B",
+"ridership_actual": 816,
+"ridership_forecast": 847
+},
+{
+"date": "2025-01-04",
+"route": "Route B",
+"ridership_actual": 644,
+"ridership_forecast": 685
+},
+{
+"date": "2025-01-05",
+"route": "Route B",
+"ridership_actual": 757,
+"ridership_forecast": 731
+},
+{
+"date": "2025-01-06",
+"route": "Route B",
+"ridership_actual": 847,
+"ridership_forecast": 860
+},
+{
+"date": "2025-01-07",
+"route": "Route B",
+"ridership_actual": 1056,
+"ridership_forecast": 1061
+},
+{
+"date": "2025-01-08",
+"route": "Route B",
+"ridership_actual": 907,
+"ridership_forecast": 863
+},
+{
+"date": "2025-01-09",
+"route": "Route B",
+"ridership_actual": 994,
+"ridership_forecast": 1039
+},
+{
+"date": "2025-01-10",
+"route": "Route B",
+"ridership_actual": 895,
+"ridership_forecast": 859
+},
+{
+"date": "2025-01-11",
+"route": "Route B",
+"ridership_actual": 627,
+"ridership_forecast": 626
+},
+{
+"date": "2025-01-12",
+"route": "Route B",
+"ridership_actual": 535,
+"ridership_forecast": 537
+},
+{
+"date": "2025-01-13",
+"route": "Route B",
+"ridership_actual": 897,
+"ridership_forecast": 889
+},
+{
+"date": "2025-01-14",
+"route": "Route B",
+"ridership_actual": 1040,
+"ridership_forecast": 1042
+},
+{
+"date": "2025-01-15",
+"route": "Route B",
+"ridership_actual": 569,
+"ridership_forecast": 560
+},
+{
+"date": "2025-01-16",
+"route": "Route B",
+"ridership_actual": 1007,
+"ridership_forecast": 1007
+},
+{
+"date": "2025-01-17",
+"route": "Route B",
+"ridership_actual": 932,
+"ridership_forecast": 927
+},
+{
+"date": "2025-01-18",
+"route": "Route B",
+"ridership_actual": 629,
+"ridership_forecast": 611
+},
+{
+"date": "2025-01-19",
+"route": "Route B",
+"ridership_actual": 694,
+"ridership_forecast": 739
+},
+{
+"date": "2025-01-20",
+"route": "Route B",
+"ridership_actual": 917,
+"ridership_forecast": 870
+},
+{
+"date": "2025-01-21",
+"route": "Route B",
+"ridership_actual": 977,
+"ridership_forecast": 1000
+},
+{
+"date": "2025-01-22",
+"route": "Route B",
+"ridership_actual": 1058,
+"ridership_forecast": 1045
+},
+{
+"date": "2025-01-23",
+"route": "Route B",
+"ridership_actual": 1044,
+"ridership_forecast": 1036
+},
+{
+"date": "2025-01-24",
+"route": "Route B",
+"ridership_actual": 878,
+"ridership_forecast": 835
+},
+{
+"date": "2025-01-25",
+"route": "Route B",
+"ridership_actual": 689,
+"ridership_forecast": 677
+},
+{
+"date": "2025-01-26",
+"route": "Route B",
+"ridership_actual": 679,
+"ridership_forecast": 690
+},
+{
+"date": "2025-01-27",
+"route": "Route B",
+"ridership_actual": 892,
+"ridership_forecast": 865
+},
+{
+"date": "2025-01-28",
+"route": "Route B",
+"ridership_actual": 993,
+"ridership_forecast": 1008
+},
+{
+"date": "2025-01-29",
+"route": "Route B",
+"ridership_actual": 1032,
+"ridership_forecast": 1013
+},
+{
+"date": "2025-01-30",
+"route": "Route B",
+"ridership_actual": 989,
+"ridership_forecast": 1022
+},
+{
+"date": "2025-01-31",
+"route": "Route B",
+"ridership_actual": 852,
+"ridership_forecast": 804
+},
+{
+"date": "2025-02-01",
+"route": "Route B",
+"ridership_actual": 714,
+"ridership_forecast": 723
+},
+{
+"date": "2025-02-02",
+"route": "Route B",
+"ridership_actual": 691,
+"ridership_forecast": 732
+},
+{
+"date": "2025-02-03",
+"route": "Route B",
+"ridership_actual": 981,
+"ridership_forecast": 1018
+},
+{
+"date": "2025-02-04",
+"route": "Route B",
+"ridership_actual": 1007,
+"ridership_forecast": 997
+},
+{
+"date": "2025-02-05",
+"route": "Route B",
+"ridership_actual": 988,
+"ridership_forecast": 959
+},
+{
+"date": "2025-02-06",
+"route": "Route B",
+"ridership_actual": 995,
+"ridership_forecast": 1024
+},
+{
+"date": "2025-02-07",
+"route": "Route B",
+"ridership_actual": 953,
+"ridership_forecast": 937
+},
+{
+"date": "2025-02-08",
+"route": "Route B",
+"ridership_actual": 715,
+"ridership_forecast": 716
+},
+{
+"date": "2025-02-09",
+"route": "Route B",
+"ridership_actual": 711,
+"ridership_forecast": 744
+},
+{
+"date": "2025-02-10",
+"route": "Route B",
+"ridership_actual": 933,
+"ridership_forecast": 888
+},
+{
+"date": "2025-02-11",
+"route": "Route B",
+"ridership_actual": 951,
+"ridership_forecast": 922
+},
+{
+"date": "2025-02-12",
+"route": "Route B",
+"ridership_actual": 958,
+"ridership_forecast": 997
+},
+{
+"date": "2025-02-13",
+"route": "Route B",
+"ridership_actual": 1015,
+"ridership_forecast": 1005
+},
+{
+"date": "2025-02-14",
+"route": "Route B",
+"ridership_actual": 927,
+"ridership_forecast": 912
+},
+{
+"date": "2025-02-15",
+"route": "Route B",
+"ridership_actual": 687,
+"ridership_forecast": 657
+},
+{
+"date": "2025-02-16",
+"route": "Route B",
+"ridership_actual": 703,
+"ridership_forecast": 722
+},
+{
+"date": "2025-02-17",
+"route": "Route B",
+"ridership_actual": 978,
+"ridership_forecast": 940
+},
+{
+"date": "2025-02-18",
+"route": "Route B",
+"ridership_actual": 956,
+"ridership_forecast": 913
+},
+{
+"date": "2025-02-19",
+"route": "Route B",
+"ridership_actual": 1027,
+"ridership_forecast": 986
+},
+{
+"date": "2025-02-20",
+"route": "Route B",
+"ridership_actual": 931,
+"ridership_forecast": 939
+},
+{
+"date": "2025-02-21",
+"route": "Route B",
+"ridership_actual": 915,
+"ridership_forecast": 914
+},
+{
+"date": "2025-02-22",
+"route": "Route B",
+"ridership_actual": 670,
+"ridership_forecast": 682
+},
+{
+"date": "2025-02-23",
+"route": "Route B",
+"ridership_actual": 638,
+"ridership_forecast": 609
+},
+{
+"date": "2025-02-24",
+"route": "Route B",
+"ridership_actual": 907,
+"ridership_forecast": 892
+},
+{
+"date": "2025-02-25",
+"route": "Route B",
+"ridership_actual": 1012,
+"ridership_forecast": 1036
+},
+{
+"date": "2025-02-26",
+"route": "Route B",
+"ridership_actual": 1052,
+"ridership_forecast": 1060
+},
+{
+"date": "2025-02-27",
+"route": "Route B",
+"ridership_actual": 973,
+"ridership_forecast": 946
+},
+{
+"date": "2025-02-28",
+"route": "Route B",
+"ridership_actual": 908,
+"ridership_forecast": 905
+},
+{
+"date": "2025-03-01",
+"route": "Route B",
+"ridership_actual": 710,
+"ridership_forecast": 755
+},
+{
+"date": "2025-03-02",
+"route": "Route B",
+"ridership_actual": 731,
+"ridership_forecast": 720
+},
+{
+"date": "2025-03-03",
+"route": "Route B",
+"ridership_actual": 939,
+"ridership_forecast": 945
+},
+{
+"date": "2025-03-04",
+"route": "Route B",
+"ridership_actual": 1035,
+"ridership_forecast": 988
+},
+{
+"date": "2025-03-05",
+"route": "Route B",
+"ridership_actual": 1029,
+"ridership_forecast": 1014
+},
+{
+"date": "2025-03-06",
+"route": "Route B",
+"ridership_actual": 983,
+"ridership_forecast": 955
+},
+{
+"date": "2025-03-07",
+"route": "Route B",
+"ridership_actual": 915,
+"ridership_forecast": 869
+},
+{
+"date": "2025-03-08",
+"route": "Route B",
+"ridership_actual": 764,
+"ridership_forecast": 742
+},
+{
+"date": "2025-03-09",
+"route": "Route B",
+"ridership_actual": 808,
+"ridership_forecast": 781
+},
+{
+"date": "2025-03-10",
+"route": "Route B",
+"ridership_actual": 988,
+"ridership_forecast": 985
+},
+{
+"date": "2025-03-11",
+"route": "Route B",
+"ridership_actual": 1108,
+"ridership_forecast": 1094
+},
+{
+"date": "2025-03-12",
+"route": "Route B",
+"ridership_actual": 987,
+"ridership_forecast": 962
+},
+{
+"date": "2025-03-13",
+"route": "Route B",
+"ridership_actual": 889,
+"ridership_forecast": 930
+},
+{
+"date": "2025-03-14",
+"route": "Route B",
+"ridership_actual": 885,
+"ridership_forecast": 908
+},
+{
+"date": "2025-03-15",
+"route": "Route B",
+"ridership_actual": 718,
+"ridership_forecast": 705
+},
+{
+"date": "2025-03-16",
+"route": "Route B",
+"ridership_actual": 758,
+"ridership_forecast": 740
+},
+{
+"date": "2025-03-17",
+"route": "Route B",
+"ridership_actual": 914,
+"ridership_forecast": 874
+},
+{
+"date": "2025-03-18",
+"route": "Route B",
+"ridership_actual": 955,
+"ridership_forecast": 905
+},
+{
+"date": "2025-03-19",
+"route": "Route B",
+"ridership_actual": 1083,
+"ridership_forecast": 1128
+},
+{
+"date": "2025-03-20",
+"route": "Route B",
+"ridership_actual": 912,
+"ridership_forecast": 919
+},
+{
+"date": "2025-03-21",
+"route": "Route B",
+"ridership_actual": 919,
+"ridership_forecast": 925
+},
+{
+"date": "2025-03-22",
+"route": "Route B",
+"ridership_actual": 635,
+"ridership_forecast": 613
+},
+{
+"date": "2025-03-23",
+"route": "Route B",
+"ridership_actual": 719,
+"ridership_forecast": 764
+},
+{
+"date": "2025-03-24",
+"route": "Route B",
+"ridership_actual": 939,
+"ridership_forecast": 957
+},
+{
+"date": "2025-03-25",
+"route": "Route B",
+"ridership_actual": 972,
+"ridership_forecast": 923
+},
+{
+"date": "2025-03-26",
+"route": "Route B",
+"ridership_actual": 1041,
+"ridership_forecast": 1068
+},
+{
+"date": "2025-03-27",
+"route": "Route B",
+"ridership_actual": 1027,
+"ridership_forecast": 1043
+},
+{
+"date": "2025-03-28",
+"route": "Route B",
+"ridership_actual": 859,
+"ridership_forecast": 852
+},
+{
+"date": "2025-03-29",
+"route": "Route B",
+"ridership_actual": 725,
+"ridership_forecast": 730
+},
+{
+"date": "2025-03-30",
+"route": "Route B",
+"ridership_actual": 792,
+"ridership_forecast": 754
+},
+{
+"date": "2025-03-31",
+"route": "Route B",
+"ridership_actual": 1017,
+"ridership_forecast": 1037
+},
+{
+"date": "2025-01-01",
+"route": "Route C",
+"ridership_actual": 712,
+"ridership_forecast": 747
+},
+{
+"date": "2025-01-02",
+"route": "Route C",
+"ridership_actual": 632,
+"ridership_forecast": 654
+},
+{
+"date": "2025-01-03",
+"route": "Route C",
+"ridership_actual": 616,
+"ridership_forecast": 647
+},
+{
+"date": "2025-01-04",
+"route": "Route C",
+"ridership_actual": 500,
+"ridership_forecast": 541
+},
+{
+"date": "2025-01-05",
+"route": "Route C",
+"ridership_actual": 591,
+"ridership_forecast": 565
+},
+{
+"date": "2025-01-06",
+"route": "Route C",
+"ridership_actual": 667,
+"ridership_forecast": 680
+},
+{
+"date": "2025-01-07",
+"route": "Route C",
+"ridership_actual": 713,
+"ridership_forecast": 718
+},
+{
+"date": "2025-01-08",
+"route": "Route C",
+"ridership_actual": 774,
+"ridership_forecast": 730
+},
+{
+"date": "2025-01-09",
+"route": "Route C",
+"ridership_actual": 656,
+"ridership_forecast": 701
+},
+{
+"date": "2025-01-10",
+"route": "Route C",
+"ridership_actual": 616,
+"ridership_forecast": 580
+},
+{
+"date": "2025-01-11",
+"route": "Route C",
+"ridership_actual": 558,
+"ridership_forecast": 557
+},
+{
+"date": "2025-01-12",
+"route": "Route C",
+"ridership_actual": 486,
+"ridership_forecast": 488
+},
+{
+"date": "2025-01-13",
+"route": "Route C",
+"ridership_actual": 649,
+"ridership_forecast": 641
+},
+{
+"date": "2025-01-14",
+"route": "Route C",
+"ridership_actual": 693,
+"ridership_forecast": 695
+},
+{
+"date": "2025-01-15",
+"route": "Route C",
+"ridership_actual": 473,
+"ridership_forecast": 464
+},
+{
+"date": "2025-01-16",
+"route": "Route C",
+"ridership_actual": 706,
+"ridership_forecast": 706
+},
+{
+"date": "2025-01-17",
+"route": "Route C",
+"ridership_actual": 642,
+"ridership_forecast": 637
+},
+{
+"date": "2025-01-18",
+"route": "Route C",
+"ridership_actual": 508,
+"ridership_forecast": 490
+},
+{
+"date": "2025-01-19",
+"route": "Route C",
+"ridership_actual": 555,
+"ridership_forecast": 600
+},
+{
+"date": "2025-01-20",
+"route": "Route C",
+"ridership_actual": 679,
+"ridership_forecast": 632
+},
+{
+"date": "2025-01-21",
+"route": "Route C",
+"ridership_actual": 659,
+"ridership_forecast": 682
+},
+{
+"date": "2025-01-22",
+"route": "Route C",
+"ridership_actual": 706,
+"ridership_forecast": 693
+},
+{
+"date": "2025-01-23",
+"route": "Route C",
+"ridership_actual": 673,
+"ridership_forecast": 665
+},
+{
+"date": "2025-01-24",
+"route": "Route C",
+"ridership_actual": 597,
+"ridership_forecast": 554
+},
+{
+"date": "2025-01-25",
+"route": "Route C",
+"ridership_actual": 540,
+"ridership_forecast": 528
+},
+{
+"date": "2025-01-26",
+"route": "Route C",
+"ridership_actual": 563,
+"ridership_forecast": 574
+},
+{
+"date": "2025-01-27",
+"route": "Route C",
+"ridership_actual": 677,
+"ridership_forecast": 650
+},
+{
+"date": "2025-01-28",
+"route": "Route C",
+"ridership_actual": 699,
+"ridership_forecast": 714
+},
+{
+"date": "2025-01-29",
+"route": "Route C",
+"ridership_actual": 703,
+"ridership_forecast": 684
+},
+{
+"date": "2025-01-30",
+"route": "Route C",
+"ridership_actual": 739,
+"ridership_forecast": 772
+},
+{
+"date": "2025-01-31",
+"route": "Route C",
+"ridership_actual": 687,
+"ridership_forecast": 639
+},
+{
+"date": "2025-02-01",
+"route": "Route C",
+"ridership_actual": 553,
+"ridership_forecast": 562
+},
+{
+"date": "2025-02-02",
+"route": "Route C",
+"ridership_actual": 457,
+"ridership_forecast": 498
+},
+{
+"date": "2025-02-03",
+"route": "Route C",
+"ridership_actual": 703,
+"ridership_forecast": 740
+},
+{
+"date": "2025-02-04",
+"route": "Route C",
+"ridership_actual": 739,
+"ridership_forecast": 729
+},
+{
+"date": "2025-02-05",
+"route": "Route C",
+"ridership_actual": 740,
+"ridership_forecast": 711
+},
+{
+"date": "2025-02-06",
+"route": "Route C",
+"ridership_actual": 749,
+"ridership_forecast": 778
+},
+{
+"date": "2025-02-07",
+"route": "Route C",
+"ridership_actual": 673,
+"ridership_forecast": 657
+},
+{
+"date": "2025-02-08",
+"route": "Route C",
+"ridership_actual": 520,
+"ridership_forecast": 521
+},
+{
+"date": "2025-02-09",
+"route": "Route C",
+"ridership_actual": 560,
+"ridership_forecast": 593
+},
+{
+"date": "2025-02-10",
+"route": "Route C",
+"ridership_actual": 696,
+"ridership_forecast": 651
+},
+{
+"date": "2025-02-11",
+"route": "Route C",
+"ridership_actual": 760,
+"ridership_forecast": 731
+},
+{
+"date": "2025-02-12",
+"route": "Route C",
+"ridership_actual": 783,
+"ridership_forecast": 822
+},
+{
+"date": "2025-02-13",
+"route": "Route C",
+"ridership_actual": 640,
+"ridership_forecast": 630
+},
+{
+"date": "2025-02-14",
+"route": "Route C",
+"ridership_actual": 599,
+"ridership_forecast": 584
+},
+{
+"date": "2025-02-15",
+"route": "Route C",
+"ridership_actual": 541,
+"ridership_forecast": 511
+},
+{
+"date": "2025-02-16",
+"route": "Route C",
+"ridership_actual": 561,
+"ridership_forecast": 580
+},
+{
+"date": "2025-02-17",
+"route": "Route C",
+"ridership_actual": 719,
+"ridership_forecast": 681
+},
+{
+"date": "2025-02-18",
+"route": "Route C",
+"ridership_actual": 742,
+"ridership_forecast": 699
+},
+{
+"date": "2025-02-19",
+"route": "Route C",
+"ridership_actual": 693,
+"ridership_forecast": 652
+},
+{
+"date": "2025-02-20",
+"route": "Route C",
+"ridership_actual": 727,
+"ridership_forecast": 735
+},
+{
+"date": "2025-02-21",
+"route": "Route C",
+"ridership_actual": 690,
+"ridership_forecast": 689
+},
+{
+"date": "2025-02-22",
+"route": "Route C",
+"ridership_actual": 549,
+"ridership_forecast": 561
+},
+{
+"date": "2025-02-23",
+"route": "Route C",
+"ridership_actual": 536,
+"ridership_forecast": 507
+},
+{
+"date": "2025-02-24",
+"route": "Route C",
+"ridership_actual": 723,
+"ridership_forecast": 708
+},
+{
+"date": "2025-02-25",
+"route": "Route C",
+"ridership_actual": 740,
+"ridership_forecast": 764
+},
+{
+"date": "2025-02-26",
+"route": "Route C",
+"ridership_actual": 766,
+"ridership_forecast": 774
+},
+{
+"date": "2025-02-27",
+"route": "Route C",
+"ridership_actual": 756,
+"ridership_forecast": 729
+},
+{
+"date": "2025-02-28",
+"route": "Route C",
+"ridership_actual": 662,
+"ridership_forecast": 659
+},
+{
+"date": "2025-03-01",
+"route": "Route C",
+"ridership_actual": 530,
+"ridership_forecast": 575
+},
+{
+"date": "2025-03-02",
+"route": "Route C",
+"ridership_actual": 582,
+"ridership_forecast": 571
+},
+{
+"date": "2025-03-03",
+"route": "Route C",
+"ridership_actual": 728,
+"ridership_forecast": 734
+},
+{
+"date": "2025-03-04",
+"route": "Route C",
+"ridership_actual": 756,
+"ridership_forecast": 709
+},
+{
+"date": "2025-03-05",
+"route": "Route C",
+"ridership_actual": 726,
+"ridership_forecast": 711
+},
+{
+"date": "2025-03-06",
+"route": "Route C",
+"ridership_actual": 661,
+"ridership_forecast": 633
+},
+{
+"date": "2025-03-07",
+"route": "Route C",
+"ridership_actual": 698,
+"ridership_forecast": 652
+},
+{
+"date": "2025-03-08",
+"route": "Route C",
+"ridership_actual": 558,
+"ridership_forecast": 536
+},
+{
+"date": "2025-03-09",
+"route": "Route C",
+"ridership_actual": 644,
+"ridership_forecast": 617
+},
+{
+"date": "2025-03-10",
+"route": "Route C",
+"ridership_actual": 705,
+"ridership_forecast": 702
+},
+{
+"date": "2025-03-11",
+"route": "Route C",
+"ridership_actual": 762,
+"ridership_forecast": 748
+},
+{
+"date": "2025-03-12",
+"route": "Route C",
+"ridership_actual": 729,
+"ridership_forecast": 704
+},
+{
+"date": "2025-03-13",
+"route": "Route C",
+"ridership_actual": 793,
+"ridership_forecast": 834
+},
+{
+"date": "2025-03-14",
+"route": "Route C",
+"ridership_actual": 735,
+"ridership_forecast": 758
+},
+{
+"date": "2025-03-15",
+"route": "Route C",
+"ridership_actual": 517,
+"ridership_forecast": 504
+},
+{
+"date": "2025-03-16",
+"route": "Route C",
+"ridership_actual": 563,
+"ridership_forecast": 545
+},
+{
+"date": "2025-03-17",
+"route": "Route C",
+"ridership_actual": 646,
+"ridership_forecast": 606
+},
+{
+"date": "2025-03-18",
+"route": "Route C",
+"ridership_actual": 744,
+"ridership_forecast": 694
+},
+{
+"date": "2025-03-19",
+"route": "Route C",
+"ridership_actual": 726,
+"ridership_forecast": 771
+},
+{
+"date": "2025-03-20",
+"route": "Route C",
+"ridership_actual": 760,
+"ridership_forecast": 767
+},
+{
+"date": "2025-03-21",
+"route": "Route C",
+"ridership_actual": 637,
+"ridership_forecast": 643
+},
+{
+"date": "2025-03-22",
+"route": "Route C",
+"ridership_actual": 543,
+"ridership_forecast": 521
+},
+{
+"date": "2025-03-23",
+"route": "Route C",
+"ridership_actual": 555,
+"ridership_forecast": 600
+},
+{
+"date": "2025-03-24",
+"route": "Route C",
+"ridership_actual": 700,
+"ridership_forecast": 718
+},
+{
+"date": "2025-03-25",
+"route": "Route C",
+"ridership_actual": 659,
+"ridership_forecast": 610
+},
+{
+"date": "2025-03-26",
+"route": "Route C",
+"ridership_actual": 757,
+"ridership_forecast": 784
+},
+{
+"date": "2025-03-27",
+"route": "Route C",
+"ridership_actual": 800,
+"ridership_forecast": 816
+},
+{
+"date": "2025-03-28",
+"route": "Route C",
+"ridership_actual": 677,
+"ridership_forecast": 670
+},
+{
+"date": "2025-03-29",
+"route": "Route C",
+"ridership_actual": 648,
+"ridership_forecast": 653
+},
+{
+"date": "2025-03-30",
+"route": "Route C",
+"ridership_actual": 568,
+"ridership_forecast": 530
+},
+{
+"date": "2025-03-31",
+"route": "Route C",
+"ridership_actual": 719,
+"ridership_forecast": 739
+},
+{
+"date": "2025-01-01",
+"route": "Route D",
+"ridership_actual": 601,
+"ridership_forecast": 636
+},
+{
+"date": "2025-01-02",
+"route": "Route D",
+"ridership_actual": 536,
+"ridership_forecast": 558
+},
+{
+"date": "2025-01-03",
+"route": "Route D",
+"ridership_actual": 536,
+"ridership_forecast": 567
+},
+{
+"date": "2025-01-04",
+"route": "Route D",
+"ridership_actual": 356,
+"ridership_forecast": 397
+},
+{
+"date": "2025-01-05",
+"route": "Route D",
+"ridership_actual": 349,
+"ridership_forecast": 323
+},
+{
+"date": "2025-01-06",
+"route": "Route D",
+"ridership_actual": 557,
+"ridership_forecast": 570
+},
+{
+"date": "2025-01-07",
+"route": "Route D",
+"ridership_actual": 597,
+"ridership_forecast": 602
+},
+{
+"date": "2025-01-08",
+"route": "Route D",
+"ridership_actual": 622,
+"ridership_forecast": 578
+},
+{
+"date": "2025-01-09",
+"route": "Route D",
+"ridership_actual": 579,
+"ridership_forecast": 624
+},
+{
+"date": "2025-01-10",
+"route": "Route D",
+"ridership_actual": 576,
+"ridership_forecast": 540
+},
+{
+"date": "2025-01-11",
+"route": "Route D",
+"ridership_actual": 312,
+"ridership_forecast": 311
+},
+{
+"date": "2025-01-12",
+"route": "Route D",
+"ridership_actual": 348,
+"ridership_forecast": 350
+},
+{
+"date": "2025-01-13",
+"route": "Route D",
+"ridership_actual": 568,
+"ridership_forecast": 560
+},
+{
+"date": "2025-01-14",
+"route": "Route D",
+"ridership_actual": 595,
+"ridership_forecast": 597
+},
+{
+"date": "2025-01-15",
+"route": "Route D",
+"ridership_actual": 284,
+"ridership_forecast": 275
+},
+{
+"date": "2025-01-16",
+"route": "Route D",
+"ridership_actual": 553,
+"ridership_forecast": 553
+},
+{
+"date": "2025-01-17",
+"route": "Route D",
+"ridership_actual": 513,
+"ridership_forecast": 508
+},
+{
+"date": "2025-01-18",
+"route": "Route D",
+"ridership_actual": 336,
+"ridership_forecast": 318
+},
+{
+"date": "2025-01-19",
+"route": "Route D",
+"ridership_actual": 378,
+"ridership_forecast": 423
+},
+{
+"date": "2025-01-20",
+"route": "Route D",
+"ridership_actual": 537,
+"ridership_forecast": 490
+},
+{
+"date": "2025-01-21",
+"route": "Route D",
+"ridership_actual": 579,
+"ridership_forecast": 602
+},
+{
+"date": "2025-01-22",
+"route": "Route D",
+"ridership_actual": 667,
+"ridership_forecast": 654
+},
+{
+"date": "2025-01-23",
+"route": "Route D",
+"ridership_actual": 608,
+"ridership_forecast": 600
+},
+{
+"date": "2025-01-24",
+"route": "Route D",
+"ridership_actual": 540,
+"ridership_forecast": 497
+},
+{
+"date": "2025-01-25",
+"route": "Route D",
+"ridership_actual": 346,
+"ridership_forecast": 334
+},
+{
+"date": "2025-01-26",
+"route": "Route D",
+"ridership_actual": 386,
+"ridership_forecast": 397
+},
+{
+"date": "2025-01-27",
+"route": "Route D",
+"ridership_actual": 577,
+"ridership_forecast": 550
+},
+{
+"date": "2025-01-28",
+"route": "Route D",
+"ridership_actual": 613,
+"ridership_forecast": 628
+},
+{
+"date": "2025-01-29",
+"route": "Route D",
+"ridership_actual": 588,
+"ridership_forecast": 569
+},
+{
+"date": "2025-01-30",
+"route": "Route D",
+"ridership_actual": 580,
+"ridership_forecast": 613
+},
+{
+"date": "2025-01-31",
+"route": "Route D",
+"ridership_actual": 548,
+"ridership_forecast": 500
+},
+{
+"date": "2025-02-01",
+"route": "Route D",
+"ridership_actual": 373,
+"ridership_forecast": 382
+},
+{
+"date": "2025-02-02",
+"route": "Route D",
+"ridership_actual": 384,
+"ridership_forecast": 425
+},
+{
+"date": "2025-02-03",
+"route": "Route D",
+"ridership_actual": 585,
+"ridership_forecast": 622
+},
+{
+"date": "2025-02-04",
+"route": "Route D",
+"ridership_actual": 599,
+"ridership_forecast": 589
+},
+{
+"date": "2025-02-05",
+"route": "Route D",
+"ridership_actual": 620,
+"ridership_forecast": 591
+},
+{
+"date": "2025-02-06",
+"route": "Route D",
+"ridership_actual": 592,
+"ridership_forecast": 621
+},
+{
+"date": "2025-02-07",
+"route": "Route D",
+"ridership_actual": 520,
+"ridership_forecast": 504
+},
+{
+"date": "2025-02-08",
+"route": "Route D",
+"ridership_actual": 365,
+"ridership_forecast": 366
+},
+{
+"date": "2025-02-09",
+"route": "Route D",
+"ridership_actual": 373,
+"ridership_forecast": 406
+},
+{
+"date": "2025-02-10",
+"route": "Route D",
+"ridership_actual": 591,
+"ridership_forecast": 546
+},
+{
+"date": "2025-02-11",
+"route": "Route D",
+"ridership_actual": 606,
+"ridership_forecast": 577
+},
+{
+"date": "2025-02-12",
+"route": "Route D",
+"ridership_actual": 602,
+"ridership_forecast": 641
+},
+{
+"date": "2025-02-13",
+"route": "Route D",
+"ridership_actual": 594,
+"ridership_forecast": 584
+},
+{
+"date": "2025-02-14",
+"route": "Route D",
+"ridership_actual": 581,
+"ridership_forecast": 566
+},
+{
+"date": "2025-02-15",
+"route": "Route D",
+"ridership_actual": 363,
+"ridership_forecast": 333
+},
+{
+"date": "2025-02-16",
+"route": "Route D",
+"ridership_actual": 410,
+"ridership_forecast": 429
+},
+{
+"date": "2025-02-17",
+"route": "Route D",
+"ridership_actual": 596,
+"ridership_forecast": 558
+},
+{
+"date": "2025-02-18",
+"route": "Route D",
+"ridership_actual": 614,
+"ridership_forecast": 571
+},
+{
+"date": "2025-02-19",
+"route": "Route D",
+"ridership_actual": 618,
+"ridership_forecast": 577
+},
+{
+"date": "2025-02-20",
+"route": "Route D",
+"ridership_actual": 579,
+"ridership_forecast": 587
+},
+{
+"date": "2025-02-21",
+"route": "Route D",
+"ridership_actual": 610,
+"ridership_forecast": 609
+},
+{
+"date": "2025-02-22",
+"route": "Route D",
+"ridership_actual": 359,
+"ridership_forecast": 371
+},
+{
+"date": "2025-02-23",
+"route": "Route D",
+"ridership_actual": 416,
+"ridership_forecast": 387
+},
+{
+"date": "2025-02-24",
+"route": "Route D",
+"ridership_actual": 563,
+"ridership_forecast": 548
+},
+{
+"date": "2025-02-25",
+"route": "Route D",
+"ridership_actual": 577,
+"ridership_forecast": 601
+},
+{
+"date": "2025-02-26",
+"route": "Route D",
+"ridership_actual": 594,
+"ridership_forecast": 602
+},
+{
+"date": "2025-02-27",
+"route": "Route D",
+"ridership_actual": 594,
+"ridership_forecast": 567
+},
+{
+"date": "2025-02-28",
+"route": "Route D",
+"ridership_actual": 594,
+"ridership_forecast": 591
+},
+{
+"date": "2025-03-01",
+"route": "Route D",
+"ridership_actual": 396,
+"ridership_forecast": 441
+},
+{
+"date": "2025-03-02",
+"route": "Route D",
+"ridership_actual": 377,
+"ridership_forecast": 366
+},
+{
+"date": "2025-03-03",
+"route": "Route D",
+"ridership_actual": 549,
+"ridership_forecast": 555
+},
+{
+"date": "2025-03-04",
+"route": "Route D",
+"ridership_actual": 618,
+"ridership_forecast": 571
+},
+{
+"date": "2025-03-05",
+"route": "Route D",
+"ridership_actual": 630,
+"ridership_forecast": 615
+},
+{
+"date": "2025-03-06",
+"route": "Route D",
+"ridership_actual": 582,
+"ridership_forecast": 554
+},
+{
+"date": "2025-03-07",
+"route": "Route D",
+"ridership_actual": 543,
+"ridership_forecast": 497
+},
+{
+"date": "2025-03-08",
+"route": "Route D",
+"ridership_actual": 358,
+"ridership_forecast": 336
+},
+{
+"date": "2025-03-09",
+"route": "Route D",
+"ridership_actual": 416,
+"ridership_forecast": 389
+},
+{
+"date": "2025-03-10",
+"route": "Route D",
+"ridership_actual": 559,
+"ridership_forecast": 556
+},
+{
+"date": "2025-03-11",
+"route": "Route D",
+"ridership_actual": 603,
+"ridership_forecast": 589
+},
+{
+"date": "2025-03-12",
+"route": "Route D",
+"ridership_actual": 631,
+"ridership_forecast": 606
+},
+{
+"date": "2025-03-13",
+"route": "Route D",
+"ridership_actual": 640,
+"ridership_forecast": 681
+},
+{
+"date": "2025-03-14",
+"route": "Route D",
+"ridership_actual": 546,
+"ridership_forecast": 569
+},
+{
+"date": "2025-03-15",
+"route": "Route D",
+"ridership_actual": 383,
+"ridership_forecast": 370
+},
+{
+"date": "2025-03-16",
+"route": "Route D",
+"ridership_actual": 399,
+"ridership_forecast": 381
+},
+{
+"date": "2025-03-17",
+"route": "Route D",
+"ridership_actual": 579,
+"ridership_forecast": 539
+},
+{
+"date": "2025-03-18",
+"route": "Route D",
+"ridership_actual": 585,
+"ridership_forecast": 535
+},
+{
+"date": "2025-03-19",
+"route": "Route D",
+"ridership_actual": 629,
+"ridership_forecast": 674
+},
+{
+"date": "2025-03-20",
+"route": "Route D",
+"ridership_actual": 592,
+"ridership_forecast": 599
+},
+{
+"date": "2025-03-21",
+"route": "Route D",
+"ridership_actual": 564,
+"ridership_forecast": 570
+},
+{
+"date": "2025-03-22",
+"route": "Route D",
+"ridership_actual": 441,
+"ridership_forecast": 419
+},
+{
+"date": "2025-03-23",
+"route": "Route D",
+"ridership_actual": 372,
+"ridership_forecast": 417
+},
+{
+"date": "2025-03-24",
+"route": "Route D",
+"ridership_actual": 603,
+"ridership_forecast": 621
+},
+{
+"date": "2025-03-25",
+"route": "Route D",
+"ridership_actual": 638,
+"ridership_forecast": 589
+},
+{
+"date": "2025-03-26",
+"route": "Route D",
+"ridership_actual": 648,
+"ridership_forecast": 675
+},
+{
+"date": "2025-03-27",
+"route": "Route D",
+"ridership_actual": 628,
+"ridership_forecast": 644
+},
+{
+"date": "2025-03-28",
+"route": "Route D",
+"ridership_actual": 594,
+"ridership_forecast": 587
+},
+{
+"date": "2025-03-29",
+"route": "Route D",
+"ridership_actual": 414,
+"ridership_forecast": 419
+},
+{
+"date": "2025-03-30",
+"route": "Route D",
+"ridership_actual": 382,
+"ridership_forecast": 344
+},
+{
+"date": "2025-03-31",
+"route": "Route D",
+"ridership_actual": 619,
+"ridership_forecast": 639
+},
+{
+"date": "2025-01-01",
+"route": "Route E",
+"ridership_actual": 851,
+"ridership_forecast": 886
+},
+{
+"date": "2025-01-02",
+"route": "Route E",
+"ridership_actual": 860,
+"ridership_forecast": 882
+},
+{
+"date": "2025-01-03",
+"route": "Route E",
+"ridership_actual": 868,
+"ridership_forecast": 899
+},
+{
+"date": "2025-01-04",
+"route": "Route E",
+"ridership_actual": 877,
+"ridership_forecast": 918
+},
+{
+"date": "2025-01-05",
+"route": "Route E",
+"ridership_actual": 885,
+"ridership_forecast": 859
+},
+{
+"date": "2025-01-06",
+"route": "Route E",
+"ridership_actual": 894,
+"ridership_forecast": 907
+},
+{
+"date": "2025-01-07",
+"route": "Route E",
+"ridership_actual": 902,
+"ridership_forecast": 907
+},
+{
+"date": "2025-01-08",
+"route": "Route E",
+"ridership_actual": 911,
+"ridership_forecast": 867
+},
+{
+"date": "2025-01-09",
+"route": "Route E",
+"ridership_actual": 919,
+"ridership_forecast": 964
+},
+{
+"date": "2025-01-10",
+"route": "Route E",
+"ridership_actual": 928,
+"ridership_forecast": 892
+},
+{
+"date": "2025-01-11",
+"route": "Route E",
+"ridership_actual": 936,
+"ridership_forecast": 935
+},
+{
+"date": "2025-01-12",
+"route": "Route E",
+"ridership_actual": 945,
+"ridership_forecast": 947
+},
+{
+"date": "2025-01-13",
+"route": "Route E",
+"ridership_actual": 953,
+"ridership_forecast": 945
+},
+{
+"date": "2025-01-14",
+"route": "Route E",
+"ridership_actual": 962,
+"ridership_forecast": 964
+},
+{
+"date": "2025-01-15",
+"route": "Route E",
+"ridership_actual": 970,
+"ridership_forecast": 961
+},
+{
+"date": "2025-01-16",
+"route": "Route E",
+"ridership_actual": 979,
+"ridership_forecast": 979
+},
+{
+"date": "2025-01-17",
+"route": "Route E",
+"ridership_actual": 987,
+"ridership_forecast": 982
+},
+{
+"date": "2025-01-18",
+"route": "Route E",
+"ridership_actual": 996,
+"ridership_forecast": 978
+},
+{
+"date": "2025-01-19",
+"route": "Route E",
+"ridership_actual": 1004,
+"ridership_forecast": 1049
+},
+{
+"date": "2025-01-20",
+"route": "Route E",
+"ridership_actual": 1013,
+"ridership_forecast": 966
+},
+{
+"date": "2025-01-21",
+"route": "Route E",
+"ridership_actual": 1021,
+"ridership_forecast": 1044
+},
+{
+"date": "2025-01-22",
+"route": "Route E",
+"ridership_actual": 1030,
+"ridership_forecast": 1017
+},
+{
+"date": "2025-01-23",
+"route": "Route E",
+"ridership_actual": 1038,
+"ridership_forecast": 1030
+},
+{
+"date": "2025-01-24",
+"route": "Route E",
+"ridership_actual": 1047,
+"ridership_forecast": 1004
+},
+{
+"date": "2025-01-25",
+"route": "Route E",
+"ridership_actual": 1055,
+"ridership_forecast": 1043
+},
+{
+"date": "2025-01-26",
+"route": "Route E",
+"ridership_actual": 1064,
+"ridership_forecast": 1075
+},
+{
+"date": "2025-01-27",
+"route": "Route E",
+"ridership_actual": 1072,
+"ridership_forecast": 1045
+},
+{
+"date": "2025-01-28",
+"route": "Route E",
+"ridership_actual": 1081,
+"ridership_forecast": 1096
+},
+{
+"date": "2025-01-29",
+"route": "Route E",
+"ridership_actual": 1089,
+"ridership_forecast": 1070
+},
+{
+"date": "2025-01-30",
+"route": "Route E",
+"ridership_actual": 1098,
+"ridership_forecast": 1131
+},
+{
+"date": "2025-01-31",
+"route": "Route E",
+"ridership_actual": 1106,
+"ridership_forecast": 1058
+},
+{
+"date": "2025-02-01",
+"route": "Route E",
+"ridership_actual": 1115,
+"ridership_forecast": 1124
+},
+{
+"date": "2025-02-02",
+"route": "Route E",
+"ridership_actual": 1123,
+"ridership_forecast": 1164
+},
+{
+"date": "2025-02-03",
+"route": "Route E",
+"ridership_actual": 1132,
+"ridership_forecast": 1169
+},
+{
+"date": "2025-02-04",
+"route": "Route E",
+"ridership_actual": 1140,
+"ridership_forecast": 1130
+},
+{
+"date": "2025-02-05",
+"route": "Route E",
+"ridership_actual": 1149,
+"ridership_forecast": 1120
+},
+{
+"date": "2025-02-06",
+"route": "Route E",
+"ridership_actual": 1157,
+"ridership_forecast": 1186
+},
+{
+"date": "2025-02-07",
+"route": "Route E",
+"ridership_actual": 1166,
+"ridership_forecast": 1150
+},
+{
+"date": "2025-02-08",
+"route": "Route E",
+"ridership_actual": 1174,
+"ridership_forecast": 1175
+},
+{
+"date": "2025-02-09",
+"route": "Route E",
+"ridership_actual": 1183,
+"ridership_forecast": 1216
+},
+{
+"date": "2025-02-10",
+"route": "Route E",
+"ridership_actual": 1191,
+"ridership_forecast": 1146
+},
+{
+"date": "2025-02-11",
+"route": "Route E",
+"ridership_actual": 1200,
+"ridership_forecast": 1171
+},
+{
+"date": "2025-02-12",
+"route": "Route E",
+"ridership_actual": 1208,
+"ridership_forecast": 1247
+},
+{
+"date": "2025-02-13",
+"route": "Route E",
+"ridership_actual": 1217,
+"ridership_forecast": 1207
+},
+{
+"date": "2025-02-14",
+"route": "Route E",
+"ridership_actual": 1225,
+"ridership_forecast": 1210
+},
+{
+"date": "2025-02-15",
+"route": "Route E",
+"ridership_actual": 1234,
+"ridership_forecast": 1204
+},
+{
+"date": "2025-02-16",
+"route": "Route E",
+"ridership_actual": 1242,
+"ridership_forecast": 1261
+},
+{
+"date": "2025-02-17",
+"route": "Route E",
+"ridership_actual": 1251,
+"ridership_forecast": 1213
+},
+{
+"date": "2025-02-18",
+"route": "Route E",
+"ridership_actual": 1259,
+"ridership_forecast": 1216
+},
+{
+"date": "2025-02-19",
+"route": "Route E",
+"ridership_actual": 1268,
+"ridership_forecast": 1227
+},
+{
+"date": "2025-02-20",
+"route": "Route E",
+"ridership_actual": 1276,
+"ridership_forecast": 1284
+},
+{
+"date": "2025-02-21",
+"route": "Route E",
+"ridership_actual": 1285,
+"ridership_forecast": 1284
+},
+{
+"date": "2025-02-22",
+"route": "Route E",
+"ridership_actual": 1293,
+"ridership_forecast": 1305
+},
+{
+"date": "2025-02-23",
+"route": "Route E",
+"ridership_actual": 1302,
+"ridership_forecast": 1273
+},
+{
+"date": "2025-02-24",
+"route": "Route E",
+"ridership_actual": 1310,
+"ridership_forecast": 1295
+},
+{
+"date": "2025-02-25",
+"route": "Route E",
+"ridership_actual": 1319,
+"ridership_forecast": 1343
+},
+{
+"date": "2025-02-26",
+"route": "Route E",
+"ridership_actual": 1327,
+"ridership_forecast": 1335
+},
+{
+"date": "2025-02-27",
+"route": "Route E",
+"ridership_actual": 1336,
+"ridership_forecast": 1309
+},
+{
+"date": "2025-02-28",
+"route": "Route E",
+"ridership_actual": 1344,
+"ridership_forecast": 1341
+},
+{
+"date": "2025-03-01",
+"route": "Route E",
+"ridership_actual": 853,
+"ridership_forecast": 898
+},
+{
+"date": "2025-03-02",
+"route": "Route E",
+"ridership_actual": 861,
+"ridership_forecast": 850
+},
+{
+"date": "2025-03-03",
+"route": "Route E",
+"ridership_actual": 870,
+"ridership_forecast": 876
+},
+{
+"date": "2025-03-04",
+"route": "Route E",
+"ridership_actual": 878,
+"ridership_forecast": 831
+},
+{
+"date": "2025-03-05",
+"route": "Route E",
+"ridership_actual": 887,
+"ridership_forecast": 872
+},
+{
+"date": "2025-03-06",
+"route": "Route E",
+"ridership_actual": 895,
+"ridership_forecast": 867
+},
+{
+"date": "2025-03-07",
+"route": "Route E",
+"ridership_actual": 904,
+"ridership_forecast": 858
+},
+{
+"date": "2025-03-08",
+"route": "Route E",
+"ridership_actual": 912,
+"ridership_forecast": 890
+},
+{
+"date": "2025-03-09",
+"route": "Route E",
+"ridership_actual": 921,
+"ridership_forecast": 894
+},
+{
+"date": "2025-03-10",
+"route": "Route E",
+"ridership_actual": 929,
+"ridership_forecast": 926
+},
+{
+"date": "2025-03-11",
+"route": "Route E",
+"ridership_actual": 938,
+"ridership_forecast": 924
+},
+{
+"date": "2025-03-12",
+"route": "Route E",
+"ridership_actual": 946,
+"ridership_forecast": 921
+},
+{
+"date": "2025-03-13",
+"route": "Route E",
+"ridership_actual": 955,
+"ridership_forecast": 996
+},
+{
+"date": "2025-03-14",
+"route": "Route E",
+"ridership_actual": 963,
+"ridership_forecast": 986
+},
+{
+"date": "2025-03-15",
+"route": "Route E",
+"ridership_actual": 972,
+"ridership_forecast": 959
+},
+{
+"date": "2025-03-16",
+"route": "Route E",
+"ridership_actual": 980,
+"ridership_forecast": 962
+},
+{
+"date": "2025-03-17",
+"route": "Route E",
+"ridership_actual": 989,
+"ridership_forecast": 949
+},
+{
+"date": "2025-03-18",
+"route": "Route E",
+"ridership_actual": 997,
+"ridership_forecast": 947
+},
+{
+"date": "2025-03-19",
+"route": "Route E",
+"ridership_actual": 1006,
+"ridership_forecast": 1051
+},
+{
+"date": "2025-03-20",
+"route": "Route E",
+"ridership_actual": 1014,
+"ridership_forecast": 1021
+},
+{
+"date": "2025-03-21",
+"route": "Route E",
+"ridership_actual": 1023,
+"ridership_forecast": 1029
+},
+{
+"date": "2025-03-22",
+"route": "Route E",
+"ridership_actual": 1031,
+"ridership_forecast": 1009
+},
+{
+"date": "2025-03-23",
+"route": "Route E",
+"ridership_actual": 1040,
+"ridership_forecast": 1085
+},
+{
+"date": "2025-03-24",
+"route": "Route E",
+"ridership_actual": 1048,
+"ridership_forecast": 1066
+},
+{
+"date": "2025-03-25",
+"route": "Route E",
+"ridership_actual": 1057,
+"ridership_forecast": 1008
+},
+{
+"date": "2025-03-26",
+"route": "Route E",
+"ridership_actual": 1065,
+"ridership_forecast": 1092
+},
+{
+"date": "2025-03-27",
+"route": "Route E",
+"ridership_actual": 1074,
+"ridership_forecast": 1090
+},
+{
+"date": "2025-03-28",
+"route": "Route E",
+"ridership_actual": 1082,
+"ridership_forecast": 1075
+},
+{
+"date": "2025-03-29",
+"route": "Route E",
+"ridership_actual": 1091,
+"ridership_forecast": 1096
+},
+{
+"date": "2025-03-30",
+"route": "Route E",
+"ridership_actual": 1099,
+"ridership_forecast": 1061
+},
+{
+"date": "2025-03-31",
+"route": "Route E",
+"ridership_actual": 1108,
+"ridership_forecast": 1128
+},
+{
+"date": "2025-01-01",
+"route": "Route F",
+"ridership_actual": 533,
+"ridership_forecast": 568
+},
+{
+"date": "2025-01-02",
+"route": "Route F",
+"ridership_actual": 540,
+"ridership_forecast": 562
+},
+{
+"date": "2025-01-03",
+"route": "Route F",
+"ridership_actual": 547,
+"ridership_forecast": 578
+},
+{
+"date": "2025-01-04",
+"route": "Route F",
+"ridership_actual": 554,
+"ridership_forecast": 595
+},
+{
+"date": "2025-01-05",
+"route": "Route F",
+"ridership_actual": 560,
+"ridership_forecast": 534
+},
+{
+"date": "2025-01-06",
+"route": "Route F",
+"ridership_actual": 567,
+"ridership_forecast": 580
+},
+{
+"date": "2025-01-07",
+"route": "Route F",
+"ridership_actual": 574,
+"ridership_forecast": 579
+},
+{
+"date": "2025-01-08",
+"route": "Route F",
+"ridership_actual": 581,
+"ridership_forecast": 537
+},
+{
+"date": "2025-01-09",
+"route": "Route F",
+"ridership_actual": 588,
+"ridership_forecast": 633
+},
+{
+"date": "2025-01-10",
+"route": "Route F",
+"ridership_actual": 594,
+"ridership_forecast": 558
+},
+{
+"date": "2025-01-11",
+"route": "Route F",
+"ridership_actual": 601,
+"ridership_forecast": 600
+},
+{
+"date": "2025-01-12",
+"route": "Route F",
+"ridership_actual": 608,
+"ridership_forecast": 610
+},
+{
+"date": "2025-01-13",
+"route": "Route F",
+"ridership_actual": 615,
+"ridership_forecast": 607
+},
+{
+"date": "2025-01-14",
+"route": "Route F",
+"ridership_actual": 622,
+"ridership_forecast": 624
+},
+{
+"date": "2025-01-15",
+"route": "Route F",
+"ridership_actual": 628,
+"ridership_forecast": 619
+},
+{
+"date": "2025-01-16",
+"route": "Route F",
+"ridership_actual": 635,
+"ridership_forecast": 635
+},
+{
+"date": "2025-01-17",
+"route": "Route F",
+"ridership_actual": 642,
+"ridership_forecast": 637
+},
+{
+"date": "2025-01-18",
+"route": "Route F",
+"ridership_actual": 649,
+"ridership_forecast": 631
+},
+{
+"date": "2025-01-19",
+"route": "Route F",
+"ridership_actual": 656,
+"ridership_forecast": 701
+},
+{
+"date": "2025-01-20",
+"route": "Route F",
+"ridership_actual": 662,
+"ridership_forecast": 615
+},
+{
+"date": "2025-01-21",
+"route": "Route F",
+"ridership_actual": 669,
+"ridership_forecast": 692
+},
+{
+"date": "2025-01-22",
+"route": "Route F",
+"ridership_actual": 676,
+"ridership_forecast": 663
+},
+{
+"date": "2025-01-23",
+"route": "Route F",
+"ridership_actual": 683,
+"ridership_forecast": 675
+},
+{
+"date": "2025-01-24",
+"route": "Route F",
+"ridership_actual": 690,
+"ridership_forecast": 647
+},
+{
+"date": "2025-01-25",
+"route": "Route F",
+"ridership_actual": 696,
+"ridership_forecast": 684
+},
+{
+"date": "2025-01-26",
+"route": "Route F",
+"ridership_actual": 703,
+"ridership_forecast": 714
+},
+{
+"date": "2025-01-27",
+"route": "Route F",
+"ridership_actual": 710,
+"ridership_forecast": 683
+},
+{
+"date": "2025-01-28",
+"route": "Route F",
+"ridership_actual": 717,
+"ridership_forecast": 732
+},
+{
+"date": "2025-01-29",
+"route": "Route F",
+"ridership_actual": 724,
+"ridership_forecast": 705
+},
+{
+"date": "2025-01-30",
+"route": "Route F",
+"ridership_actual": 730,
+"ridership_forecast": 763
+},
+{
+"date": "2025-01-31",
+"route": "Route F",
+"ridership_actual": 737,
+"ridership_forecast": 689
+},
+{
+"date": "2025-02-01",
+"route": "Route F",
+"ridership_actual": 744,
+"ridership_forecast": 753
+},
+{
+"date": "2025-02-02",
+"route": "Route F",
+"ridership_actual": 751,
+"ridership_forecast": 792
+},
+{
+"date": "2025-02-03",
+"route": "Route F",
+"ridership_actual": 758,
+"ridership_forecast": 795
+},
+{
+"date": "2025-02-04",
+"route": "Route F",
+"ridership_actual": 764,
+"ridership_forecast": 754
+},
+{
+"date": "2025-02-05",
+"route": "Route F",
+"ridership_actual": 771,
+"ridership_forecast": 742
+},
+{
+"date": "2025-02-06",
+"route": "Route F",
+"ridership_actual": 778,
+"ridership_forecast": 807
+},
+{
+"date": "2025-02-07",
+"route": "Route F",
+"ridership_actual": 785,
+"ridership_forecast": 769
+},
+{
+"date": "2025-02-08",
+"route": "Route F",
+"ridership_actual": 792,
+"ridership_forecast": 793
+},
+{
+"date": "2025-02-09",
+"route": "Route F",
+"ridership_actual": 798,
+"ridership_forecast": 831
+},
+{
+"date": "2025-02-10",
+"route": "Route F",
+"ridership_actual": 805,
+"ridership_forecast": 760
+},
+{
+"date": "2025-02-11",
+"route": "Route F",
+"ridership_actual": 812,
+"ridership_forecast": 783
+},
+{
+"date": "2025-02-12",
+"route": "Route F",
+"ridership_actual": 819,
+"ridership_forecast": 858
+},
+{
+"date": "2025-02-13",
+"route": "Route F",
+"ridership_actual": 826,
+"ridership_forecast": 816
+},
+{
+"date": "2025-02-14",
+"route": "Route F",
+"ridership_actual": 832,
+"ridership_forecast": 817
+},
+{
+"date": "2025-02-15",
+"route": "Route F",
+"ridership_actual": 839,
+"ridership_forecast": 809
+},
+{
+"date": "2025-02-16",
+"route": "Route F",
+"ridership_actual": 846,
+"ridership_forecast": 865
+},
+{
+"date": "2025-02-17",
+"route": "Route F",
+"ridership_actual": 853,
+"ridership_forecast": 815
+},
+{
+"date": "2025-02-18",
+"route": "Route F",
+"ridership_actual": 860,
+"ridership_forecast": 817
+},
+{
+"date": "2025-02-19",
+"route": "Route F",
+"ridership_actual": 866,
+"ridership_forecast": 825
+},
+{
+"date": "2025-02-20",
+"route": "Route F",
+"ridership_actual": 873,
+"ridership_forecast": 881
+},
+{
+"date": "2025-02-21",
+"route": "Route F",
+"ridership_actual": 880,
+"ridership_forecast": 879
+},
+{
+"date": "2025-02-22",
+"route": "Route F",
+"ridership_actual": 887,
+"ridership_forecast": 899
+},
+{
+"date": "2025-02-23",
+"route": "Route F",
+"ridership_actual": 894,
+"ridership_forecast": 865
+},
+{
+"date": "2025-02-24",
+"route": "Route F",
+"ridership_actual": 900,
+"ridership_forecast": 885
+},
+{
+"date": "2025-02-25",
+"route": "Route F",
+"ridership_actual": 907,
+"ridership_forecast": 931
+},
+{
+"date": "2025-02-26",
+"route": "Route F",
+"ridership_actual": 914,
+"ridership_forecast": 922
+},
+{
+"date": "2025-02-27",
+"route": "Route F",
+"ridership_actual": 521,
+"ridership_forecast": 494
+},
+{
+"date": "2025-02-28",
+"route": "Route F",
+"ridership_actual": 528,
+"ridership_forecast": 525
+},
+{
+"date": "2025-03-01",
+"route": "Route F",
+"ridership_actual": 534,
+"ridership_forecast": 579
+},
+{
+"date": "2025-03-02",
+"route": "Route F",
+"ridership_actual": 541,
+"ridership_forecast": 530
+},
+{
+"date": "2025-03-03",
+"route": "Route F",
+"ridership_actual": 548,
+"ridership_forecast": 554
+},
+{
+"date": "2025-03-04",
+"route": "Route F",
+"ridership_actual": 555,
+"ridership_forecast": 508
+},
+{
+"date": "2025-03-05",
+"route": "Route F",
+"ridership_actual": 562,
+"ridership_forecast": 547
+},
+{
+"date": "2025-03-06",
+"route": "Route F",
+"ridership_actual": 568,
+"ridership_forecast": 540
+},
+{
+"date": "2025-03-07",
+"route": "Route F",
+"ridership_actual": 575,
+"ridership_forecast": 529
+},
+{
+"date": "2025-03-08",
+"route": "Route F",
+"ridership_actual": 582,
+"ridership_forecast": 560
+},
+{
+"date": "2025-03-09",
+"route": "Route F",
+"ridership_actual": 589,
+"ridership_forecast": 562
+},
+{
+"date": "2025-03-10",
+"route": "Route F",
+"ridership_actual": 596,
+"ridership_forecast": 593
+},
+{
+"date": "2025-03-11",
+"route": "Route F",
+"ridership_actual": 602,
+"ridership_forecast": 588
+},
+{
+"date": "2025-03-12",
+"route": "Route F",
+"ridership_actual": 609,
+"ridership_forecast": 584
+},
+{
+"date": "2025-03-13",
+"route": "Route F",
+"ridership_actual": 616,
+"ridership_forecast": 657
+},
+{
+"date": "2025-03-14",
+"route": "Route F",
+"ridership_actual": 623,
+"ridership_forecast": 646
+},
+{
+"date": "2025-03-15",
+"route": "Route F",
+"ridership_actual": 630,
+"ridership_forecast": 617
+},
+{
+"date": "2025-03-16",
+"route": "Route F",
+"ridership_actual": 636,
+"ridership_forecast": 618
+},
+{
+"date": "2025-03-17",
+"route": "Route F",
+"ridership_actual": 643,
+"ridership_forecast": 603
+},
+{
+"date": "2025-03-18",
+"route": "Route F",
+"ridership_actual": 650,
+"ridership_forecast": 600
+},
+{
+"date": "2025-03-19",
+"route": "Route F",
+"ridership_actual": 657,
+"ridership_forecast": 702
+},
+{
+"date": "2025-03-20",
+"route": "Route F",
+"ridership_actual": 664,
+"ridership_forecast": 671
+},
+{
+"date": "2025-03-21",
+"route": "Route F",
+"ridership_actual": 670,
+"ridership_forecast": 676
+},
+{
+"date": "2025-03-22",
+"route": "Route F",
+"ridership_actual": 677,
+"ridership_forecast": 655
+},
+{
+"date": "2025-03-23",
+"route": "Route F",
+"ridership_actual": 684,
+"ridership_forecast": 729
+},
+{
+"date": "2025-03-24",
+"route": "Route F",
+"ridership_actual": 691,
+"ridership_forecast": 709
+},
+{
+"date": "2025-03-25",
+"route": "Route F",
+"ridership_actual": 698,
+"ridership_forecast": 649
+},
+{
+"date": "2025-03-26",
+"route": "Route F",
+"ridership_actual": 704,
+"ridership_forecast": 731
+},
+{
+"date": "2025-03-27",
+"route": "Route F",
+"ridership_actual": 711,
+"ridership_forecast": 727
+},
+{
+"date": "2025-03-28",
+"route": "Route F",
+"ridership_actual": 718,
+"ridership_forecast": 711
+},
+{
+"date": "2025-03-29",
+"route": "Route F",
+"ridership_actual": 725,
+"ridership_forecast": 730
+},
+{
+"date": "2025-03-30",
+"route": "Route F",
+"ridership_actual": 732,
+"ridership_forecast": 694
+},
+{
+"date": "2025-03-31",
+"route": "Route F",
+"ridership_actual": 738,
+"ridership_forecast": 758
+}
+]

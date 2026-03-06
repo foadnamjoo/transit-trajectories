@@ -26,17 +26,9 @@
     </div>
   </header>
 
-  <!-- Toolbar: Section, Route, Metric in one row -->
+  <!-- Toolbar: Route, Metric -->
   <section class="toolbar">
     <div class="container toolbar-inner toolbar-row" aria-label="Controls">
-      <div class="control">
-        <label for="section-select">View</label>
-        <select id="section-select" class="select" aria-label="Select section">
-          <option value="overview" selected>Performance overview</option>
-          <option value="map">Routes & map</option>
-          <option value="fleet">Fleet & emissions</option>
-        </select>
-      </div>
       <div class="control">
         <label for="dataset">Route</label>
         <select id="dataset" name="dataset" class="select">
@@ -58,91 +50,145 @@
     </div>
   </section>
 
-  <!-- Panel: Overview (charts only) -->
-  <section id="panel-overview" class="panel active" role="tabpanel" aria-labelledby="section-select">
+  <!-- KPI cards (Summary) -->
+  <div id="kpi-cards" class="container kpi-cards"></div>
 
-  <!-- 2x2 responsive grid -->
-  <main class="container charts">
-    <section class="chart-card">
+  <!-- Panel: Summary (overview + fleet/emissions) -->
+  <section id="panel-summary" class="panel active" role="main">
+
+  <!-- Chart toggles: when a chart is deselected it disappears; restore from here -->
+  <div class="container chart-restore-bar" id="chart-restore-bar" aria-label="Restore hidden charts"></div>
+  <!-- 10 plots (incl. Forecast & Data Quality); each can be shown/hidden -->
+  <main class="container charts-grid-10" id="charts-grid-10">
+    <section class="chart-card" data-chart="histogram">
       <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Histogram" /> Show</label>
         <h3>Histogram</h3>
-        <p class="caption">Distribution of the selected metric across 120 days.</p>
+        <p class="caption">Distribution of the selected metric.</p>
       </div>
       <div id="Histogram-div" class="chart-plot"></div>
     </section>
-
-    <section class="chart-card">
+    <section class="chart-card" data-chart="line">
       <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Line Chart" /> Show</label>
         <h3>Line Chart</h3>
-        <p class="caption">Time trend with color by day type; hover for details.</p>
+        <p class="caption">Time trend by day type.</p>
       </div>
       <div id="Linechart-div" class="chart-plot"></div>
     </section>
-
-    <section class="chart-card">
+    <section class="chart-card" data-chart="timeseries">
       <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Time series" /> Show</label>
         <h3>Time series</h3>
-        <p class="caption">Ridership and on-time % over time (two lines).</p>
+        <p class="caption">Ridership and on-time %.</p>
       </div>
       <div id="TimeSeries-div" class="chart-plot"></div>
     </section>
-
-    <section class="chart-card">
+    <section class="chart-card" data-chart="scatter">
       <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Scatterplot" /> Show</label>
         <h3>Scatterplot</h3>
-        <p class="caption">Ridership vs. on-time %, colored by day type.</p>
+        <p class="caption">Ridership vs. on-time %.</p>
       </div>
       <div id="Scatterplot-div" class="chart-plot"></div>
+    </section>
+    <section class="chart-card" data-chart="emissions">
+      <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Emissions" /> Show</label>
+        <h3>Emissions over time</h3>
+        <p class="caption">Daily CO₂ for selected route.</p>
+      </div>
+      <div id="FuelChart-div" class="chart-plot"></div>
+    </section>
+    <section class="chart-card" data-chart="cost">
+      <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Cost" /> Show</label>
+        <h3>Total cost by route</h3>
+        <p class="caption">Aggregate cost (USD).</p>
+      </div>
+      <div id="CostByRoute-div" class="chart-plot"></div>
+    </section>
+    <section class="chart-card" data-chart="vehicle">
+      <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Vehicle usage" /> Show</label>
+        <h3>Vehicle type usage</h3>
+        <p class="caption">Days by vehicle type.</p>
+      </div>
+      <div id="VehicleBreakdown-div" class="chart-plot"></div>
+    </section>
+    <section class="chart-card" data-chart="ridershipByRoute">
+      <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Ridership by route" /> Show</label>
+        <h3>Ridership by route</h3>
+        <p class="caption">Total ridership per route.</p>
+      </div>
+      <div id="RidershipByRoute-div" class="chart-plot"></div>
+    </section>
+    <section class="chart-card" data-chart="forecast">
+      <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Forecast" /> Show</label>
+        <h3>Forecast</h3>
+        <p class="caption">Ridership: actual vs forecast (selected route).</p>
+      </div>
+      <div id="SummaryForecast-div" class="chart-plot"></div>
+    </section>
+    <section class="chart-card" data-chart="quality">
+      <div class="chart-head">
+        <label class="chart-toggle"><input type="checkbox" checked aria-label="Show Data Quality" /> Show</label>
+        <h3>Data Quality</h3>
+        <p class="caption">Quality score by route and date (0–1).</p>
+      </div>
+      <div id="SummaryQuality-div" class="chart-plot"></div>
     </section>
   </main>
 
   </section>
-  <!-- end panel-overview -->
+  <!-- end panel-summary -->
 
-  <!-- Panel: City map & route trajectories -->
-  <section id="panel-map" class="panel" role="tabpanel" aria-labelledby="section-select">
-    <div class="container map-section">
-      <div class="chart-card map-card">
+  <!-- Panel: Forecast -->
+  <section id="panel-forecast" class="panel" role="region" aria-label="Forecast">
+    <div class="container">
+      <div class="chart-card">
         <div class="chart-head">
-          <h3>Route trajectories</h3>
-          <p class="caption">Salt Lake City transit routes (e.g. Route A: Airport → University). Toggle routes; click to highlight. S = Start, E = End.</p>
+          <h3>Ridership: actual vs forecast</h3>
+          <p class="caption">Pipeline forecast (e.g. seasonal naive) vs actual.</p>
         </div>
-        <div class="map-legend" id="map-legend"></div>
-        <div id="city-map-container" class="city-map-container">
-          <div id="city-map" class="city-map"></div>
+        <div id="ForecastChart-div" class="chart-plot"></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-head">
+          <h3>Anomalies (ridership / cost)</h3>
+          <p class="caption">Flagged by pipeline (IsolationForest).</p>
         </div>
+        <div id="Anomalies-list" class="anomalies-list"></div>
       </div>
     </div>
   </section>
 
-  <!-- Panel: Fleet & emissions -->
-  <section id="panel-fleet" class="panel" role="tabpanel" aria-labelledby="section-select">
-    <div class="container fleet-section">
-      <section class="chart-card">
+  <!-- Panel: Data Quality -->
+  <section id="panel-quality" class="panel" role="region" aria-label="Data Quality">
+    <div class="container">
+      <div class="chart-card">
         <div class="chart-head">
-          <h3>Emissions over time</h3>
-          <p class="caption">Daily tailpipe CO₂ and fuel for the selected route.</p>
+          <h3>Data quality score by route and date</h3>
+          <p class="caption">Completeness, validity, consistency (0–1).</p>
         </div>
-        <div id="FuelChart-div" class="chart-plot"></div>
-      </section>
-      <section class="chart-card">
-        <div class="chart-head">
-          <h3>Total cost by route</h3>
-          <p class="caption">Aggregate cost (USD) across the period for all routes.</p>
-        </div>
-        <div id="CostByRoute-div" class="chart-plot"></div>
-      </section>
-      <section class="chart-card">
-        <div class="chart-head">
-          <h3>Vehicle type usage</h3>
-          <p class="caption">Days operated by vehicle type for the selected route.</p>
-        </div>
-        <div id="VehicleBreakdown-div" class="chart-plot"></div>
-      </section>
+        <div id="Quality-heatmap" class="quality-heatmap"></div>
+      </div>
     </div>
   </section>
 
   <!-- Tooltip for charts -->
   <div id="tooltip" class="vis-tooltip" style="opacity:0"></div>
+
+  <!-- Chart zoom modal (click plot to open) -->
+  <div id="chart-modal" class="chart-modal" aria-hidden="true" role="dialog" aria-label="Chart zoom">
+    <div class="chart-modal-backdrop"></div>
+    <div class="chart-modal-content">
+      <button type="button" class="chart-modal-close" aria-label="Close">&times;</button>
+      <div class="chart-modal-title"></div>
+      <div class="chart-modal-body"></div>
+    </div>
+  </div>
 </body>
 </html>

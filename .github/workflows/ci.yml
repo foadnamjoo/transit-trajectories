@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Lint (compile)
+        run: python -m py_compile python/config.py python/stage_a_generate.py python/stage_b_clean.py python/stage_c_validate.py python/stage_d_metrics.py python/stage_e_forecast.py python/export_serving.py python/run_pipeline.py
+      - name: Run pipeline
+        run: python python/run_pipeline.py
+      - name: Run tests
+        run: python -m pytest tests/ -v --tb=short

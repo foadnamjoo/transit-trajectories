@@ -1,0 +1,4322 @@
+[
+{
+"date": "2025-01-01",
+"route": "Route A",
+"completeness": 0.4,
+"validity": 0.4,
+"consistency": 0.41,
+"quality_score": 0.4
+},
+{
+"date": "2025-01-02",
+"route": "Route A",
+"completeness": 0.96,
+"validity": 0.92,
+"consistency": 0.95,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-03",
+"route": "Route A",
+"completeness": 0.36,
+"validity": 0.36,
+"consistency": 0.37,
+"quality_score": 0.36
+},
+{
+"date": "2025-01-04",
+"route": "Route A",
+"completeness": 0.46,
+"validity": 0.45999999999999996,
+"consistency": 0.47,
+"quality_score": 0.46
+},
+{
+"date": "2025-01-05",
+"route": "Route A",
+"completeness": 0.92,
+"validity": 0.98,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-06",
+"route": "Route A",
+"completeness": 0.98,
+"validity": 0.92,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-07",
+"route": "Route A",
+"completeness": 0.9,
+"validity": 0.93,
+"consistency": 0.91,
+"quality_score": 0.91
+},
+{
+"date": "2025-01-08",
+"route": "Route A",
+"completeness": 0.96,
+"validity": 0.98,
+"consistency": 0.94,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-09",
+"route": "Route A",
+"completeness": 0.5,
+"validity": 0.5,
+"consistency": 0.51,
+"quality_score": 0.5
+},
+{
+"date": "2025-01-10",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-11",
+"route": "Route A",
+"completeness": 0.95,
+"validity": 0.9600000000000001,
+"consistency": 0.98,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-12",
+"route": "Route A",
+"completeness": 0.98,
+"validity": 0.99,
+"consistency": 0.88,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-13",
+"route": "Route A",
+"completeness": 0.99,
+"validity": 0.98,
+"consistency": 0.91,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-14",
+"route": "Route A",
+"completeness": 0.98,
+"validity": 0.99,
+"consistency": 0.88,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-15",
+"route": "Route A",
+"completeness": 0.98,
+"validity": 0.9700000000000001,
+"consistency": 0.9,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-16",
+"route": "Route A",
+"completeness": 0.96,
+"validity": 0.9700000000000001,
+"consistency": 0.99,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-17",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-18",
+"route": "Route A",
+"completeness": 1.0,
+"validity": 0.9700000000000001,
+"consistency": 0.94,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-19",
+"route": "Route A",
+"completeness": 0.5,
+"validity": 0.5,
+"consistency": 0.51,
+"quality_score": 0.5
+},
+{
+"date": "2025-01-20",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.9500000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-21",
+"route": "Route A",
+"completeness": 0.97,
+"validity": 0.93,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-22",
+"route": "Route A",
+"completeness": 0.94,
+"validity": 0.93,
+"consistency": 0.99,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-23",
+"route": "Route A",
+"completeness": 0.99,
+"validity": 0.98,
+"consistency": 0.91,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-24",
+"route": "Route A",
+"completeness": 0.97,
+"validity": 0.99,
+"consistency": 0.95,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-25",
+"route": "Route A",
+"completeness": 0.95,
+"validity": 0.9400000000000001,
+"consistency": 1.0,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-26",
+"route": "Route A",
+"completeness": 0.96,
+"validity": 0.99,
+"consistency": 0.97,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-27",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.9700000000000001,
+"consistency": 0.98,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-28",
+"route": "Route A",
+"completeness": 1.0,
+"validity": 0.9400000000000001,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-29",
+"route": "Route A",
+"completeness": 0.99,
+"validity": 0.9600000000000001,
+"consistency": 0.93,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-30",
+"route": "Route A",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-01-31",
+"route": "Route A",
+"completeness": 0.92,
+"validity": 0.9400000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-01",
+"route": "Route A",
+"completeness": 0.94,
+"validity": 0.9700000000000001,
+"consistency": 0.95,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-02",
+"route": "Route A",
+"completeness": 0.46,
+"validity": 0.45999999999999996,
+"consistency": 0.47,
+"quality_score": 0.46
+},
+{
+"date": "2025-02-03",
+"route": "Route A",
+"completeness": 0.42,
+"validity": 0.42,
+"consistency": 0.43,
+"quality_score": 0.42
+},
+{
+"date": "2025-02-04",
+"route": "Route A",
+"completeness": 0.97,
+"validity": 0.9600000000000001,
+"consistency": 0.89,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-05",
+"route": "Route A",
+"completeness": 1.0,
+"validity": 0.9500000000000001,
+"consistency": 0.96,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-06",
+"route": "Route A",
+"completeness": 0.34,
+"validity": 0.33999999999999997,
+"consistency": 0.35,
+"quality_score": 0.34
+},
+{
+"date": "2025-02-07",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.99,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-08",
+"route": "Route A",
+"completeness": 0.97,
+"validity": 0.98,
+"consistency": 1.0,
+"quality_score": 0.98
+},
+{
+"date": "2025-02-09",
+"route": "Route A",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-02-10",
+"route": "Route A",
+"completeness": 0.95,
+"validity": 0.9700000000000001,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-11",
+"route": "Route A",
+"completeness": 1.0,
+"validity": 0.9500000000000001,
+"consistency": 0.96,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-12",
+"route": "Route A",
+"completeness": 0.44,
+"validity": 0.44,
+"consistency": 0.45,
+"quality_score": 0.44
+},
+{
+"date": "2025-02-13",
+"route": "Route A",
+"completeness": 0.97,
+"validity": 0.9600000000000001,
+"consistency": 0.89,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-14",
+"route": "Route A",
+"completeness": 0.92,
+"validity": 1.0,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-15",
+"route": "Route A",
+"completeness": 0.99,
+"validity": 0.9400000000000001,
+"consistency": 0.95,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-16",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.98,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-17",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.9500000000000001,
+"consistency": 1.0,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-18",
+"route": "Route A",
+"completeness": 0.97,
+"validity": 0.99,
+"consistency": 0.95,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-19",
+"route": "Route A",
+"completeness": 0.99,
+"validity": 0.92,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-20",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.9600000000000001,
+"consistency": 0.94,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-21",
+"route": "Route A",
+"completeness": 0.95,
+"validity": 0.9600000000000001,
+"consistency": 0.98,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-22",
+"route": "Route A",
+"completeness": 0.97,
+"validity": 1.0,
+"consistency": 0.98,
+"quality_score": 0.98
+},
+{
+"date": "2025-02-23",
+"route": "Route A",
+"completeness": 1.0,
+"validity": 0.9500000000000001,
+"consistency": 0.96,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-24",
+"route": "Route A",
+"completeness": 0.92,
+"validity": 1.0,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-25",
+"route": "Route A",
+"completeness": 0.98,
+"validity": 0.9400000000000001,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-26",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.9600000000000001,
+"consistency": 0.94,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-27",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.9700000000000001,
+"consistency": 0.98,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-28",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.9400000000000001,
+"consistency": 0.96,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-01",
+"route": "Route A",
+"completeness": 0.5,
+"validity": 0.5,
+"consistency": 0.51,
+"quality_score": 0.5
+},
+{
+"date": "2025-03-02",
+"route": "Route A",
+"completeness": 0.96,
+"validity": 0.9500000000000001,
+"consistency": 0.88,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-03",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.9400000000000001,
+"consistency": 0.92,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-04",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.9500000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-05",
+"route": "Route A",
+"completeness": 0.92,
+"validity": 1.0,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-06",
+"route": "Route A",
+"completeness": 0.9,
+"validity": 0.9600000000000001,
+"consistency": 0.97,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-07",
+"route": "Route A",
+"completeness": 0.94,
+"validity": 0.9600000000000001,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-08",
+"route": "Route A",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-09",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.9700000000000001,
+"consistency": 0.98,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-10",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.9400000000000001,
+"consistency": 0.96,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-11",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.92,
+"consistency": 0.98,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-12",
+"route": "Route A",
+"completeness": 0.93,
+"validity": 0.99,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-13",
+"route": "Route A",
+"completeness": 0.46,
+"validity": 0.45999999999999996,
+"consistency": 0.47,
+"quality_score": 0.46
+},
+{
+"date": "2025-03-14",
+"route": "Route A",
+"completeness": 0.97,
+"validity": 0.93,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-15",
+"route": "Route A",
+"completeness": 0.94,
+"validity": 0.93,
+"consistency": 0.99,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-16",
+"route": "Route A",
+"completeness": 1.0,
+"validity": 0.9700000000000001,
+"consistency": 0.94,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-17",
+"route": "Route A",
+"completeness": 1.0,
+"validity": 0.93,
+"consistency": 0.98,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-18",
+"route": "Route A",
+"completeness": 0.9,
+"validity": 0.92,
+"consistency": 0.88,
+"quality_score": 0.9
+},
+{
+"date": "2025-03-19",
+"route": "Route A",
+"completeness": 0.5,
+"validity": 0.5,
+"consistency": 0.51,
+"quality_score": 0.5
+},
+{
+"date": "2025-03-20",
+"route": "Route A",
+"completeness": 0.92,
+"validity": 0.9500000000000001,
+"consistency": 0.93,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-21",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.9400000000000001,
+"consistency": 0.92,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-22",
+"route": "Route A",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-23",
+"route": "Route A",
+"completeness": 0.5,
+"validity": 0.5,
+"consistency": 0.51,
+"quality_score": 0.5
+},
+{
+"date": "2025-03-24",
+"route": "Route A",
+"completeness": 0.92,
+"validity": 0.9700000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-25",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.93,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-26",
+"route": "Route A",
+"completeness": 0.32,
+"validity": 0.32,
+"consistency": 0.33,
+"quality_score": 0.32
+},
+{
+"date": "2025-03-27",
+"route": "Route A",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-28",
+"route": "Route A",
+"completeness": 1.0,
+"validity": 0.99,
+"consistency": 0.92,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-29",
+"route": "Route A",
+"completeness": 0.9,
+"validity": 0.93,
+"consistency": 0.91,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-30",
+"route": "Route A",
+"completeness": 0.91,
+"validity": 0.9500000000000001,
+"consistency": 1.0,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-31",
+"route": "Route A",
+"completeness": 0.94,
+"validity": 0.99,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-01",
+"route": "Route B",
+"completeness": 0.95,
+"validity": 0.99,
+"consistency": 0.91,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-02",
+"route": "Route B",
+"completeness": 0.93,
+"validity": 0.9500000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-03",
+"route": "Route B",
+"completeness": 0.91,
+"validity": 0.9500000000000001,
+"consistency": 1.0,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-04",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.9600000000000001,
+"consistency": 0.97,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-05",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.93,
+"consistency": 0.91,
+"quality_score": 0.91
+},
+{
+"date": "2025-01-06",
+"route": "Route B",
+"completeness": 0.49,
+"validity": 0.49,
+"consistency": 0.5,
+"quality_score": 0.49
+},
+{
+"date": "2025-01-07",
+"route": "Route B",
+"completeness": 0.41,
+"validity": 0.41,
+"consistency": 0.42,
+"quality_score": 0.41
+},
+{
+"date": "2025-01-08",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 0.93,
+"consistency": 0.99,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-09",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 1.0,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-10",
+"route": "Route B",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-11",
+"route": "Route B",
+"completeness": 0.35,
+"validity": 0.35,
+"consistency": 0.36,
+"quality_score": 0.35
+},
+{
+"date": "2025-01-12",
+"route": "Route B",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-01-13",
+"route": "Route B",
+"completeness": 0.97,
+"validity": 0.93,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-14",
+"route": "Route B",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-01-15",
+"route": "Route B",
+"completeness": 0.96,
+"validity": 0.92,
+"consistency": 0.95,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-16",
+"route": "Route B",
+"completeness": 0.36,
+"validity": 0.36,
+"consistency": 0.37,
+"quality_score": 0.36
+},
+{
+"date": "2025-01-17",
+"route": "Route B",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-01-18",
+"route": "Route B",
+"completeness": 0.98,
+"validity": 0.92,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-19",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 1.0,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-20",
+"route": "Route B",
+"completeness": 0.91,
+"validity": 0.99,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-21",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 0.9600000000000001,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-22",
+"route": "Route B",
+"completeness": 0.92,
+"validity": 0.9700000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-23",
+"route": "Route B",
+"completeness": 0.97,
+"validity": 0.93,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-24",
+"route": "Route B",
+"completeness": 0.95,
+"validity": 0.9400000000000001,
+"consistency": 1.0,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-25",
+"route": "Route B",
+"completeness": 0.93,
+"validity": 0.98,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-26",
+"route": "Route B",
+"completeness": 0.47,
+"validity": 0.47,
+"consistency": 0.48,
+"quality_score": 0.47
+},
+{
+"date": "2025-01-27",
+"route": "Route B",
+"completeness": 1.0,
+"validity": 0.92,
+"consistency": 0.9,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-28",
+"route": "Route B",
+"completeness": 0.51,
+"validity": 0.51,
+"consistency": 0.52,
+"quality_score": 0.51
+},
+{
+"date": "2025-01-29",
+"route": "Route B",
+"completeness": 0.97,
+"validity": 1.0,
+"consistency": 0.98,
+"quality_score": 0.98
+},
+{
+"date": "2025-01-30",
+"route": "Route B",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-31",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.98,
+"consistency": 0.95,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-01",
+"route": "Route B",
+"completeness": 0.45,
+"validity": 0.44999999999999996,
+"consistency": 0.46,
+"quality_score": 0.45
+},
+{
+"date": "2025-02-02",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.9600000000000001,
+"consistency": 0.97,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-03",
+"route": "Route B",
+"completeness": 0.97,
+"validity": 0.92,
+"consistency": 0.93,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-04",
+"route": "Route B",
+"completeness": 0.95,
+"validity": 1.0,
+"consistency": 0.94,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-05",
+"route": "Route B",
+"completeness": 0.98,
+"validity": 0.99,
+"consistency": 0.88,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-06",
+"route": "Route B",
+"completeness": 1.0,
+"validity": 0.93,
+"consistency": 0.98,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-07",
+"route": "Route B",
+"completeness": 1.0,
+"validity": 0.9400000000000001,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-08",
+"route": "Route B",
+"completeness": 0.37,
+"validity": 0.37,
+"consistency": 0.38,
+"quality_score": 0.37
+},
+{
+"date": "2025-02-09",
+"route": "Route B",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-10",
+"route": "Route B",
+"completeness": 0.93,
+"validity": 0.92,
+"consistency": 0.98,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-11",
+"route": "Route B",
+"completeness": 0.98,
+"validity": 0.99,
+"consistency": 0.88,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-12",
+"route": "Route B",
+"completeness": 0.99,
+"validity": 0.9400000000000001,
+"consistency": 0.95,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-13",
+"route": "Route B",
+"completeness": 0.95,
+"validity": 1.0,
+"consistency": 0.94,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-14",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-02-15",
+"route": "Route B",
+"completeness": 0.97,
+"validity": 0.98,
+"consistency": 1.0,
+"quality_score": 0.98
+},
+{
+"date": "2025-02-16",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.92,
+"consistency": 0.88,
+"quality_score": 0.9
+},
+{
+"date": "2025-02-17",
+"route": "Route B",
+"completeness": 1.0,
+"validity": 0.99,
+"consistency": 0.92,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-18",
+"route": "Route B",
+"completeness": 0.95,
+"validity": 0.9400000000000001,
+"consistency": 1.0,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-19",
+"route": "Route B",
+"completeness": 0.97,
+"validity": 0.9600000000000001,
+"consistency": 0.89,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-20",
+"route": "Route B",
+"completeness": 0.44,
+"validity": 0.44,
+"consistency": 0.45,
+"quality_score": 0.44
+},
+{
+"date": "2025-02-21",
+"route": "Route B",
+"completeness": 0.35,
+"validity": 0.35,
+"consistency": 0.36,
+"quality_score": 0.35
+},
+{
+"date": "2025-02-22",
+"route": "Route B",
+"completeness": 0.48,
+"validity": 0.48,
+"consistency": 0.49,
+"quality_score": 0.48
+},
+{
+"date": "2025-02-23",
+"route": "Route B",
+"completeness": 0.98,
+"validity": 0.99,
+"consistency": 0.88,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-24",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-02-25",
+"route": "Route B",
+"completeness": 0.95,
+"validity": 0.9700000000000001,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-26",
+"route": "Route B",
+"completeness": 0.44,
+"validity": 0.44,
+"consistency": 0.45,
+"quality_score": 0.44
+},
+{
+"date": "2025-02-27",
+"route": "Route B",
+"completeness": 1.0,
+"validity": 0.92,
+"consistency": 0.9,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-28",
+"route": "Route B",
+"completeness": 0.33,
+"validity": 0.32999999999999996,
+"consistency": 0.34,
+"quality_score": 0.33
+},
+{
+"date": "2025-03-01",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 1.0,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-02",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 0.99,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-03",
+"route": "Route B",
+"completeness": 0.42,
+"validity": 0.42,
+"consistency": 0.43,
+"quality_score": 0.42
+},
+{
+"date": "2025-03-04",
+"route": "Route B",
+"completeness": 0.91,
+"validity": 0.99,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-05",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-06",
+"route": "Route B",
+"completeness": 0.99,
+"validity": 1.0,
+"consistency": 0.89,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-07",
+"route": "Route B",
+"completeness": 0.92,
+"validity": 1.0,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-08",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 0.9700000000000001,
+"consistency": 0.95,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-09",
+"route": "Route B",
+"completeness": 1.0,
+"validity": 0.92,
+"consistency": 0.9,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-10",
+"route": "Route B",
+"completeness": 0.33,
+"validity": 0.32999999999999996,
+"consistency": 0.34,
+"quality_score": 0.33
+},
+{
+"date": "2025-03-11",
+"route": "Route B",
+"completeness": 0.91,
+"validity": 0.9600000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-12",
+"route": "Route B",
+"completeness": 0.91,
+"validity": 0.9400000000000001,
+"consistency": 0.92,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-13",
+"route": "Route B",
+"completeness": 0.9,
+"validity": 0.9600000000000001,
+"consistency": 0.97,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-14",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 0.9600000000000001,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-15",
+"route": "Route B",
+"completeness": 0.92,
+"validity": 0.9700000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-16",
+"route": "Route B",
+"completeness": 0.98,
+"validity": 0.92,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-17",
+"route": "Route B",
+"completeness": 0.98,
+"validity": 0.9700000000000001,
+"consistency": 0.9,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-18",
+"route": "Route B",
+"completeness": 0.99,
+"validity": 0.9600000000000001,
+"consistency": 0.93,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-19",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 1.0,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-20",
+"route": "Route B",
+"completeness": 0.43,
+"validity": 0.43,
+"consistency": 0.44,
+"quality_score": 0.43
+},
+{
+"date": "2025-03-21",
+"route": "Route B",
+"completeness": 0.42,
+"validity": 0.42,
+"consistency": 0.43,
+"quality_score": 0.42
+},
+{
+"date": "2025-03-22",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 0.9700000000000001,
+"consistency": 0.95,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-23",
+"route": "Route B",
+"completeness": 0.94,
+"validity": 1.0,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-24",
+"route": "Route B",
+"completeness": 0.54,
+"validity": 0.54,
+"consistency": 0.22,
+"quality_score": 0.43
+},
+{
+"date": "2025-03-25",
+"route": "Route B",
+"completeness": 1.0,
+"validity": 0.9700000000000001,
+"consistency": 0.94,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-26",
+"route": "Route B",
+"completeness": 0.98,
+"validity": 1.0,
+"consistency": 0.96,
+"quality_score": 0.98
+},
+{
+"date": "2025-03-27",
+"route": "Route B",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-03-28",
+"route": "Route B",
+"completeness": 0.98,
+"validity": 0.9400000000000001,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-29",
+"route": "Route B",
+"completeness": 0.41,
+"validity": 0.41,
+"consistency": 0.42,
+"quality_score": 0.41
+},
+{
+"date": "2025-03-30",
+"route": "Route B",
+"completeness": 1.0,
+"validity": 0.99,
+"consistency": 0.92,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-31",
+"route": "Route B",
+"completeness": 0.91,
+"validity": 0.93,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-01-01",
+"route": "Route C",
+"completeness": 0.93,
+"validity": 0.9400000000000001,
+"consistency": 0.96,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-02",
+"route": "Route C",
+"completeness": 0.91,
+"validity": 0.99,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-03",
+"route": "Route C",
+"completeness": 1.0,
+"validity": 0.99,
+"consistency": 0.92,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-04",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 1.0,
+"consistency": 0.89,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-05",
+"route": "Route C",
+"completeness": 0.41,
+"validity": 0.41,
+"consistency": 0.42,
+"quality_score": 0.41
+},
+{
+"date": "2025-01-06",
+"route": "Route C",
+"completeness": 0.93,
+"validity": 0.99,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-07",
+"route": "Route C",
+"completeness": 0.96,
+"validity": 1.0,
+"consistency": 0.92,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-08",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9700000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-09",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9500000000000001,
+"consistency": 0.93,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-10",
+"route": "Route C",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-01-11",
+"route": "Route C",
+"completeness": 0.9,
+"validity": 0.9400000000000001,
+"consistency": 0.99,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-12",
+"route": "Route C",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-13",
+"route": "Route C",
+"completeness": 0.94,
+"validity": 0.9600000000000001,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-14",
+"route": "Route C",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-15",
+"route": "Route C",
+"completeness": 0.93,
+"validity": 0.9500000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-16",
+"route": "Route C",
+"completeness": 0.91,
+"validity": 0.9500000000000001,
+"consistency": 1.0,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-17",
+"route": "Route C",
+"completeness": 0.97,
+"validity": 0.99,
+"consistency": 0.95,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-18",
+"route": "Route C",
+"completeness": 0.49,
+"validity": 0.49,
+"consistency": 0.5,
+"quality_score": 0.49
+},
+{
+"date": "2025-01-19",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9500000000000001,
+"consistency": 0.93,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-20",
+"route": "Route C",
+"completeness": 1.0,
+"validity": 0.9400000000000001,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-21",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 1.0,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-22",
+"route": "Route C",
+"completeness": 0.54,
+"validity": 0.54,
+"consistency": 0.22,
+"quality_score": 0.43
+},
+{
+"date": "2025-01-23",
+"route": "Route C",
+"completeness": 0.94,
+"validity": 0.9600000000000001,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-24",
+"route": "Route C",
+"completeness": 0.93,
+"validity": 0.98,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-25",
+"route": "Route C",
+"completeness": 0.9,
+"validity": 0.92,
+"consistency": 0.88,
+"quality_score": 0.9
+},
+{
+"date": "2025-01-26",
+"route": "Route C",
+"completeness": 0.91,
+"validity": 0.9700000000000001,
+"consistency": 0.98,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-27",
+"route": "Route C",
+"completeness": 0.4,
+"validity": 0.4,
+"consistency": 0.41,
+"quality_score": 0.4
+},
+{
+"date": "2025-01-28",
+"route": "Route C",
+"completeness": 0.95,
+"validity": 0.92,
+"consistency": 0.89,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-29",
+"route": "Route C",
+"completeness": 0.48,
+"validity": 0.48,
+"consistency": 0.49,
+"quality_score": 0.48
+},
+{
+"date": "2025-01-30",
+"route": "Route C",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-31",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 0.93,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-01",
+"route": "Route C",
+"completeness": 1.0,
+"validity": 0.9500000000000001,
+"consistency": 0.96,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-02",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 1.0,
+"consistency": 0.89,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-03",
+"route": "Route C",
+"completeness": 0.95,
+"validity": 0.9600000000000001,
+"consistency": 0.98,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-04",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9400000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-05",
+"route": "Route C",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-02-06",
+"route": "Route C",
+"completeness": 0.98,
+"validity": 0.9700000000000001,
+"consistency": 0.9,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-07",
+"route": "Route C",
+"completeness": 0.51,
+"validity": 0.51,
+"consistency": 0.52,
+"quality_score": 0.51
+},
+{
+"date": "2025-02-08",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9600000000000001,
+"consistency": 0.88,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-09",
+"route": "Route C",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-10",
+"route": "Route C",
+"completeness": 0.91,
+"validity": 0.9600000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-11",
+"route": "Route C",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-02-12",
+"route": "Route C",
+"completeness": 0.97,
+"validity": 0.98,
+"consistency": 1.0,
+"quality_score": 0.98
+},
+{
+"date": "2025-02-13",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9400000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-14",
+"route": "Route C",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-02-15",
+"route": "Route C",
+"completeness": 0.37,
+"validity": 0.37,
+"consistency": 0.38,
+"quality_score": 0.37
+},
+{
+"date": "2025-02-16",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 0.9600000000000001,
+"consistency": 0.93,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-17",
+"route": "Route C",
+"completeness": 0.98,
+"validity": 0.9400000000000001,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-18",
+"route": "Route C",
+"completeness": 0.93,
+"validity": 0.98,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-19",
+"route": "Route C",
+"completeness": 0.95,
+"validity": 1.0,
+"consistency": 0.94,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-20",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 0.9400000000000001,
+"consistency": 0.95,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-21",
+"route": "Route C",
+"completeness": 0.9,
+"validity": 0.9400000000000001,
+"consistency": 0.99,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-22",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.98,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-23",
+"route": "Route C",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-02-24",
+"route": "Route C",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-02-25",
+"route": "Route C",
+"completeness": 0.93,
+"validity": 0.92,
+"consistency": 0.98,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-26",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 0.9400000000000001,
+"consistency": 0.95,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-27",
+"route": "Route C",
+"completeness": 0.4,
+"validity": 0.4,
+"consistency": 0.41,
+"quality_score": 0.4
+},
+{
+"date": "2025-02-28",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 0.92,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-01",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9500000000000001,
+"consistency": 0.93,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-02",
+"route": "Route C",
+"completeness": 0.91,
+"validity": 0.93,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-03",
+"route": "Route C",
+"completeness": 0.97,
+"validity": 0.92,
+"consistency": 0.93,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-04",
+"route": "Route C",
+"completeness": 1.0,
+"validity": 0.9400000000000001,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-05",
+"route": "Route C",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-03-06",
+"route": "Route C",
+"completeness": 0.39,
+"validity": 0.39,
+"consistency": 0.4,
+"quality_score": 0.39
+},
+{
+"date": "2025-03-07",
+"route": "Route C",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-08",
+"route": "Route C",
+"completeness": 0.45,
+"validity": 0.44999999999999996,
+"consistency": 0.46,
+"quality_score": 0.45
+},
+{
+"date": "2025-03-09",
+"route": "Route C",
+"completeness": 0.4,
+"validity": 0.4,
+"consistency": 0.41,
+"quality_score": 0.4
+},
+{
+"date": "2025-03-10",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 0.92,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-11",
+"route": "Route C",
+"completeness": 0.53,
+"validity": 0.53,
+"consistency": 0.54,
+"quality_score": 0.53
+},
+{
+"date": "2025-03-12",
+"route": "Route C",
+"completeness": 0.42,
+"validity": 0.42,
+"consistency": 0.43,
+"quality_score": 0.42
+},
+{
+"date": "2025-03-13",
+"route": "Route C",
+"completeness": 0.99,
+"validity": 1.0,
+"consistency": 0.89,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-14",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 1.0,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-15",
+"route": "Route C",
+"completeness": 0.54,
+"validity": 0.54,
+"consistency": 0.22,
+"quality_score": 0.43
+},
+{
+"date": "2025-03-16",
+"route": "Route C",
+"completeness": 0.49,
+"validity": 0.49,
+"consistency": 0.5,
+"quality_score": 0.49
+},
+{
+"date": "2025-03-17",
+"route": "Route C",
+"completeness": 0.96,
+"validity": 0.92,
+"consistency": 0.95,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-18",
+"route": "Route C",
+"completeness": 0.97,
+"validity": 1.0,
+"consistency": 0.98,
+"quality_score": 0.98
+},
+{
+"date": "2025-03-19",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9500000000000001,
+"consistency": 0.93,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-20",
+"route": "Route C",
+"completeness": 0.98,
+"validity": 0.93,
+"consistency": 0.94,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-21",
+"route": "Route C",
+"completeness": 0.97,
+"validity": 0.92,
+"consistency": 0.93,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-22",
+"route": "Route C",
+"completeness": 0.45,
+"validity": 0.44999999999999996,
+"consistency": 0.46,
+"quality_score": 0.45
+},
+{
+"date": "2025-03-23",
+"route": "Route C",
+"completeness": 0.92,
+"validity": 0.9500000000000001,
+"consistency": 0.93,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-24",
+"route": "Route C",
+"completeness": 0.98,
+"validity": 0.9500000000000001,
+"consistency": 0.92,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-25",
+"route": "Route C",
+"completeness": 0.98,
+"validity": 0.92,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-26",
+"route": "Route C",
+"completeness": 0.96,
+"validity": 0.9500000000000001,
+"consistency": 0.88,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-27",
+"route": "Route C",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-28",
+"route": "Route C",
+"completeness": 0.95,
+"validity": 0.9700000000000001,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-29",
+"route": "Route C",
+"completeness": 0.96,
+"validity": 1.0,
+"consistency": 0.92,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-30",
+"route": "Route C",
+"completeness": 0.98,
+"validity": 0.9400000000000001,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-31",
+"route": "Route C",
+"completeness": 1.0,
+"validity": 0.9700000000000001,
+"consistency": 0.94,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-01",
+"route": "Route D",
+"completeness": 0.33,
+"validity": 0.32999999999999996,
+"consistency": 0.34,
+"quality_score": 0.33
+},
+{
+"date": "2025-01-02",
+"route": "Route D",
+"completeness": 1.0,
+"validity": 0.9400000000000001,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-03",
+"route": "Route D",
+"completeness": 0.98,
+"validity": 0.9400000000000001,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-04",
+"route": "Route D",
+"completeness": 0.39,
+"validity": 0.39,
+"consistency": 0.4,
+"quality_score": 0.39
+},
+{
+"date": "2025-01-05",
+"route": "Route D",
+"completeness": 0.96,
+"validity": 1.0,
+"consistency": 0.92,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-06",
+"route": "Route D",
+"completeness": 0.91,
+"validity": 0.9400000000000001,
+"consistency": 0.92,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-07",
+"route": "Route D",
+"completeness": 0.94,
+"validity": 0.9500000000000001,
+"consistency": 0.97,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-08",
+"route": "Route D",
+"completeness": 0.54,
+"validity": 0.54,
+"consistency": 0.22,
+"quality_score": 0.43
+},
+{
+"date": "2025-01-09",
+"route": "Route D",
+"completeness": 0.43,
+"validity": 0.43,
+"consistency": 0.44,
+"quality_score": 0.43
+},
+{
+"date": "2025-01-10",
+"route": "Route D",
+"completeness": 0.97,
+"validity": 0.99,
+"consistency": 0.95,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-11",
+"route": "Route D",
+"completeness": 0.99,
+"validity": 0.98,
+"consistency": 0.91,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-12",
+"route": "Route D",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-13",
+"route": "Route D",
+"completeness": 0.92,
+"validity": 1.0,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-14",
+"route": "Route D",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-15",
+"route": "Route D",
+"completeness": 0.91,
+"validity": 0.99,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-16",
+"route": "Route D",
+"completeness": 1.0,
+"validity": 0.99,
+"consistency": 0.92,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-17",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.9400000000000001,
+"consistency": 1.0,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-18",
+"route": "Route D",
+"completeness": 0.93,
+"validity": 0.99,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-19",
+"route": "Route D",
+"completeness": 0.43,
+"validity": 0.43,
+"consistency": 0.44,
+"quality_score": 0.43
+},
+{
+"date": "2025-01-20",
+"route": "Route D",
+"completeness": 0.51,
+"validity": 0.51,
+"consistency": 0.52,
+"quality_score": 0.51
+},
+{
+"date": "2025-01-21",
+"route": "Route D",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-01-22",
+"route": "Route D",
+"completeness": 0.98,
+"validity": 0.9500000000000001,
+"consistency": 0.92,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-23",
+"route": "Route D",
+"completeness": 0.92,
+"validity": 1.0,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-24",
+"route": "Route D",
+"completeness": 0.9,
+"validity": 0.92,
+"consistency": 0.88,
+"quality_score": 0.9
+},
+{
+"date": "2025-01-25",
+"route": "Route D",
+"completeness": 0.99,
+"validity": 0.9600000000000001,
+"consistency": 0.93,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-26",
+"route": "Route D",
+"completeness": 1.0,
+"validity": 0.92,
+"consistency": 0.9,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-27",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.99,
+"consistency": 0.91,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-28",
+"route": "Route D",
+"completeness": 0.93,
+"validity": 0.9600000000000001,
+"consistency": 0.94,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-29",
+"route": "Route D",
+"completeness": 0.92,
+"validity": 0.98,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-30",
+"route": "Route D",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-01-31",
+"route": "Route D",
+"completeness": 0.5,
+"validity": 0.5,
+"consistency": 0.51,
+"quality_score": 0.5
+},
+{
+"date": "2025-02-01",
+"route": "Route D",
+"completeness": 0.98,
+"validity": 0.99,
+"consistency": 0.88,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-02",
+"route": "Route D",
+"completeness": 0.39,
+"validity": 0.39,
+"consistency": 0.4,
+"quality_score": 0.39
+},
+{
+"date": "2025-02-03",
+"route": "Route D",
+"completeness": 0.35,
+"validity": 0.35,
+"consistency": 0.36,
+"quality_score": 0.35
+},
+{
+"date": "2025-02-04",
+"route": "Route D",
+"completeness": 0.9,
+"validity": 0.98,
+"consistency": 0.95,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-05",
+"route": "Route D",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-06",
+"route": "Route D",
+"completeness": 0.96,
+"validity": 0.92,
+"consistency": 0.95,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-07",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.92,
+"consistency": 0.89,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-08",
+"route": "Route D",
+"completeness": 0.9,
+"validity": 1.0,
+"consistency": 0.93,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-09",
+"route": "Route D",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-02-10",
+"route": "Route D",
+"completeness": 0.53,
+"validity": 0.53,
+"consistency": 0.54,
+"quality_score": 0.53
+},
+{
+"date": "2025-02-11",
+"route": "Route D",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-12",
+"route": "Route D",
+"completeness": 0.37,
+"validity": 0.37,
+"consistency": 0.38,
+"quality_score": 0.37
+},
+{
+"date": "2025-02-13",
+"route": "Route D",
+"completeness": 0.9,
+"validity": 0.98,
+"consistency": 0.95,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-14",
+"route": "Route D",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-15",
+"route": "Route D",
+"completeness": 0.92,
+"validity": 0.9600000000000001,
+"consistency": 0.88,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-16",
+"route": "Route D",
+"completeness": 0.97,
+"validity": 1.0,
+"consistency": 0.98,
+"quality_score": 0.98
+},
+{
+"date": "2025-02-17",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.9700000000000001,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-18",
+"route": "Route D",
+"completeness": 0.9,
+"validity": 0.92,
+"consistency": 0.88,
+"quality_score": 0.9
+},
+{
+"date": "2025-02-19",
+"route": "Route D",
+"completeness": 0.92,
+"validity": 0.9400000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-20",
+"route": "Route D",
+"completeness": 0.97,
+"validity": 0.98,
+"consistency": 1.0,
+"quality_score": 0.98
+},
+{
+"date": "2025-02-21",
+"route": "Route D",
+"completeness": 0.99,
+"validity": 0.98,
+"consistency": 0.91,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-22",
+"route": "Route D",
+"completeness": 0.9,
+"validity": 0.93,
+"consistency": 0.91,
+"quality_score": 0.91
+},
+{
+"date": "2025-02-23",
+"route": "Route D",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-24",
+"route": "Route D",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-25",
+"route": "Route D",
+"completeness": 0.91,
+"validity": 0.9600000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-26",
+"route": "Route D",
+"completeness": 0.97,
+"validity": 0.98,
+"consistency": 1.0,
+"quality_score": 0.98
+},
+{
+"date": "2025-02-27",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.99,
+"consistency": 0.91,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-28",
+"route": "Route D",
+"completeness": 0.97,
+"validity": 0.9600000000000001,
+"consistency": 0.89,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-01",
+"route": "Route D",
+"completeness": 0.43,
+"validity": 0.43,
+"consistency": 0.44,
+"quality_score": 0.43
+},
+{
+"date": "2025-03-02",
+"route": "Route D",
+"completeness": 1.0,
+"validity": 0.9700000000000001,
+"consistency": 0.94,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-03",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.9600000000000001,
+"consistency": 0.98,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-04",
+"route": "Route D",
+"completeness": 0.51,
+"validity": 0.51,
+"consistency": 0.52,
+"quality_score": 0.51
+},
+{
+"date": "2025-03-05",
+"route": "Route D",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-06",
+"route": "Route D",
+"completeness": 0.94,
+"validity": 0.98,
+"consistency": 0.9,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-07",
+"route": "Route D",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-03-08",
+"route": "Route D",
+"completeness": 1.0,
+"validity": 0.9500000000000001,
+"consistency": 0.96,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-09",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.99,
+"consistency": 0.91,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-10",
+"route": "Route D",
+"completeness": 0.97,
+"validity": 0.9600000000000001,
+"consistency": 0.89,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-11",
+"route": "Route D",
+"completeness": 0.97,
+"validity": 0.9400000000000001,
+"consistency": 0.91,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-12",
+"route": "Route D",
+"completeness": 0.97,
+"validity": 0.92,
+"consistency": 0.93,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-13",
+"route": "Route D",
+"completeness": 0.39,
+"validity": 0.39,
+"consistency": 0.4,
+"quality_score": 0.39
+},
+{
+"date": "2025-03-14",
+"route": "Route D",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-15",
+"route": "Route D",
+"completeness": 0.98,
+"validity": 0.9500000000000001,
+"consistency": 0.92,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-16",
+"route": "Route D",
+"completeness": 0.93,
+"validity": 0.99,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-17",
+"route": "Route D",
+"completeness": 0.93,
+"validity": 0.9500000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-18",
+"route": "Route D",
+"completeness": 0.48,
+"validity": 0.48,
+"consistency": 0.49,
+"quality_score": 0.48
+},
+{
+"date": "2025-03-19",
+"route": "Route D",
+"completeness": 0.43,
+"validity": 0.43,
+"consistency": 0.44,
+"quality_score": 0.43
+},
+{
+"date": "2025-03-20",
+"route": "Route D",
+"completeness": 0.96,
+"validity": 0.9700000000000001,
+"consistency": 0.99,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-21",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.9600000000000001,
+"consistency": 0.98,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-22",
+"route": "Route D",
+"completeness": 1.0,
+"validity": 0.9500000000000001,
+"consistency": 0.96,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-23",
+"route": "Route D",
+"completeness": 0.43,
+"validity": 0.43,
+"consistency": 0.44,
+"quality_score": 0.43
+},
+{
+"date": "2025-03-24",
+"route": "Route D",
+"completeness": 0.96,
+"validity": 0.99,
+"consistency": 0.97,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-25",
+"route": "Route D",
+"completeness": 0.49,
+"validity": 0.49,
+"consistency": 0.5,
+"quality_score": 0.49
+},
+{
+"date": "2025-03-26",
+"route": "Route D",
+"completeness": 0.94,
+"validity": 0.99,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-27",
+"route": "Route D",
+"completeness": 0.94,
+"validity": 0.9700000000000001,
+"consistency": 0.95,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-28",
+"route": "Route D",
+"completeness": 0.93,
+"validity": 0.92,
+"consistency": 0.98,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-29",
+"route": "Route D",
+"completeness": 0.94,
+"validity": 0.9500000000000001,
+"consistency": 0.97,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-30",
+"route": "Route D",
+"completeness": 0.95,
+"validity": 0.9700000000000001,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-31",
+"route": "Route D",
+"completeness": 0.98,
+"validity": 0.92,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-01",
+"route": "Route E",
+"completeness": 0.99,
+"validity": 0.92,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-02",
+"route": "Route E",
+"completeness": 0.51,
+"validity": 0.51,
+"consistency": 0.52,
+"quality_score": 0.51
+},
+{
+"date": "2025-01-03",
+"route": "Route E",
+"completeness": 0.95,
+"validity": 0.9700000000000001,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-04",
+"route": "Route E",
+"completeness": 0.94,
+"validity": 0.98,
+"consistency": 0.9,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-05",
+"route": "Route E",
+"completeness": 0.94,
+"validity": 0.9500000000000001,
+"consistency": 0.97,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-06",
+"route": "Route E",
+"completeness": 0.42,
+"validity": 0.42,
+"consistency": 0.43,
+"quality_score": 0.42
+},
+{
+"date": "2025-01-07",
+"route": "Route E",
+"completeness": 0.34,
+"validity": 0.33999999999999997,
+"consistency": 0.35,
+"quality_score": 0.34
+},
+{
+"date": "2025-01-08",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.9500000000000001,
+"consistency": 0.92,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-09",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.93,
+"consistency": 0.94,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-10",
+"route": "Route E",
+"completeness": 0.95,
+"validity": 0.9400000000000001,
+"consistency": 1.0,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-11",
+"route": "Route E",
+"completeness": 0.97,
+"validity": 0.93,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-12",
+"route": "Route E",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-01-13",
+"route": "Route E",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-01-14",
+"route": "Route E",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-01-15",
+"route": "Route E",
+"completeness": 1.0,
+"validity": 0.9400000000000001,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-16",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.9400000000000001,
+"consistency": 0.97,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-17",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.98,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-18",
+"route": "Route E",
+"completeness": 0.91,
+"validity": 0.9400000000000001,
+"consistency": 0.92,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-19",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.93,
+"consistency": 0.94,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-20",
+"route": "Route E",
+"completeness": 0.95,
+"validity": 0.92,
+"consistency": 0.89,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-21",
+"route": "Route E",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-01-22",
+"route": "Route E",
+"completeness": 0.96,
+"validity": 0.99,
+"consistency": 0.97,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-23",
+"route": "Route E",
+"completeness": 0.9,
+"validity": 0.9500000000000001,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-01-24",
+"route": "Route E",
+"completeness": 0.99,
+"validity": 0.9600000000000001,
+"consistency": 0.93,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-25",
+"route": "Route E",
+"completeness": 0.97,
+"validity": 1.0,
+"consistency": 0.98,
+"quality_score": 0.98
+},
+{
+"date": "2025-01-26",
+"route": "Route E",
+"completeness": 0.4,
+"validity": 0.4,
+"consistency": 0.41,
+"quality_score": 0.4
+},
+{
+"date": "2025-01-27",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.9400000000000001,
+"consistency": 0.96,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-28",
+"route": "Route E",
+"completeness": 0.44,
+"validity": 0.44,
+"consistency": 0.45,
+"quality_score": 0.44
+},
+{
+"date": "2025-01-29",
+"route": "Route E",
+"completeness": 0.9,
+"validity": 0.93,
+"consistency": 0.91,
+"quality_score": 0.91
+},
+{
+"date": "2025-01-30",
+"route": "Route E",
+"completeness": 0.97,
+"validity": 0.99,
+"consistency": 0.95,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-31",
+"route": "Route E",
+"completeness": 0.94,
+"validity": 1.0,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-01",
+"route": "Route E",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-02-02",
+"route": "Route E",
+"completeness": 0.94,
+"validity": 0.98,
+"consistency": 0.9,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-03",
+"route": "Route E",
+"completeness": 0.9,
+"validity": 0.9400000000000001,
+"consistency": 0.99,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-04",
+"route": "Route E",
+"completeness": 0.99,
+"validity": 0.93,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-05",
+"route": "Route E",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-06",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.9500000000000001,
+"consistency": 0.91,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-07",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.9600000000000001,
+"consistency": 0.94,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-08",
+"route": "Route E",
+"completeness": 0.3,
+"validity": 0.3,
+"consistency": 0.31,
+"quality_score": 0.3
+},
+{
+"date": "2025-02-09",
+"route": "Route E",
+"completeness": 0.97,
+"validity": 0.99,
+"consistency": 0.95,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-10",
+"route": "Route E",
+"completeness": 0.97,
+"validity": 0.9400000000000001,
+"consistency": 0.91,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-11",
+"route": "Route E",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-12",
+"route": "Route E",
+"completeness": 0.92,
+"validity": 0.9600000000000001,
+"consistency": 0.88,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-13",
+"route": "Route E",
+"completeness": 0.99,
+"validity": 0.93,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-14",
+"route": "Route E",
+"completeness": 0.94,
+"validity": 0.9700000000000001,
+"consistency": 0.95,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-15",
+"route": "Route E",
+"completeness": 0.9,
+"validity": 1.0,
+"consistency": 0.93,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-16",
+"route": "Route E",
+"completeness": 0.48,
+"validity": 0.48,
+"consistency": 0.49,
+"quality_score": 0.48
+},
+{
+"date": "2025-02-17",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.92,
+"consistency": 0.98,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-18",
+"route": "Route E",
+"completeness": 0.99,
+"validity": 0.9600000000000001,
+"consistency": 0.93,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-19",
+"route": "Route E",
+"completeness": 0.9,
+"validity": 0.98,
+"consistency": 0.95,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-20",
+"route": "Route E",
+"completeness": 0.37,
+"validity": 0.37,
+"consistency": 0.38,
+"quality_score": 0.37
+},
+{
+"date": "2025-02-21",
+"route": "Route E",
+"completeness": 0.97,
+"validity": 0.93,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-22",
+"route": "Route E",
+"completeness": 0.41,
+"validity": 0.41,
+"consistency": 0.42,
+"quality_score": 0.41
+},
+{
+"date": "2025-02-23",
+"route": "Route E",
+"completeness": 0.91,
+"validity": 0.92,
+"consistency": 0.94,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-24",
+"route": "Route E",
+"completeness": 0.94,
+"validity": 0.9700000000000001,
+"consistency": 0.95,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-25",
+"route": "Route E",
+"completeness": 0.53,
+"validity": 0.53,
+"consistency": 0.54,
+"quality_score": 0.53
+},
+{
+"date": "2025-02-26",
+"route": "Route E",
+"completeness": 0.37,
+"validity": 0.37,
+"consistency": 0.38,
+"quality_score": 0.37
+},
+{
+"date": "2025-02-27",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.9400000000000001,
+"consistency": 0.96,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-28",
+"route": "Route E",
+"completeness": 0.95,
+"validity": 1.0,
+"consistency": 0.94,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-01",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.93,
+"consistency": 0.94,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-02",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.92,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-03",
+"route": "Route E",
+"completeness": 0.35,
+"validity": 0.35,
+"consistency": 0.36,
+"quality_score": 0.35
+},
+{
+"date": "2025-03-04",
+"route": "Route E",
+"completeness": 0.95,
+"validity": 0.92,
+"consistency": 0.89,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-05",
+"route": "Route E",
+"completeness": 0.94,
+"validity": 0.9700000000000001,
+"consistency": 0.95,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-06",
+"route": "Route E",
+"completeness": 0.92,
+"validity": 0.93,
+"consistency": 0.95,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-07",
+"route": "Route E",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-08",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.99,
+"consistency": 0.88,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-09",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.9400000000000001,
+"consistency": 0.96,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-10",
+"route": "Route E",
+"completeness": 0.95,
+"validity": 1.0,
+"consistency": 0.94,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-11",
+"route": "Route E",
+"completeness": 0.95,
+"validity": 0.98,
+"consistency": 0.96,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-12",
+"route": "Route E",
+"completeness": 0.95,
+"validity": 0.9600000000000001,
+"consistency": 0.98,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-13",
+"route": "Route E",
+"completeness": 0.94,
+"validity": 0.98,
+"consistency": 0.9,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-14",
+"route": "Route E",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-03-15",
+"route": "Route E",
+"completeness": 0.96,
+"validity": 0.99,
+"consistency": 0.97,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-16",
+"route": "Route E",
+"completeness": 0.91,
+"validity": 0.9400000000000001,
+"consistency": 0.92,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-17",
+"route": "Route E",
+"completeness": 0.91,
+"validity": 0.99,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-18",
+"route": "Route E",
+"completeness": 0.92,
+"validity": 0.98,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-03-19",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.93,
+"consistency": 0.94,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-20",
+"route": "Route E",
+"completeness": 0.36,
+"validity": 0.36,
+"consistency": 0.37,
+"quality_score": 0.36
+},
+{
+"date": "2025-03-21",
+"route": "Route E",
+"completeness": 0.35,
+"validity": 0.35,
+"consistency": 0.36,
+"quality_score": 0.35
+},
+{
+"date": "2025-03-22",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.99,
+"consistency": 0.88,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-23",
+"route": "Route E",
+"completeness": 0.98,
+"validity": 0.93,
+"consistency": 0.94,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-24",
+"route": "Route E",
+"completeness": 0.47,
+"validity": 0.47,
+"consistency": 0.48,
+"quality_score": 0.47
+},
+{
+"date": "2025-03-25",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.99,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-26",
+"route": "Route E",
+"completeness": 0.91,
+"validity": 0.93,
+"consistency": 0.89,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-27",
+"route": "Route E",
+"completeness": 0.45,
+"validity": 0.44999999999999996,
+"consistency": 0.46,
+"quality_score": 0.45
+},
+{
+"date": "2025-03-28",
+"route": "Route E",
+"completeness": 0.91,
+"validity": 0.9600000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-29",
+"route": "Route E",
+"completeness": 0.34,
+"validity": 0.33999999999999997,
+"consistency": 0.35,
+"quality_score": 0.34
+},
+{
+"date": "2025-03-30",
+"route": "Route E",
+"completeness": 0.93,
+"validity": 0.92,
+"consistency": 0.98,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-31",
+"route": "Route E",
+"completeness": 0.49,
+"validity": 0.49,
+"consistency": 0.5,
+"quality_score": 0.49
+},
+{
+"date": "2025-01-01",
+"route": "Route F",
+"completeness": 0.97,
+"validity": 0.9600000000000001,
+"consistency": 0.89,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-02",
+"route": "Route F",
+"completeness": 0.95,
+"validity": 0.92,
+"consistency": 0.89,
+"quality_score": 0.92
+},
+{
+"date": "2025-01-03",
+"route": "Route F",
+"completeness": 0.93,
+"validity": 0.92,
+"consistency": 0.98,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-04",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.93,
+"consistency": 0.95,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-05",
+"route": "Route F",
+"completeness": 0.34,
+"validity": 0.33999999999999997,
+"consistency": 0.35,
+"quality_score": 0.34
+},
+{
+"date": "2025-01-06",
+"route": "Route F",
+"completeness": 0.97,
+"validity": 0.92,
+"consistency": 0.93,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-07",
+"route": "Route F",
+"completeness": 1.0,
+"validity": 0.93,
+"consistency": 0.98,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-08",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.99,
+"consistency": 0.97,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-09",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.9700000000000001,
+"consistency": 0.99,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-10",
+"route": "Route F",
+"completeness": 0.93,
+"validity": 0.98,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-11",
+"route": "Route F",
+"completeness": 0.94,
+"validity": 0.9600000000000001,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-12",
+"route": "Route F",
+"completeness": 0.97,
+"validity": 0.99,
+"consistency": 0.95,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-13",
+"route": "Route F",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-01-14",
+"route": "Route F",
+"completeness": 0.97,
+"validity": 0.99,
+"consistency": 0.95,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-15",
+"route": "Route F",
+"completeness": 0.51,
+"validity": 0.51,
+"consistency": 0.52,
+"quality_score": 0.51
+},
+{
+"date": "2025-01-16",
+"route": "Route F",
+"completeness": 0.95,
+"validity": 0.9700000000000001,
+"consistency": 0.93,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-17",
+"route": "Route F",
+"completeness": 0.9,
+"validity": 0.92,
+"consistency": 0.88,
+"quality_score": 0.9
+},
+{
+"date": "2025-01-18",
+"route": "Route F",
+"completeness": 0.42,
+"validity": 0.42,
+"consistency": 0.43,
+"quality_score": 0.42
+},
+{
+"date": "2025-01-19",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.9700000000000001,
+"consistency": 0.99,
+"quality_score": 0.97
+},
+{
+"date": "2025-01-20",
+"route": "Route F",
+"completeness": 0.93,
+"validity": 0.9600000000000001,
+"consistency": 0.94,
+"quality_score": 0.94
+},
+{
+"date": "2025-01-21",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-01-22",
+"route": "Route F",
+"completeness": 0.47,
+"validity": 0.47,
+"consistency": 0.48,
+"quality_score": 0.47
+},
+{
+"date": "2025-01-23",
+"route": "Route F",
+"completeness": 0.52,
+"validity": 0.52,
+"consistency": 0.53,
+"quality_score": 0.52
+},
+{
+"date": "2025-01-24",
+"route": "Route F",
+"completeness": 0.97,
+"validity": 1.0,
+"consistency": 0.98,
+"quality_score": 0.98
+},
+{
+"date": "2025-01-25",
+"route": "Route F",
+"completeness": 0.48,
+"validity": 0.48,
+"consistency": 0.49,
+"quality_score": 0.48
+},
+{
+"date": "2025-01-26",
+"route": "Route F",
+"completeness": 0.95,
+"validity": 0.99,
+"consistency": 0.91,
+"quality_score": 0.95
+},
+{
+"date": "2025-01-27",
+"route": "Route F",
+"completeness": 0.33,
+"validity": 0.32999999999999996,
+"consistency": 0.34,
+"quality_score": 0.33
+},
+{
+"date": "2025-01-28",
+"route": "Route F",
+"completeness": 0.99,
+"validity": 0.9400000000000001,
+"consistency": 0.95,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-29",
+"route": "Route F",
+"completeness": 0.41,
+"validity": 0.41,
+"consistency": 0.42,
+"quality_score": 0.41
+},
+{
+"date": "2025-01-30",
+"route": "Route F",
+"completeness": 0.95,
+"validity": 0.9400000000000001,
+"consistency": 1.0,
+"quality_score": 0.96
+},
+{
+"date": "2025-01-31",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.9500000000000001,
+"consistency": 0.93,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-01",
+"route": "Route F",
+"completeness": 0.93,
+"validity": 0.9700000000000001,
+"consistency": 0.89,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-02",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.93,
+"consistency": 0.95,
+"quality_score": 0.93
+},
+{
+"date": "2025-02-03",
+"route": "Route F",
+"completeness": 0.99,
+"validity": 0.98,
+"consistency": 0.91,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-04",
+"route": "Route F",
+"completeness": 0.5,
+"validity": 0.5,
+"consistency": 0.51,
+"quality_score": 0.5
+},
+{
+"date": "2025-02-05",
+"route": "Route F",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-02-06",
+"route": "Route F",
+"completeness": 0.91,
+"validity": 0.99,
+"consistency": 0.96,
+"quality_score": 0.95
+},
+{
+"date": "2025-02-07",
+"route": "Route F",
+"completeness": 0.44,
+"validity": 0.44,
+"consistency": 0.45,
+"quality_score": 0.44
+},
+{
+"date": "2025-02-08",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.98,
+"consistency": 0.94,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-09",
+"route": "Route F",
+"completeness": 0.95,
+"validity": 0.9400000000000001,
+"consistency": 1.0,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-10",
+"route": "Route F",
+"completeness": 0.95,
+"validity": 0.98,
+"consistency": 0.96,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-11",
+"route": "Route F",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-02-12",
+"route": "Route F",
+"completeness": 0.9,
+"validity": 1.0,
+"consistency": 0.93,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-13",
+"route": "Route F",
+"completeness": 0.5,
+"validity": 0.5,
+"consistency": 0.51,
+"quality_score": 0.5
+},
+{
+"date": "2025-02-14",
+"route": "Route F",
+"completeness": 0.45,
+"validity": 0.44999999999999996,
+"consistency": 0.46,
+"quality_score": 0.45
+},
+{
+"date": "2025-02-15",
+"route": "Route F",
+"completeness": 0.3,
+"validity": 0.3,
+"consistency": 0.31,
+"quality_score": 0.3
+},
+{
+"date": "2025-02-16",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.98,
+"consistency": 0.99,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-17",
+"route": "Route F",
+"completeness": 0.91,
+"validity": 0.9600000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-18",
+"route": "Route F",
+"completeness": 0.97,
+"validity": 1.0,
+"consistency": 0.98,
+"quality_score": 0.98
+},
+{
+"date": "2025-02-19",
+"route": "Route F",
+"completeness": 0.99,
+"validity": 0.93,
+"consistency": 1.0,
+"quality_score": 0.97
+},
+{
+"date": "2025-02-20",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.9600000000000001,
+"consistency": 0.88,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-21",
+"route": "Route F",
+"completeness": 0.94,
+"validity": 0.9600000000000001,
+"consistency": 0.92,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-22",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 1.0,
+"consistency": 0.92,
+"quality_score": 0.96
+},
+{
+"date": "2025-02-23",
+"route": "Route F",
+"completeness": 0.31,
+"validity": 0.31,
+"consistency": 0.32,
+"quality_score": 0.31
+},
+{
+"date": "2025-02-24",
+"route": "Route F",
+"completeness": 0.45,
+"validity": 0.44999999999999996,
+"consistency": 0.46,
+"quality_score": 0.45
+},
+{
+"date": "2025-02-25",
+"route": "Route F",
+"completeness": 0.97,
+"validity": 0.9400000000000001,
+"consistency": 0.91,
+"quality_score": 0.94
+},
+{
+"date": "2025-02-26",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.9600000000000001,
+"consistency": 0.88,
+"quality_score": 0.92
+},
+{
+"date": "2025-02-27",
+"route": "Route F",
+"completeness": 0.33,
+"validity": 0.32999999999999996,
+"consistency": 0.34,
+"quality_score": 0.33
+},
+{
+"date": "2025-02-28",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.9400000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-01",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.9700000000000001,
+"consistency": 0.99,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-02",
+"route": "Route F",
+"completeness": 0.49,
+"validity": 0.49,
+"consistency": 0.5,
+"quality_score": 0.49
+},
+{
+"date": "2025-03-03",
+"route": "Route F",
+"completeness": 0.9,
+"validity": 0.9400000000000001,
+"consistency": 0.99,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-04",
+"route": "Route F",
+"completeness": 0.93,
+"validity": 0.9600000000000001,
+"consistency": 0.94,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-05",
+"route": "Route F",
+"completeness": 0.45,
+"validity": 0.44999999999999996,
+"consistency": 0.46,
+"quality_score": 0.45
+},
+{
+"date": "2025-03-06",
+"route": "Route F",
+"completeness": 0.32,
+"validity": 0.32,
+"consistency": 0.33,
+"quality_score": 0.32
+},
+{
+"date": "2025-03-07",
+"route": "Route F",
+"completeness": 0.94,
+"validity": 0.9700000000000001,
+"consistency": 0.95,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-08",
+"route": "Route F",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-03-09",
+"route": "Route F",
+"completeness": 0.33,
+"validity": 0.32999999999999996,
+"consistency": 0.34,
+"quality_score": 0.33
+},
+{
+"date": "2025-03-10",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.9400000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-11",
+"route": "Route F",
+"completeness": 0.46,
+"validity": 0.45999999999999996,
+"consistency": 0.47,
+"quality_score": 0.46
+},
+{
+"date": "2025-03-12",
+"route": "Route F",
+"completeness": 0.35,
+"validity": 0.35,
+"consistency": 0.36,
+"quality_score": 0.35
+},
+{
+"date": "2025-03-13",
+"route": "Route F",
+"completeness": 0.92,
+"validity": 0.93,
+"consistency": 0.95,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-14",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.93,
+"consistency": 0.9,
+"quality_score": 0.93
+},
+{
+"date": "2025-03-15",
+"route": "Route F",
+"completeness": 0.47,
+"validity": 0.47,
+"consistency": 0.48,
+"quality_score": 0.47
+},
+{
+"date": "2025-03-16",
+"route": "Route F",
+"completeness": 0.42,
+"validity": 0.42,
+"consistency": 0.43,
+"quality_score": 0.42
+},
+{
+"date": "2025-03-17",
+"route": "Route F",
+"completeness": 1.0,
+"validity": 0.9400000000000001,
+"consistency": 0.88,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-18",
+"route": "Route F",
+"completeness": 0.9,
+"validity": 0.93,
+"consistency": 0.91,
+"quality_score": 0.91
+},
+{
+"date": "2025-03-19",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.9700000000000001,
+"consistency": 0.99,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-20",
+"route": "Route F",
+"completeness": 0.91,
+"validity": 0.9500000000000001,
+"consistency": 1.0,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-21",
+"route": "Route F",
+"completeness": 0.9,
+"validity": 0.9400000000000001,
+"consistency": 0.99,
+"quality_score": 0.94
+},
+{
+"date": "2025-03-22",
+"route": "Route F",
+"completeness": 0.38,
+"validity": 0.38,
+"consistency": 0.39,
+"quality_score": 0.38
+},
+{
+"date": "2025-03-23",
+"route": "Route F",
+"completeness": 0.96,
+"validity": 0.9700000000000001,
+"consistency": 0.99,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-24",
+"route": "Route F",
+"completeness": 0.91,
+"validity": 0.9700000000000001,
+"consistency": 0.98,
+"quality_score": 0.95
+},
+{
+"date": "2025-03-25",
+"route": "Route F",
+"completeness": 0.91,
+"validity": 0.9400000000000001,
+"consistency": 0.92,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-26",
+"route": "Route F",
+"completeness": 1.0,
+"validity": 0.9700000000000001,
+"consistency": 0.94,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-27",
+"route": "Route F",
+"completeness": 1.0,
+"validity": 0.9500000000000001,
+"consistency": 0.96,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-28",
+"route": "Route F",
+"completeness": 0.53,
+"validity": 0.53,
+"consistency": 0.54,
+"quality_score": 0.53
+},
+{
+"date": "2025-03-29",
+"route": "Route F",
+"completeness": 1.0,
+"validity": 0.93,
+"consistency": 0.98,
+"quality_score": 0.97
+},
+{
+"date": "2025-03-30",
+"route": "Route F",
+"completeness": 0.91,
+"validity": 0.9600000000000001,
+"consistency": 0.9,
+"quality_score": 0.92
+},
+{
+"date": "2025-03-31",
+"route": "Route F",
+"completeness": 0.93,
+"validity": 0.99,
+"consistency": 1.0,
+"quality_score": 0.97
+}
+]

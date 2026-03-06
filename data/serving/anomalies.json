@@ -1,0 +1,72 @@
+[
+{
+"date": "2025-02-11",
+"route": "Route A",
+"ridership": 1471,
+"cost_usd": 249.92,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-03-25",
+"route": "Route A",
+"ridership": 1477,
+"cost_usd": 243.82,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-02-05",
+"route": "Route A",
+"ridership": 1418,
+"cost_usd": 243.51,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-03-20",
+"route": "Route A",
+"ridership": 1497,
+"cost_usd": 243.36,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-02-04",
+"route": "Route A",
+"ridership": 1397,
+"cost_usd": 241.49,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-02-12",
+"route": "Route A",
+"ridership": 1355,
+"cost_usd": 241.44,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-01-28",
+"route": "Route A",
+"ridership": 1430,
+"cost_usd": 241.32,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-03-26",
+"route": "Route A",
+"ridership": 1435,
+"cost_usd": 240.95,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-03-19",
+"route": "Route A",
+"ridership": 1460,
+"cost_usd": 240.08,
+"anomaly_score": 0.8
+},
+{
+"date": "2025-02-06",
+"route": "Route A",
+"ridership": 1339,
+"cost_usd": 237.84,
+"anomaly_score": 0.8
+}
+]

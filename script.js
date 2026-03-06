@@ -1,11 +1,12 @@
 // ===== Hand-tuned HW2 (root) script.js =====
 
 // --- Constants & helpers ---
-const CHART_WIDTH = 560;
-const CHART_HEIGHT = 280;
-const FLEET_CHART_WIDTH = 420;
-const FLEET_CHART_HEIGHT = 260;
-const MARGIN = { left: 58, bottom: 52, top: 24, right: 20 };
+const CHART_WIDTH = 640;
+const CHART_HEIGHT = 320;
+const FLEET_CHART_WIDTH = 640;
+const FLEET_CHART_HEIGHT = 320;
+const MARGIN = { left: 72, bottom: 48, top: 28, right: 24 };
+const MARGIN_DUAL_AXIS = { left: 72, bottom: 48, top: 28, right: 48 };
 const ANIMATION_DURATION = 420;
 
 const METRIC_MAP = { attribute1: "ridership", attribute2: "on_time_pct" };
@@ -64,9 +65,18 @@ function showTip(html, evt) {
 function hideTip() { tip.style("opacity", 0); }
 
 // --- State & Refs ---
-const DATA_VERSION = "2"; // bump to bypass cache when data files change
-let STATE = { rows: [], metricKey: METRIC_MAP.attribute1, allRoutes: null, trajectories: null };
-const REFS = { hist: null, line: null, timeSeries: null, scat: null, fuel: null, costByRoute: null, vehicleBreakdown: null };
+const DATA_VERSION = "7";
+let DATA_BASE = "data"; // set to "data/serving" when pipeline outputs exist
+const CHART_IDS = ["histogram", "line", "timeseries", "scatter", "emissions", "cost", "vehicle", "ridershipByRoute", "forecast", "quality"];
+const CHART_LABELS = { histogram: "Histogram", line: "Line Chart", timeseries: "Time series", scatter: "Scatterplot", emissions: "Emissions", cost: "Cost by route", vehicle: "Vehicle usage", ridershipByRoute: "Ridership by route", forecast: "Forecast", quality: "Data Quality" };
+const TIME_SERIES_KEYS = ["ridership", "on_time_pct"];
+let STATE = {
+  rows: [], metricKey: METRIC_MAP.attribute1, allRoutes: null, trajectories: null, routeShapes: null,
+  kpis: null, quality: null, forecast: null, anomalies: null,
+  visibleCharts: Object.fromEntries(CHART_IDS.map(id => [id, true])),
+  activeTimeSeriesVars: new Set(TIME_SERIES_KEYS)
+};
+const REFS = { hist: null, line: null, timeSeries: null, scat: null, fuel: null, costByRoute: null, vehicleBreakdown: null, ridershipByRoute: null, forecastChart: null };
 const ROUTE_FILES = ["route_a.csv", "route_b.csv", "route_c.csv", "route_d.csv", "route_e.csv", "route_f.csv"];
 const ROUTE_LABELS = { "route_a.csv": "Route A", "route_b.csv": "Route B", "route_c.csv": "Route C", "route_d.csv": "Route D", "route_e.csv": "Route E", "route_f.csv": "Route F" };
 const ROUTE_DESCRIPTIONS = {
@@ -94,9 +104,13 @@ function updateBadges(){
 document.addEventListener("DOMContentLoaded", setup);
 
 function setup () {
-  STATE.currentPanel = "overview";
+  STATE.currentPanel = "summary";
 
-  d3.select("#dataset").on("change", () => { changeData(); updateBadges(); });
+  d3.select("#dataset").on("change", () => {
+    changeData();
+    updateBadges();
+    drawForecastChart("#SummaryForecast-div");
+  });
   d3.select("#metric").on("change", () => {
     const ui = d3.select("#metric").property("value");
     STATE.metricKey = METRIC_MAP[ui] || METRIC_MAP.attribute1;
@@ -104,34 +118,129 @@ function setup () {
     update(STATE.rows);
   });
 
-  // Section dropdown
-  d3.select("#section-select").on("change", function() {
-    switchPanel(this.value);
-  });
-
   // Scaffolds for overview charts
   REFS.hist  = makeScaffold("#Histogram-div");
   REFS.line  = makeScaffold("#Linechart-div");
-  REFS.timeSeries = makeScaffold("#TimeSeries-div");
+  REFS.timeSeries = makeScaffold("#TimeSeries-div", { margin: MARGIN_DUAL_AXIS });
   REFS.scat  = makeScaffold("#Scatterplot-div");
 
+  // Fleet & emissions scaffolds
+  initFleetPanel();
+
+  // Show/hide each plot (deselected = card disappears)
+  function updateRestoreBar() {
+    const bar = document.getElementById("chart-restore-bar");
+    if (!bar) return;
+    bar.innerHTML = "";
+    CHART_IDS.filter(id => !STATE.visibleCharts[id]).forEach(id => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "restore-btn";
+      btn.textContent = "Show " + (CHART_LABELS[id] || id);
+      btn.addEventListener("click", () => {
+        STATE.visibleCharts[id] = true;
+        const card = document.querySelector(`.chart-card[data-chart="${id}"]`);
+        if (card) { card.classList.remove("chart-card-hidden"); const cb = card.querySelector(".chart-toggle input[type=checkbox]"); if (cb) cb.checked = true; }
+        updateRestoreBar();
+      });
+      bar.appendChild(btn);
+    });
+  }
+  CHART_IDS.forEach(id => {
+    const card = document.querySelector(`.chart-card[data-chart="${id}"]`);
+    if (!card) return;
+    const cb = card.querySelector(".chart-toggle input[type=checkbox]");
+    if (cb) {
+      cb.checked = STATE.visibleCharts[id] !== false;
+      cb.addEventListener("change", function() {
+        STATE.visibleCharts[id] = this.checked;
+        card.classList.toggle("chart-card-hidden", !this.checked);
+        updateRestoreBar();
+      });
+      card.classList.toggle("chart-card-hidden", !STATE.visibleCharts[id]);
+    }
+  });
+  updateRestoreBar();
+
+  // Click on plot to open zoom modal (ignore clicks on Show checkbox); enable drag and zoom in modal
+  function initModalChartZoom(container) {
+    const svg = container.querySelector(".chart-svg");
+    if (!svg) return;
+    const sel = d3.select(svg);
+    const zoomGroup = sel.insert("g", ":first-child").attr("class", "zoom-group");
+    const toMove = Array.from(svg.querySelectorAll(":scope > *")).filter(n => n !== zoomGroup.node());
+    toMove.forEach(n => zoomGroup.node().appendChild(n));
+    const zoom = d3.zoom()
+      .scaleExtent([0.4, 8])
+      .on("zoom", function(ev) { zoomGroup.attr("transform", ev.transform); })
+      .on("start", function() { sel.style("cursor", "grabbing"); })
+      .on("end", function() { sel.style("cursor", "grab"); });
+    sel.call(zoom).on("dblclick.zoom", null);
+    sel.style("cursor", "grab");
+  }
+  const grid = document.getElementById("charts-grid-10");
+  if (grid) {
+    grid.addEventListener("click", function(ev) {
+      const plot = ev.target.closest(".chart-plot");
+      if (!plot || ev.target.closest(".chart-toggle")) return;
+      const card = plot.closest(".chart-card");
+      const titleEl = card ? card.querySelector(".chart-head h3") : null;
+      const title = titleEl ? titleEl.textContent : "Chart";
+      const modal = document.getElementById("chart-modal");
+      const body = document.querySelector(".chart-modal-body");
+      const titleBar = document.querySelector(".chart-modal-title");
+      if (!modal || !body) return;
+      body.innerHTML = "";
+      const clone = plot.cloneNode(true);
+      clone.style.cursor = "default";
+      body.appendChild(clone);
+      initModalChartZoom(body);
+      if (titleBar) titleBar.textContent = title;
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+    });
+  }
+  function closeChartModal() {
+    const modal = document.getElementById("chart-modal");
+    if (!modal) return;
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    const body = document.querySelector(".chart-modal-body");
+    if (body) body.innerHTML = "";
+  }
+  document.querySelector(".chart-modal-backdrop")?.addEventListener("click", closeChartModal);
+  document.querySelector(".chart-modal-close")?.addEventListener("click", closeChartModal);
+  document.getElementById("chart-modal")?.addEventListener("keydown", function(ev) {
+    if (ev.key === "Escape") closeChartModal();
+  });
+
+  // Prefer pipeline serving data if present
+  d3.csv("data/serving/route_a.csv").then(() => { DATA_BASE = "data/serving"; }).catch(() => {}).finally(() => {
+    loadServingJson();
   updateBadges();
   changeData();
+  });
 }
 
 function switchPanel(name) {
   STATE.currentPanel = name;
-  d3.select("#section-select").property("value", name);
   d3.selectAll(".panel").classed("active", false);
-  const panelId = name === "overview" ? "panel-overview" : name === "map" ? "panel-map" : "panel-fleet";
+  const panelIds = { summary: "panel-summary", forecast: "panel-forecast", quality: "panel-quality" };
+  const panelId = panelIds[name] || "panel-summary";
   d3.select("#" + panelId).classed("active", true);
-  if (name === "map") initMapPanel();
-  if (name === "fleet") initFleetPanel();
+  if (name === "forecast") initForecastPanel();
+  if (name === "quality") initQualityPanel();
+  if (name === "summary") {
+    if (STATE.kpis) renderKpiCards();
+    drawForecastChart("#SummaryForecast-div");
+    drawQualityHeatmap("#SummaryQuality-div", { maxDates: 10, noHorizontalScroll: true });
+  }
 }
 
 function loadAllRoutes() {
   if (STATE.allRoutes) return Promise.resolve(STATE.allRoutes);
-  return Promise.all(ROUTE_FILES.map(f => d3.csv(`data/${f}?v=${DATA_VERSION}`))).then(rawArrays => {
+  const base = DATA_BASE;
+  return Promise.all(ROUTE_FILES.map(f => d3.csv(`${base}/${f}?v=${DATA_VERSION}`))).then(rawArrays => {
     const out = {};
     ROUTE_FILES.forEach((f, i) => {
       const raw = rawArrays[i];
@@ -155,6 +264,27 @@ function loadAllRoutes() {
   });
 }
 
+function loadRouteShapes() {
+  if (STATE.routeShapes) return Promise.resolve(STATE.routeShapes);
+  return d3.csv(`${DATA_BASE}/route_shapes.csv?v=${DATA_VERSION}`).then(raw => {
+    const grouped = d3.group(raw, d => d.route);
+    const shapes = {};
+    grouped.forEach((vals, route) => {
+      shapes[route] = vals
+        .map(d => ({
+          seq: +d.seq,
+          lat: +d.lat,
+          lon: +d.lon,
+        }))
+        .filter(d => isFinite(d.lat) && isFinite(d.lon))
+        .sort((a, b) => a.seq - b.seq)
+        .map(d => [d.lat, d.lon]);
+    });
+    STATE.routeShapes = shapes;
+    return shapes;
+  });
+}
+
 function initMapPanel() {
   const container = d3.select("#city-map");
   if (STATE.leafletMap) return;
@@ -170,10 +300,9 @@ function initMapPanel() {
     });
   }
 
-  if (!STATE.trajectories) {
+  if (!STATE.routeShapes) {
     container.html("<p class='map-loading'>Loading routes…</p>");
-    d3.json(`data/route_trajectories.json?v=${DATA_VERSION}`).then(traj => {
-      STATE.trajectories = traj;
+    loadRouteShapes().then(() => {
       container.html("");
       drawWhenReady();
     }).catch(() => container.html("<p class='map-loading'>Could not load route data.</p>"));
@@ -192,9 +321,10 @@ function drawLeafletMap() {
   if (!container) return;
 
   const map = L.map(container, { zoomControl: true }).setView([40.765, -111.868], 11);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
-    maxZoom: 19
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+    attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
+    maxZoom: 19,
+    subdomains: "abcd"
   }).addTo(map);
 
   const routePane = map.createPane("routes");
@@ -204,28 +334,40 @@ function drawLeafletMap() {
   const routeMarkers = {};
   const allBounds = [];
 
-  Object.keys(STATE.trajectories || {}).forEach(routeName => {
-    const coords = STATE.trajectories[routeName].map(p => [Number(p[0]), Number(p[1])]);
+  Object.keys(STATE.routeShapes || {}).forEach(routeName => {
+    const raw = STATE.routeShapes[routeName] || [];
+    if (!raw.length) return;
+    const coords = raw.map(p => [Number(p[0]), Number(p[1])]);
     if (!coords.length) return;
+
+    // Soft glow behind the main route line
+    L.polyline(coords, {
+      color: "#0f172a",
+      weight: 14,
+      opacity: 0.9,
+      pane: "routes",
+      className: "route-path-glow"
+    }).addTo(map);
 
     const polyline = L.polyline(coords, {
       color: routeColor(routeName),
-      weight: 10,
+      weight: 5,
       opacity: 1,
-      pane: "routes"
+      pane: "routes",
+      className: "route-path"
     }).addTo(map);
 
     polyline.on("mouseover", function() {
-      this.setStyle({ weight: 12, opacity: 1 });
+      this.setStyle({ weight: 7, opacity: 1 });
     });
     polyline.on("mouseout", function() {
       if (STATE.highlightedRoute !== routeName)
-        this.setStyle({ weight: 10, opacity: 1 });
+        this.setStyle({ weight: 5, opacity: 1 });
     });
     polyline.on("click", function() {
       STATE.highlightedRoute = STATE.highlightedRoute === routeName ? null : routeName;
       Object.keys(routeLayers).forEach(r => {
-        routeLayers[r].setStyle({ weight: 10, opacity: STATE.highlightedRoute === r ? 1 : 0.4 });
+        routeLayers[r].setStyle({ weight: STATE.highlightedRoute === r ? 7 : 4, opacity: STATE.highlightedRoute === r ? 1 : 0.4 });
       });
       if (STATE.highlightedRoute) routeLayers[routeName].bringToFront();
     });
@@ -270,11 +412,35 @@ function drawLeafletMap() {
   STATE.leafletMap = map;
   STATE.routeLayers = routeLayers;
   STATE.routeMarkers = routeMarkers;
+  updateMapAnomalyLayer();
+}
+
+function updateMapAnomalyLayer() {
+  const map = STATE.leafletMap;
+  if (!map || !STATE.routeShapes) return;
+  if (STATE.anomalyLayer) { STATE.anomalyLayer.remove(); STATE.anomalyLayer = null; }
+  if (!STATE.showAnomalies || !STATE.anomalies || !STATE.anomalies.length) return;
+  const group = L.layerGroup();
+  STATE.anomalies.forEach(a => {
+    const coords = STATE.routeShapes[a.route];
+    if (!coords || !coords.length) return;
+    const pt = coords[0];
+    L.marker([pt[0], pt[1]], {
+      icon: L.divIcon({
+        html: `<span style="background:#f59e0b;color:#fff;padding:2px 5px;border-radius:4px;font-size:9px;">!</span>`,
+        className: "anomaly-marker",
+        iconSize: [18, 18],
+        iconAnchor: [9, 9]
+      })
+    }).addTo(group).bindTooltip(`${a.route} ${a.date} (cost $${fmtInt(a.cost_usd)})`, { permanent: false });
+  });
+  group.addTo(map);
+  STATE.anomalyLayer = group;
 }
 
 function renderMapLegend() {
   const wrap = d3.select("#map-legend").html("");
-  Object.keys(STATE.trajectories || {}).forEach(routeName => {
+  Object.keys(STATE.routeShapes || {}).forEach(routeName => {
     const label = wrap.append("label");
     label.append("input").attr("type", "checkbox").attr("checked", true).attr("value", routeName)
       .on("change", function() {
@@ -296,13 +462,121 @@ function renderMapLegend() {
   });
 }
 
+function loadServingJson() {
+  const base = "data/serving";
+  const v = "v=" + (DATA_VERSION || "1");
+  Promise.all([
+    d3.json(`${base}/kpis.json?${v}`).catch(() => null),
+    d3.json(`${base}/quality.json?${v}`).catch(() => null),
+    d3.json(`${base}/forecast.json?${v}`).catch(() => null),
+    d3.json(`${base}/anomalies.json?${v}`).catch(() => null)
+  ]).then(([kpis, quality, forecast, anomalies]) => {
+    STATE.kpis = kpis || [];
+    STATE.quality = quality || [];
+    STATE.forecast = forecast || [];
+    STATE.anomalies = anomalies || [];
+    renderKpiCards();
+    drawForecastChart("#SummaryForecast-div");
+    drawQualityHeatmap("#SummaryQuality-div", { maxDates: 10, noHorizontalScroll: true });
+  });
+}
+
+function renderKpiCards() {
+  const el = d3.select("#kpi-cards");
+  el.html("");
+  if (!STATE.kpis || !STATE.kpis.length) return;
+  const byRoute = d3.groups(STATE.kpis, d => d.route);
+  const totals = { ridership: d3.sum(STATE.kpis, d => d.ridership), cost: d3.sum(STATE.kpis, d => d.cost_usd), co2: d3.sum(STATE.kpis, d => d.co2_kg) };
+  el.append("div").attr("class", "kpi-card").html("<strong>Total ridership</strong><br><span class='kpi-val'>" + fmtInt(totals.ridership) + "</span>");
+  el.append("div").attr("class", "kpi-card").html("<strong>Total cost</strong><br><span class='kpi-val'>$" + fmtInt(Math.round(totals.cost)) + "</span>");
+  el.append("div").attr("class", "kpi-card").html("<strong>Total CO₂ (kg)</strong><br><span class='kpi-val'>" + fmtInt(Math.round(totals.co2)) + "</span>");
+  el.append("div").attr("class", "kpi-card").html("<strong>Routes</strong><br><span class='kpi-val'>" + byRoute.length + "</span>");
+}
+
+function drawForecastChart(containerSelector) {
+  const sel = d3.select(containerSelector);
+  if (sel.empty()) return;
+  sel.html("");
+  if (!STATE.forecast || !STATE.forecast.length) { sel.append("p").attr("class", "chart-placeholder").style("padding", "1em").style("color", "var(--muted)").text("No forecast data (run pipeline or use demo data)."); return; }
+  const w = CHART_WIDTH, h = CHART_HEIGHT;
+  const plotW = w - MARGIN.left - MARGIN.right, plotH = h - MARGIN.top - MARGIN.bottom;
+  const r = d3.select("#dataset").property("value").replace("route_", "").replace(".csv", "");
+  const routeName = "Route " + (r.charAt(0).toUpperCase() + r.slice(1));
+  const data = STATE.forecast.filter(d => d.route === routeName).slice(-60);
+  if (!data.length) { sel.append("p").attr("class", "chart-placeholder").style("padding", "1em").style("color", "var(--muted)").text("No forecast for " + routeName); return; }
+  const svg = sel.append("svg").attr("viewBox", `0 0 ${w} ${h}`).attr("class", "chart-svg");
+  const g = svg.append("g").attr("transform", `translate(${MARGIN.left},${MARGIN.top})`);
+  const x = d3.scaleTime().domain(d3.extent(data, d => new Date(d.date))).range([0, plotW]);
+  const y = d3.scaleLinear().domain([0, d3.max(data, d => Math.max(d.ridership_actual, d.ridership_forecast))]).nice().range([plotH, 0]);
+  g.append("path").attr("class", "line").attr("stroke", "#1170aa").attr("stroke-width", 2).attr("fill", "none")
+    .attr("d", d3.line().x(d => x(new Date(d.date))).y(d => y(d.ridership_actual)).curve(d3.curveMonotoneX)(data));
+  g.append("path").attr("class", "line").attr("stroke", "#c55a11").attr("stroke-width", 1.5).attr("stroke-dasharray", "4 2").attr("fill", "none")
+    .attr("d", d3.line().x(d => x(new Date(d.date))).y(d => y(d.ridership_forecast)).curve(d3.curveMonotoneX)(data));
+  svg.append("g").attr("transform", `translate(${MARGIN.left},${MARGIN.top + plotH})`).call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat("%b")));
+  svg.append("g").attr("transform", `translate(${MARGIN.left},${MARGIN.top})`).call(d3.axisLeft(y));
+  svg.append("text").attr("class", "axis-label x-label").attr("text-anchor", "middle")
+    .attr("x", MARGIN.left + plotW / 2).attr("y", h - 6).text("Date");
+  svg.append("text").attr("class", "axis-label y-label").attr("text-anchor", "middle")
+    .attr("transform", `translate(10, ${MARGIN.top + plotH / 2}) rotate(-90)`).text("Ridership");
+  const legend = svg.append("g").attr("class", "forecast-legend").attr("transform", `translate(${MARGIN.left},${MARGIN.top + 8})`);
+  legend.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 24).attr("y2", 0).attr("stroke", "#1170aa").attr("stroke-width", 2);
+  legend.append("text").attr("x", 30).attr("y", 4).attr("font-size", "11px").attr("fill", "var(--fg)").text("Actual");
+  legend.append("line").attr("x1", 0).attr("y1", 16).attr("x2", 24).attr("y2", 16).attr("stroke", "#c55a11").attr("stroke-width", 1.5).attr("stroke-dasharray", "4 2");
+  legend.append("text").attr("x", 30).attr("y", 20).attr("font-size", "11px").attr("fill", "var(--fg)").text("Forecast");
+}
+
+function drawQualityHeatmap(containerSelector, opts) {
+  const el = d3.select(containerSelector);
+  if (el.empty()) return;
+  el.html("");
+  if (!STATE.quality || !STATE.quality.length) { el.append("p").attr("class", "chart-placeholder").style("padding", "1em").style("color", "var(--muted)").text("No quality data (run pipeline or use demo data)."); return; }
+  const routes = [...new Set(STATE.quality.map(d => d.route))].sort();
+  const maxDates = (opts && opts.maxDates) || 30;
+  const dates = [...new Set(STATE.quality.map(d => d.date))].sort().slice(-maxDates);
+  const color = d3.scaleSequential(d3.interpolateRdYlGn).domain([0, 1]);
+  const noScroll = opts && opts.noHorizontalScroll;
+  const wrap = el.append("div").attr("class", "quality-heatmap-wrap" + (noScroll ? " quality-heatmap-no-scroll" : ""))
+    .style("overflow", noScroll ? "hidden" : "auto").style("max-height", "100%");
+  const table = wrap.append("table").attr("class", "quality-table" + (noScroll ? " quality-table-fit" : ""));
+  const thead = table.append("thead").append("tr");
+  thead.append("th").text("Route");
+  dates.forEach(d => thead.append("th").text(d.slice(5)));
+  const tbody = table.append("tbody");
+  routes.forEach(route => {
+    const row = tbody.append("tr");
+    row.append("td").text(route);
+    dates.forEach(date => {
+      const q = STATE.quality.find(r => r.route === route && r.date === date);
+      const score = q ? q.quality_score : null;
+      row.append("td").attr("class", "qcell").style("background", score != null ? color(score) : "#eee").text(score != null ? score.toFixed(2) : "—");
+    });
+  });
+}
+
+function initForecastPanel() {
+  const listEl = d3.select("#Anomalies-list");
+  listEl.html("");
+  if (STATE.anomalies && STATE.anomalies.length) {
+    listEl.append("ul").selectAll("li").data(STATE.anomalies.slice(0, 20)).join("li").html(d => `${d.route} ${d.date}: ridership ${fmtInt(d.ridership)}, cost $${fmtInt(d.cost_usd)}`);
+  } else listEl.text("No anomaly records (run pipeline or use demo data).");
+  drawForecastChart("#ForecastChart-div");
+}
+
+function initQualityPanel() {
+  const el = d3.select("#Quality-heatmap");
+  el.html("");
+  drawQualityHeatmap("#Quality-heatmap");
+}
+
 function initFleetPanel() {
   const fleetOpts = { width: FLEET_CHART_WIDTH, height: FLEET_CHART_HEIGHT };
   if (!REFS.fuel) REFS.fuel = makeScaffold("#FuelChart-div", fleetOpts);
   if (!REFS.costByRoute) REFS.costByRoute = makeScaffold("#CostByRoute-div", fleetOpts);
   if (!REFS.vehicleBreakdown) REFS.vehicleBreakdown = makeScaffold("#VehicleBreakdown-div", fleetOpts);
+  if (!REFS.ridershipByRoute) REFS.ridershipByRoute = makeScaffold("#RidershipByRoute-div", fleetOpts);
   loadAllRoutes().then(all => {
     updateCostByRoute(all);
+    updateRidershipByRoute(all);
     if (STATE.rows && STATE.rows.length) updateFleetCharts(STATE.rows);
   });
 }
@@ -418,26 +692,49 @@ function updateVehicleBreakdown(rows) {
   yLabel.text("Days");
 }
 
+function updateRidershipByRoute(all) {
+  const ref = REFS.ridershipByRoute;
+  if (!ref) return;
+  const { gPlot, gX, gY, gGridY, xLabel, yLabel, plotW, plotH } = ref;
+
+  const routeNames = Object.keys(all);
+  const sums = routeNames.map(r => ({ route: r, ridership: d3.sum(all[r], d => d.ridership) }));
+  const x = d3.scaleBand().domain(routeNames).range([0, plotW]).padding(0.35);
+  const y = d3.scaleLinear().domain([0, d3.max(sums, d => d.ridership) || 1]).nice().range([plotH, 0]);
+
+  const bars = gPlot.selectAll("rect.ridership-route-bar").data(sums, d => d.route);
+  bars.join("rect").attr("class", "ridership-route-bar bar").attr("fill", d => routeColor(d.route))
+    .attr("x", d => x(d.route)).attr("width", x.bandwidth())
+    .attr("y", d => y(d.ridership)).attr("height", d => plotH - y(d.ridership))
+    .attr("rx", 4).on("mousemove", (ev, d) => showTip(`<b>${d.route}</b><br>Total ridership: ${fmtInt(d.ridership)}`, ev))
+    .on("mouseleave", hideTip);
+
+  gX.call(d3.axisBottom(x).tickSizeOuter(0).tickPadding(8));
+  gY.call(d3.axisLeft(y).ticks(5).tickSizeOuter(0).tickPadding(8).tickFormat(d => fmtInt(d)));
+  gGridY.call(d3.axisLeft(y).ticks(5).tickSize(-plotW).tickFormat("")).selectAll("line").attr("class", "gridline").attr("stroke-opacity", 0.6);
+  xLabel.text("Route");
+  yLabel.text("Total ridership");
+}
+
 function makeScaffold(sel, opts) {
   const w = (opts && opts.width) || CHART_WIDTH;
   const h = (opts && opts.height) || CHART_HEIGHT;
-  const svg = d3.select(sel).append("svg").attr("viewBox", `0 0 ${w} ${h}`);
-  const plotW = w - MARGIN.left - MARGIN.right;
-  const plotH = h - MARGIN.top - MARGIN.bottom;
+  const margin = (opts && opts.margin) || MARGIN;
+  const svg = d3.select(sel).append("svg").attr("viewBox", `0 0 ${w} ${h}`).attr("class", "chart-svg");
+  const plotW = w - margin.left - margin.right;
+  const plotH = h - margin.top - margin.bottom;
 
-  const gPlot = svg.append("g").attr("class", "plot").attr("transform", `translate(${MARGIN.left},${MARGIN.top})`);
-  const gX = svg.append("g").attr("class", "x-axis").attr("transform", `translate(${MARGIN.left},${MARGIN.top + plotH})`);
-  const gY = svg.append("g").attr("class", "y-axis").attr("transform", `translate(${MARGIN.left},${MARGIN.top})`);
-  const gGridY = svg.append("g").attr("class", "grid-y").attr("transform", `translate(${MARGIN.left},${MARGIN.top})`);
+  const gPlot = svg.append("g").attr("class", "plot").attr("transform", `translate(${margin.left},${margin.top})`);
+  const gX = svg.append("g").attr("class", "x-axis").attr("transform", `translate(${margin.left},${margin.top + plotH})`);
+  const gY = svg.append("g").attr("class", "y-axis").attr("transform", `translate(${margin.left},${margin.top})`);
+  const gGridY = svg.append("g").attr("class", "grid-y").attr("transform", `translate(${margin.left},${margin.top})`);
 
-  // Place x-label a touch lower; added gap comes mostly from larger bottom margin
   const xLabel = svg.append("text").attr("class", "axis-label x-label").attr("text-anchor", "middle")
-    .attr("x", MARGIN.left + plotW / 2).attr("y", h - 6).text("");
+    .attr("x", margin.left + plotW / 2).attr("y", h - 6).text("");
 
   const yLabel = svg.append("text").attr("class", "axis-label y-label").attr("text-anchor", "middle")
-    .attr("transform", `translate(16, ${MARGIN.top + plotH / 2}) rotate(-90)`).text("");
+    .attr("transform", `translate(10, ${margin.top + plotH / 2}) rotate(-90)`).text("");
 
-  // Inline (HTML) legend in the chart header (outside the plot)
   let legendHtml = null;
   try {
     const card = svg.node().parentNode.closest('.chart-card');
@@ -450,12 +747,11 @@ function makeScaffold(sel, opts) {
     }
   } catch(_) {}
 
-  // Keep an SVG legend group (unused when HTML legend exists, but harmless)
   const legend = svg.append("g").attr("class", "legend")
-    .attr("transform", `translate(${w - MARGIN.right - 120}, ${MARGIN.top + 8})`)
-    .style("display", legendHtml ? "none" : null); // hide if HTML legend is present
+    .attr("transform", `translate(${w - margin.right - 120}, ${margin.top + 8})`)
+    .style("display", legendHtml ? "none" : null);
 
-  return { svg, gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH };
+  return { svg, gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH, margin };
 }
 
 // Utility: render a small HTML legend in the header (labelFn optional, interactive=false for static legend)
@@ -502,14 +798,14 @@ function changeData () {
   STATE.metricKey = METRIC_MAP[metricUi] || METRIC_MAP.attribute1;
   updateBadges();
 
-  d3.csv(`data/${file}?v=${DATA_VERSION}`).then(raw => {
+  d3.csv(`${DATA_BASE}/${file}?v=${DATA_VERSION}`).then(raw => {
     const rows = raw.map(d => {
       const r = {
-        date: parseDate(d[DATE_FIELD]),
-        group: d.group,
-        ridership: +d.ridership,
-        on_time_pct: +d.on_time_pct,
-        day_type: d[CATEGORY_FIELD],
+      date: parseDate(d[DATE_FIELD]),
+      group: d.group,
+      ridership: +d.ridership,
+      on_time_pct: +d.on_time_pct,
+      day_type: d[CATEGORY_FIELD],
       };
       if (d.vehicle_type != null && d.vehicle_type !== "") r.vehicle_type = d.vehicle_type;
       if (d.fuel_liters != null && d.fuel_liters !== "") r.fuel_liters = +d.fuel_liters;
@@ -521,7 +817,7 @@ function changeData () {
     rows.sort((a, b) => a.date - b.date);
     STATE.rows = rows;
     update(rows);
-    if (STATE.currentPanel === "fleet") updateFleetCharts(rows);
+    updateFleetCharts(rows);
   }).catch(e => {
     console.error("CSV load failed:", e);
     alert('Error loading CSV. Check the filename and data schema.');
@@ -555,8 +851,9 @@ function updateHistogramChart (rows) {
   const metric = STATE.metricKey;
 
   const values = rows.map(d => d[metric]);
-  const x = d3.scaleLinear().domain(d3.extent(values)).nice().range([0, plotW]);
-  const bins = d3.bin().domain(x.domain()).thresholds(24)(values);
+  const xDomain = metric === "on_time_pct" ? [0, 100] : d3.extent(values);
+  const x = d3.scaleLinear().domain(xDomain).nice().range([0, plotW]);
+  const bins = d3.bin().domain(x.domain()).thresholds(metric === "on_time_pct" ? 20 : 24)(values);
   const y = d3.scaleLinear().domain([0, d3.max(bins, d => d.length) || 1]).nice().range([plotH, 0]);
 
   const barGap = 1;
@@ -612,7 +909,10 @@ function updateLineChart (rows) {
   const metric = STATE.metricKey;
 
   const x = d3.scaleTime().domain(d3.extent(rows, d => d.date)).range([0, plotW]);
-  const y = d3.scaleLinear().domain(d3.extent(rows, d => d[metric])).nice().range([plotH, 0]);
+  const y = d3.scaleLinear()
+    .domain(metric === "on_time_pct" ? [0, 100] : [0, d3.max(rows, d => d[metric]) || 1])
+    .nice()
+    .range([plotH, 0]);
 
   const line = d3.line().x(d => x(d.date)).y(d => y(d[metric])).curve(d3.curveMonotoneX);
 
@@ -689,20 +989,24 @@ function updateLineChart (rows) {
 
 // --- Time series (ridership + on-time % over time) ---
 function updateTimeSeriesChart (rows) {
-  const { svg, gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH } = REFS.timeSeries;
+  const { svg, gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH, margin } = REFS.timeSeries;
+  const m = margin || MARGIN;
+  const active = STATE.activeTimeSeriesVars || new Set(TIME_SERIES_KEYS);
 
   const x = d3.scaleTime().domain(d3.extent(rows, d => d.date)).range([0, plotW]);
-  const yRidership = d3.scaleLinear().domain(d3.extent(rows, d => d.ridership)).nice().range([plotH, 0]);
-  const yOnTime = d3.scaleLinear().domain(d3.extent(rows, d => d.on_time_pct)).nice().range([plotH, 0]);
+  const yRidership = d3.scaleLinear().domain([0, d3.max(rows, d => d.ridership) || 1]).nice().range([plotH, 0]);
+  const yOnTime = d3.scaleLinear().domain([0, 100]).range([plotH, 0]);
 
   const lineRidership = d3.line().x(d => x(d.date)).y(d => yRidership(d.ridership)).curve(d3.curveMonotoneX);
   const lineOnTime = d3.line().x(d => x(d.date)).y(d => yOnTime(d.on_time_pct)).curve(d3.curveMonotoneX);
 
   gPlot.selectAll("path.ts-line").remove();
-  gPlot.append("path").attr("class", "ts-line line").attr("stroke", TIME_SERIES_COLORS[0])
-    .attr("stroke-width", 2.5).attr("d", lineRidership(rows));
-  gPlot.append("path").attr("class", "ts-line line").attr("stroke", TIME_SERIES_COLORS[1])
-    .attr("stroke-width", 2.5).attr("d", lineOnTime(rows));
+  gPlot.append("path").attr("class", "ts-line ts-line-ridership line").attr("stroke", TIME_SERIES_COLORS[0])
+    .attr("stroke-width", 2.5).attr("d", lineRidership(rows))
+    .attr("opacity", active.has("ridership") ? 1 : 0);
+  gPlot.append("path").attr("class", "ts-line ts-line-ontime line").attr("stroke", TIME_SERIES_COLORS[1])
+    .attr("stroke-width", 2.5).attr("d", lineOnTime(rows))
+    .attr("opacity", active.has("on_time_pct") ? 1 : 0);
 
   const axisX = d3.axisBottom(x).ticks(d3.timeMonth.every(1)).tickSizeOuter(0).tickPadding(10).tickFormat(monthFmt);
   const axisY = d3.axisLeft(yRidership).ticks(5).tickSizeOuter(0).tickPadding(8).tickFormat(fmtInt);
@@ -712,16 +1016,34 @@ function updateTimeSeriesChart (rows) {
   let gYRight = svg.select(".y-axis-right");
   if (gYRight.empty()) {
     gYRight = svg.append("g").attr("class", "y-axis y-axis-right")
-      .attr("transform", `translate(${MARGIN.left + plotW},${MARGIN.top})`);
+      .attr("transform", `translate(${m.left + plotW},${m.top})`);
   }
   gYRight.call(d3.axisRight(yOnTime).ticks(5).tickSizeOuter(0).tickPadding(8).tickFormat(d => fmtPct(d) + "%"));
+  gYRight.attr("visibility", active.has("on_time_pct") ? "visible" : "hidden");
 
   gGridY.call(d3.axisLeft(yRidership).ticks(5).tickSize(-plotW).tickFormat(""))
     .selectAll("line").attr("class", "gridline").attr("stroke-opacity", 0.6);
 
   if (legendHtml) {
-    const keys = ["ridership", "on_time_pct"];
-    renderHtmlLegend(legendHtml, "Variables", keys, d => d === "ridership" ? TIME_SERIES_COLORS[0] : TIME_SERIES_COLORS[1], d => STACKED_LABELS[d] || d, false);
+    legendHtml.html("");
+    legendHtml.append("span").attr("class", "legend-title").text("Variables");
+    const ul = legendHtml.append("ul");
+    TIME_SERIES_KEYS.forEach(key => {
+      const li = ul.append("li")
+        .attr("class", "legend-item" + (active.has(key) ? "" : " is-inactive"))
+        .style("cursor", "pointer")
+        .html(`<span class="swatch" style="background:${key === "ridership" ? TIME_SERIES_COLORS[0] : TIME_SERIES_COLORS[1]}"></span>${STACKED_LABELS[key] || key}`);
+      li.on("click", () => {
+        if (active.has(key)) {
+          if (active.size === 1) return;
+          active.delete(key);
+  } else {
+          active.add(key);
+        }
+        STATE.activeTimeSeriesVars = active;
+        updateTimeSeriesChart(STATE.rows);
+      });
+    });
   }
   xLabel.text("Date");
   yLabel.text("Ridership");
@@ -731,8 +1053,19 @@ function updateTimeSeriesChart (rows) {
 function updateScatterPlot (rows) {
   const { gPlot, gX, gY, gGridY, xLabel, yLabel, legend, legendHtml, plotW, plotH } = REFS.scat;
 
-  const x = d3.scaleLinear().domain(d3.extent(rows, d => d.ridership)).nice().range([0, plotW]);
-  const y = d3.scaleLinear().domain(d3.extent(rows, d => d.on_time_pct)).nice().range([plotH, 0]);
+  const xExtent = d3.extent(rows, d => d.ridership);
+  const yExtent = d3.extent(rows, d => d.on_time_pct);
+  const xSpan = (xExtent[1] - xExtent[0]) || 1;
+  const ySpan = (yExtent[1] - yExtent[0]) || 1;
+  const pad = 0.08;
+  const x = d3.scaleLinear()
+    .domain([xExtent[0] - xSpan * pad, xExtent[1] + xSpan * pad])
+    .nice()
+    .range([0, plotW]);
+  const y = d3.scaleLinear()
+    .domain([yExtent[0] - ySpan * pad, yExtent[1] + ySpan * pad])
+    .nice()
+    .range([plotH, 0]);
 
   const dots = gPlot.selectAll("circle.dot").data(rows, d => +d.date);
   dots.join(

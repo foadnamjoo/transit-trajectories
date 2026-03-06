@@ -78,16 +78,168 @@ body{
   padding:4px 8px; border-radius:999px;
 }
 
-/* Charts grid */
-.charts{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(340px, 1fr));
-  gap:20px;
-  padding:18px 0 26px;
+/* 7 plots in one grid, same size, no scroll */
+.charts-grid-7 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+  max-height: calc(100vh - 220px);
+  min-height: 0;
+  overflow: hidden;
 }
-@media (max-width: 1000px){
-  .charts{ grid-template-columns: 1fr; }
+.charts-grid-7 .chart-card {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
+.charts-grid-7 .chart-card-hidden {
+  display: none;
+}
+.charts-grid-8 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+  max-height: calc(100vh - 260px);
+  min-height: 0;
+  overflow: hidden;
+}
+.charts-grid-8 .chart-card { min-height: 0; display: flex; flex-direction: column; overflow: hidden; }
+.charts-grid-8 .chart-card-hidden { display: none; }
+.charts-grid-8 .chart-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.charts-grid-8 .chart-head h3 { margin: 0; font-size: 13px; }
+.charts-grid-8 .chart-head .caption { margin: 0; font-size: 11px; flex-basis: 100%; }
+.charts-grid-8 .chart-plot { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.charts-grid-8 .chart-plot .chart-svg { width: 100%; height: 100%; max-height: 100%; object-fit: contain; aspect-ratio: 520 / 260; }
+
+/* Summary panel: use more horizontal space (less margin) */
+#panel-summary .container {
+  width: min(1480px, 98%);
+}
+
+/* 10 plots: 2 columns, larger cells; scroll if needed */
+.charts-grid-10 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(5, minmax(400px, 1fr));
+  gap: 24px;
+  padding: 16px 0;
+  min-height: 0;
+  overflow: visible;
+}
+.charts-grid-10 .chart-card { min-height: 380px; display: flex; flex-direction: column; overflow: hidden; }
+.charts-grid-10 .chart-card-hidden { display: none; }
+.charts-grid-10 .chart-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.charts-grid-10 .chart-head h3 { margin: 0; font-size: 15px; }
+.charts-grid-10 .chart-head .caption { margin: 0; font-size: 12px; flex-basis: 100%; }
+.charts-grid-10 .chart-plot { flex: 1; min-height: 340px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.charts-grid-10 .chart-plot .chart-svg { width: 100%; height: 100%; max-height: 100%; object-fit: contain; aspect-ratio: 520 / 260; }
+.charts-grid-10 .chart-plot .quality-heatmap-wrap { width: 100%; max-width: 100%; }
+.charts-grid-10 .chart-plot .quality-heatmap-no-scroll { overflow-x: hidden; overflow-y: auto; }
+.charts-grid-10 .chart-plot .quality-table-fit { table-layout: fixed; width: 100%; }
+.charts-grid-10 .chart-plot .quality-table-fit th:first-child,
+.charts-grid-10 .chart-plot .quality-table-fit td:first-child { width: 4.2em; min-width: 0; }
+.charts-grid-10 .chart-plot .quality-table-fit .qcell { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.charts-grid-10 .chart-plot .quality-table { font-size: 12px; }
+.charts-grid-10 .chart-plot .quality-table th,
+.charts-grid-10 .chart-plot .quality-table td { padding: 6px 8px; }
+@media (max-width: 768px) {
+  #panel-summary .container { width: min(100%, 92%); }
+  .charts-grid-10 { grid-template-columns: 1fr; grid-template-rows: repeat(10, minmax(320px, auto)); }
+  .charts-grid-10 .chart-card { min-height: 300px; }
+  .charts-grid-10 .chart-plot { min-height: 260px; }
+}
+
+.chart-restore-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0;
+  min-height: 36px;
+}
+.chart-restore-bar .restore-btn {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--muted);
+}
+.chart-restore-bar .restore-btn:hover { background: var(--border); color: var(--fg); }
+@media (max-width: 1200px) {
+  .charts-grid-8 { grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .charts-grid-8 { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, 1fr); }
+}
+.charts-grid-7 .chart-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.charts-grid-7 .chart-head h3 { margin: 0; font-size: 13px; }
+.charts-grid-7 .chart-head .caption { margin: 0; font-size: 11px; flex-basis: 100%; }
+.chart-toggle {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.chart-toggle input { cursor: pointer; }
+.charts-grid-7 .chart-plot {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charts-grid-7 .chart-plot .chart-svg {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  aspect-ratio: 520 / 260;
+}
+@media (max-width: 1200px) {
+  .charts-grid-7 { grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .charts-grid-7 { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, 1fr); }
+}
+
+.kpi-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 0;
+}
+.kpi-card {
+  min-width: 140px;
+  padding: 12px 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.kpi-card .kpi-val { font-size: 18px; font-weight: 700; color: var(--fg); }
+
+.quality-table { border-collapse: collapse; width: 100%; font-size: 12px; }
+.quality-table th, .quality-table td { padding: 6px 8px; border: 1px solid var(--border); text-align: center; }
+.quality-table th { background: var(--panel); font-weight: 600; }
+.quality-table .qcell { min-width: 36px; }
+.anomalies-list ul { margin: 0; padding-left: 20px; }
+.anomalies-list li { margin: 4px 0; font-size: 13px; }
 
 /* Analytic summary panel */
 .insights{
@@ -186,7 +338,7 @@ body{
 .caption { margin: 0; font-size: 12px; color: var(--muted); line-height: 1.4; }
 .chart-plot { margin-top: 4px; }
 
-svg{ width:100%; height: clamp(260px, 36vh, 400px); display:block; }
+.chart-plot svg:not(.chart-svg) { width: 100%; height: auto; max-height: 300px; display: block; }
 
 /* Axes — clean, minimal, publication-style */
 .x-axis text,
@@ -361,22 +513,35 @@ path.layer {
 .map-legend .route-desc { margin-left: 2px; }
 .map-legend input { accent-color: var(--accent); }
 .city-map-container {
-  background: #f1f5f9;
+  background: #020617;
   border-radius: 12px;
   padding: 16px;
   min-height: 420px;
+  box-shadow: 0 18px 45px rgba(15,23,42,.75);
 }
 .city-map {
   width: 100%;
   height: 400px;
-  background: #e2e8f0;
+  background: #020617;
   border-radius: 8px;
   position: relative;
+  overflow: hidden;
 }
 .city-map svg { display: block; width: 100%; height: 100%; }
-.map-loading { text-align: center; padding: 2rem; color: var(--muted); }
-.leaflet-container { font-family: inherit; z-index: 1; }
+.map-loading { text-align: center; padding: 2rem; color: #9ca3af; }
+.leaflet-container {
+  font-family: inherit;
+  z-index: 1;
+  background: #020617;
+}
 .route-label-marker { background: none !important; border: none !important; }
+.leaflet-overlay-pane .route-path {
+  stroke-linecap: round;
+}
+.leaflet-overlay-pane .route-path-glow {
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 6px rgba(56,189,248,.85));
+}
 .chart-placeholder { font-size: 13px; }
 
 /* Fleet & cost panel — 3 columns, fit on one screen */
@@ -395,7 +560,106 @@ path.layer {
 }
 .fleet-section .chart-card { padding: 12px; }
 .fleet-section .chart-head h3 { font-size: 14px; }
-.fleet-section .chart-plot svg {
-  height: clamp(220px, 28vh, 280px);
-  max-height: 280px;
+.fleet-section .chart-plot .chart-svg {
+  max-width: 100%;
+}
+
+/* Chart zoom modal (click plot to open) */
+.chart-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.chart-modal.is-open {
+  display: flex;
+}
+.chart-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.chart-modal-content {
+  position: relative;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow), 0 0 0 1px var(--border);
+  min-width: min(920px, 92vw);
+  max-width: 96vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chart-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: var(--panel);
+  border-radius: 8px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart-modal-close:hover {
+  background: var(--border);
+  color: var(--fg);
+}
+.chart-modal-title {
+  padding: 14px 48px 8px 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--fg);
+  flex-shrink: 0;
+}
+.chart-modal-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Force charts to display large in modal (SVG has viewBox so scales cleanly) */
+.chart-modal-body .chart-plot {
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+.chart-modal-body .chart-svg {
+  width: min(880px, 88vw) !important;
+  min-width: 480px;
+  height: auto !important;
+  display: block;
+  max-width: 100%;
+}
+.chart-modal-body .quality-heatmap-wrap {
+  overflow: auto;
+  max-height: 70vh;
+  width: 100%;
+}
+.chart-modal-body .quality-table {
+  font-size: 14px;
+}
+.chart-modal-body .quality-table th,
+.chart-modal-body .quality-table td {
+  padding: 8px 10px;
+}
+.charts-grid-10 .chart-plot {
+  cursor: pointer;
 }
