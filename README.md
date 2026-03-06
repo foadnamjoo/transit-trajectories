@@ -2,6 +2,8 @@
 
 **Recruiter-grade portfolio project:** end-to-end data pipeline (dirty data → cleaning → validation → metrics → forecasting & anomaly detection) plus an interactive D3 + Leaflet dashboard that consumes the processed outputs.
 
+![Transit Ops Lab demo](assets/demo.gif)
+
 ---
 
 ## What problem it solves
